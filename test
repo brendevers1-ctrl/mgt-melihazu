@@ -1,0 +1,1 @@
+php bin/magento setup:install --base-url=http://magento.local/ --db-host=localhost --db-name=magento --db-user=root --db-password=doanh123 --admin-firstname=Admin --admin-lastname=User --admin-email=admin@example.com --admin-user=kenz --admin-password=doanh123 --language=en_US --currency=USD --timezone=Asia/Ho_Chi_Minh --use-rewrites=1

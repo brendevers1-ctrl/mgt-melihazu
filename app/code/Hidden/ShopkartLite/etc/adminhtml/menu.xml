@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Hidden_ShopkartLite::shopkartlite" title="ShopkartLite" module="Hidden_ShopkartLite" sortOrder="65" resource="Hidden_ShopkartLite::shopkartlite"/>
+        <add id="Hidden_ShopkartLite::shopkartlitesettings" title="Configuration" module="Hidden_ShopkartLite" sortOrder="20" parent="Hidden_ShopkartLite::shopkartlite" action="adminhtml/system_config/edit/section/shopkartlitesettings" resource="Hidden_ShopkartLite::shopkartlite"/>
+    </menu>
+</config>

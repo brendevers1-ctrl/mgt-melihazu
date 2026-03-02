@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Hidden_ShopkartLite::css/owl.carousel.css"/>
+        <css src="Hidden_ShopkartLite::css/owl.theme.css"/>
+        <css src="Hidden_ShopkartLite::css/owl.transitions.css"/>
+        <css src="Hidden_ShopkartLite::css/fancybox/jquery.fancybox.css"/>
+        <css src="Hidden_ShopkartLite::css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="top.promotion.block" template="Hidden_ShopkartLite::promotion.phtml" before="global_notices"/>
+        </referenceContainer>
+        <referenceContainer name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="custom.css" template="Hidden_ShopkartLite::customcss.phtml" before="-"/>
+        </referenceContainer>
+        <referenceContainer name="footer-container">
+            <block class="Magento\Framework\View\Element\Template" as="shopkartlite.footer" name="shopkartlite.footer" template="Hidden_ShopkartLite::html/footer.phtml">
+                <block class="Magento\Framework\View\Element\Html\Links" name="footer_links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">footer links</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="html/copyright.phtml"/>
+            </block>
+            <referenceBlock name="report.bugs" remove="true"/>
+            <referenceBlock name="footer" remove="true"/>
+            <referenceContainer name="copyright" remove="true"/>
+        </referenceContainer>
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Framework\View\Element\Template" as="shopkartlite.above" name="shopkartlite.above" template="Hidden_ShopkartLite::shopkartliteabove.phtml" before="main.content" />
+            <block class="Magento\Framework\View\Element\Template" as="shopkartlite.below" name="shopkartlite.below" template="Hidden_ShopkartLite::shopkartlitebelow.phtml" after="main.content" />
+        </referenceContainer>
+        <referenceBlock name="wish-list-link" remove="true"/>
+    </body>
+</page>
