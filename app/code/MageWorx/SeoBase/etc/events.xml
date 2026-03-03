@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="cms_page_save_before">
+        <observer name="mw_seobase_observer_page_prepare_save" instance="MageWorx\SeoBase\Model\Observer\PagePrepareSaveObserver" />
+    </event>
+    <event name="mageworx_xmlsitemap_product_generation_before">
+        <observer
+            name="mageworx_seobase_apply_flexible_canonical_strategy"
+            instance="MageWorx\SeoBase\Model\Observer\XmlSitemap\ProductUrlGenerationObserver"
+        />
+        <observer
+            name="mageworx_seobase_exclude_products_having_custom_canonical"
+            instance="MageWorx\SeoBase\Model\Observer\XmlSitemap\ExcludeProductsByCustomCanonicalObserver"
+        />
+    </event>
+    <event name="mageworx_xmlsitemap_category_generation_before">
+        <observer
+            name="mageworx_seobase_exclude_categories_having_custom_canonical"
+            instance="MageWorx\SeoBase\Model\Observer\XmlSitemap\ExcludeCategoriesByCustomCanonicalObserver"
+        />
+    </event>
+    <event name="mageworx_xmlsitemap_cms_page_generation_before">
+        <observer
+            name="mageworx_seobase_exclude_cms_pages_having_custom_canonical"
+            instance="MageWorx\SeoBase\Model\Observer\XmlSitemap\ExcludeCmsPagesByCustomCanonicalObserver"
+        />
+    </event>
+    <event name="mageworx_xmlsitemap_product_hreflang_urls">
+        <observer
+            name="mageworx_seobase_add_product_hreflang_urls"
+            instance="MageWorx\SeoBase\Model\Observer\XmlSitemap\AddProductHreflangUrlsDataObserver"
+        />
+    </event>
+    <event name="mageworx_xmlsitemap_category_hreflang_urls">
+        <observer
+            name="mageworx_seobase_add_category_hreflang_urls"
+            instance="MageWorx\SeoBase\Model\Observer\XmlSitemap\AddCategoryHreflangUrlsDataObserver"
+        />
+    </event>
+    <event name="mageworx_xmlsitemap_cms_page_hreflang_urls">
+        <observer
+            name="mageworx_seobase_add_cms_page_hreflang_urls"
+            instance="MageWorx\SeoBase\Model\Observer\XmlSitemap\AddCmsPageHreflangUrlsDataObserver"
+        />
+    </event>
+</config>

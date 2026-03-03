@@ -1,0 +1,53 @@
+"You can exclude any specific CMS, Category, and Product pages from HTML sitemap on the corresponding grids, or on their Edit pages (%linkProduct, %linkCategory, %linkPage).","Sie können bestimmte CMS-, Kategorie- und Produktseiten aus der HTML-Sitemap auf den entsprechenden Rastern oder auf ihren Bearbeitungsseiten ausschließen (%linkProduct, %linkCategory, %linkPage)."
+In HTML Sitemap,In der HTML-Sitemap
+No,Nein
+Yes,Ja
+This setting was added by MageWorx HTML Sitemap,Diese Einstellung wurde von MageWorx HTML-Sitemap hinzugefügt
+Add,Hinzufügen
+Crop,Kürzen
+Position,Position
+Name,Name
+Use Categories Path,Kategorienpfad verwenden
+Root,Wurzel
+Catalog,Katalog
+Pages,Seiten
+Links,Links
+Stores,Shops
+SEO,SEO
+HTML Sitemap,HTML-Sitemap
+Show Stores,Shops anzeigen
+Show Categories ▾,Kategorien anzeigen ▾
+Maximum category depth level,Maximale Kategorietiefe
+Manages the maximum depth of the categories to show. Leave empty for default (all categories).,Verwaltet die maximale Tiefe der anzuzeigenden Kategorien. Lassen Sie es leer für die Standardeinstellung (alle Kategorien).
+Show Products ▾,Produkte anzeigen ▾
+"If <i>Enabled</i>, HTML Sitemap includes products so that every product is being displayed under the appropriate category. Any Product can be <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/sitemap/image12.png"">excluded manually</a>. Keep it disabled if you have a big number of products.","Wenn <i>aktiviert</i>, enthält die HTML-Sitemap Produkte, sodass jedes Produkt unter der entsprechenden Kategorie angezeigt wird. Jedes Produkt kann <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/sitemap/image12.png"">manuell ausgeschlossen werden</a>. Lassen Sie es deaktiviert, wenn Sie eine große Anzahl von Produkten haben."
+According to the category display mode,Gemäß dem Kategoriedarstellungsmodus
+Product URLs,Produkt-URLs
+Categories/Products Sort Order,Sortierreihenfolge für Kategorien/Produkte
+Show CMS Pages,CMS-Seiten anzeigen
+Show Additional Links ▾,Zusätzliche Links anzeigen ▾
+Additional Links,Zusätzliche Links
+"
+                        A comma-delimited list of links and link labels to append to the sitemap. <b>Example:</b><br/>http://www.mageworx.com,MageWorx.<br/>Link without 'http[s]://' will be treated as relative to this domain.<br/><b>NOTE!</b> http[s]:// is required in case the page is on some other website
+                    ","
+Eine kommagetrennte Liste von Links und Linkbezeichnungen, die der Sitemap hinzugefügt werden sollen. <b>Beispiel:</b><br/>http://www.mageworx.com,MageWorx.<br/>Links ohne 'http[s]://' werden als relativ zu dieser Domain behandelt.<br/><b>HINWEIS!</b> http[s]:// ist erforderlich, wenn die Seite auf einer anderen Website ist
+                    "
+Exclude Pages from Sitemap,Seiten aus Sitemap ausschließen
+"
+                        You can exclude any specific CMS, Category, and Product pages from HTML sitemap on the corresponding grids, or on their Edit pages (Product, Category, CMS).
+                    ","
+Sie können bestimmte CMS-, Kategorie- und Produktseiten aus der HTML-Sitemap auf den entsprechenden Rastern oder auf ihren Bearbeitungsseiten (Produkt, Kategorie, CMS) ausschließen.
+                    "
+Allow Third-party Links ▾,Drittanbieter-Links zulassen ▾
+Title,Titel
+Meta Description,Meta-Beschreibung
+Meta Keywords,Meta-Schlüsselwörter
+Common Settings For Sitemaps,Gemeinsame Einstellungen für Sitemaps
+Trailing Slash For Home Page,Schrägstrich am Ende der Startseite
+<b>NOTE!</b> The trailing slash can be added to pages without suffix .html or .htm,<b>HINWEIS!</b> Der Schrägstrich am Ende kann zu Seiten ohne Suffix .html oder .htm hinzugefügt werden
+Trailing Slash For URLs,Schrägstrich am Ende der URLs
+<b>NOTE!<b> The trailing slash can be added to pages without suffix .html or .htm,<b>HINWEIS!<b> Der Schrägstrich am Ende kann zu Seiten ohne Suffix .html oder .htm hinzugefügt werden
+Include in HTML Sitemap,In HTML-Sitemap einschließen
+Use in HTML Sitemap,In HTML-Sitemap verwenden
+Use in Html Sitemap,In HTML-Sitemap verwenden
+Sitemap,Sitemap

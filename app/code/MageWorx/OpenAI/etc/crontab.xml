@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="mageworx_openai_queue_tik"
+             instance="MageWorx\OpenAI\Cron\Queue\Tick"
+             method="execute">
+            <config_path>mageworx_openai/main_settings/cron/cron_frequency_value</config_path>
+        </job>
+        <job name="mageworx_openai_queue_tik_1"
+             instance="MageWorx\OpenAI\Cron\Queue\Tick"
+             method="execute">
+            <config_path>mageworx_openai/main_settings/cron/cron_frequency_value</config_path>
+        </job>
+        <job name="mageworx_openai_queue_process_ready_items"
+             instance="MageWorx\OpenAI\Cron\Queue\ProcessReadyItems"
+             method="execute">
+            <config_path>mageworx_openai/main_settings/cron/cron_frequency_value</config_path>
+        </job>
+        <job name="clear_completed_queue_items"
+             instance="MageWorx\OpenAI\Cron\Queue\ClearCompletedQueueItems"
+             method="execute">
+            <schedule>0 3 * * *</schedule>
+        </job>
+    </group>
+</config>

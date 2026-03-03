@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+  <table name="mageworx_seocrosslinks_crosslink" resource="default" engine="innodb" comment="mageworx_seocrosslinks_crosslink">
+    <column xsi:type="smallint" name="crosslink_id" padding="5" unsigned="true" nullable="false" identity="true" comment="CrossLink ID"/>
+    <column xsi:type="text" name="keyword" nullable="false" comment="Keyword"/>
+    <column xsi:type="varchar" name="link_title" nullable="false" length="255" comment="Title Link"/>
+    <column xsi:type="smallint" name="link_target" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Target Link"/>
+    <column xsi:type="smallint" name="replacement_count" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Count of Replacements"/>
+    <column xsi:type="text" name="ref_static_url" nullable="true" comment="Reference by Custom URL"/>
+    <column xsi:type="varchar" name="ref_product_sku" nullable="true" length="255" comment="Reference by Product SKU"/>
+    <column xsi:type="int" name="ref_category_id" padding="10" unsigned="true" nullable="true" identity="false" comment="Reference by Category ID"/>
+    <column xsi:type="smallint" name="in_product" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Use in Product Page"/>
+    <column xsi:type="smallint" name="in_category" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Use in Category Page"/>
+    <column xsi:type="smallint" name="in_cms_page" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Use in CMS Page"/>
+    <column xsi:type="smallint" name="priority" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Priority"/>
+    <column xsi:type="smallint" name="is_active" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Is Active"/>
+    <column xsi:type="boolean" name="nofollow_rel" nullable="false" comment="Nofollow rel for crosslink"/>
+    <column xsi:type="text" name="ref_landingpage_id" nullable="true" comment="Reference by Landing Page"/>
+    <column xsi:type="smallint" name="in_landingpage" padding="6" unsigned="false" nullable="false" identity="false" default="1" comment="Use in  Landing Page"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="crosslink_id"/>
+    </constraint>
+  </table>
+  <table name="mageworx_seocrosslinks_crosslink_store" resource="default" engine="innodb" comment="Crosslink To Store Linkage Table">
+    <column xsi:type="smallint" name="crosslink_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Cross Link ID"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Store ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="crosslink_id"/>
+      <column name="store_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_3FF8B90D5A215D8798BEFF160AABBB21" table="mageworx_seocrosslinks_crosslink_store" column="crosslink_id" referenceTable="mageworx_seocrosslinks_crosslink" referenceColumn="crosslink_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOCROSSLINKS_CROSSLINK_STORE_STORE_ID_STORE_STORE_ID" table="mageworx_seocrosslinks_crosslink_store" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+  </table>
+  <table name="cms_page" resource="default">
+    <column xsi:type="boolean" name="use_in_crosslinking" nullable="false" default="true" comment="MageWorx flag for using in CrossLinking"/>
+  </table>
+</schema>

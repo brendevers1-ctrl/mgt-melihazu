@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction" component="Magento_Ui/js/grid/tree-massactions">
+            <action name="mageworx_seoai_massaction">
+                <settings>
+                    <type>mageworx_seoai_massaction</type>
+                    <label translate="true">Generate with AI</label>
+                    <callback>
+                        <target>toggleModal</target>
+                        <provider>product_listing.product_listing.mageworx_seoai_massaction_modal</provider>
+                    </callback>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+    <modal name="mageworx_seoai_massaction_modal" provider="product_listing.product_listing_data_source">
+        <settings>
+            <options>
+                <option name="buttons" xsi:type="array">
+                    <item name="0" xsi:type="array">
+                        <item name="text" translate="true" xsi:type="string">Done</item>
+                        <item name="class" xsi:type="string">action-primary</item>
+                        <item name="actions" xsi:type="array">
+                            <item name="0" xsi:type="array">
+                                <item name="targetName" xsi:type="string">${ $.name }</item>
+                                <item name="actionName" xsi:type="string">actionDone</item>
+                            </item>
+                        </item>
+                    </item>
+                    <item name="1" xsi:type="array">
+                        <item name="text" translate="true" xsi:type="string">Cancel</item>
+                        <item name="actions" xsi:type="array">
+                            <item name="0" xsi:type="array">
+                                <item name="targetName" xsi:type="string">${ $.name }</item>
+                                <item name="actionName" xsi:type="string">actionCancel</item>
+                            </item>
+                        </item>
+                    </item>
+                </option>
+                <option name="title" xsi:type="string">AI-Powered Data Generator</option>
+            </options>
+            <onCancel>actionCancel</onCancel>
+            <dataScope>product_listing.mageworx_seo</dataScope>
+        </settings>
+        <fieldset name="seo_generate">
+            <settings>
+                <label translate="true"></label>
+            </settings>
+
+            <component name="notice_component" component="MageWorx_SeoAI/js/components/notice">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="noticeText" xsi:type="string" translate="true">Please specify entity, select
+                            necessary stores and click 'Submit' button.
+                        </item>
+                    </item>
+                </argument>
+            </component>
+
+            <field name="message_type"
+                   formElement="select"
+                   component="MageWorx_SeoAI/js/product_form/element/message-types">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="rawOptions" xsi:type="boolean">true</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Entity</label>
+                    <visible>true</visible>
+                    <dataScope>message_type</dataScope>
+                </settings>
+                <formElements>
+                    <select>
+                        <settings>
+                            <options class="MageWorx\SeoAI\Model\Source\ProductMessageType"/>
+                        </settings>
+                    </select>
+                </formElements>
+            </field>
+
+            <field name="store_id" formElement="multiselect">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="source" xsi:type="string">block</item>
+                        <item name="default" xsi:type="number">0</item>
+                    </item>
+                </argument>
+                <settings>
+                    <validation>
+                        <rule name="required-entry" xsi:type="boolean">true</rule>
+                    </validation>
+                    <dataType>int</dataType>
+                    <label translate="true">Store View</label>
+                    <dataScope>store_id</dataScope>
+                </settings>
+                <formElements>
+                    <multiselect>
+                        <settings>
+                            <options class="Magento\Cms\Ui\Component\Listing\Column\Cms\Options"/>
+                        </settings>
+                    </multiselect>
+                </formElements>
+            </field>
+
+            <!-- Buttons -->
+            <container name="buttons_container" component="uiComponent">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="template" xsi:type="string">MageWorx_SeoAI/generate_buttons_container</item>
+                        <item name="sortOrder" xsi:type="number">10</item>
+                    </item>
+                </argument>
+                <container name="add_to_queue_button"
+                           component="MageWorx_SeoAI/js/product_listing/element/buttons/add-to-queue-button"
+                           sortOrder="30">
+                    <argument name="data" xsi:type="array">
+                        <item name="config" xsi:type="array">
+                            <item name="title" xsi:type="string">Submit</item>
+                            <item name="buttonClasses" xsi:type="string">action-primary page-actions-buttons</item>
+                            <item name="ajaxUrl" xsi:type="url" path="mageworx_seoai/product/AddProductsToQueue"/>
+                            <item name="actions" xsi:type="array">
+                                <item name="0" xsi:type="array">
+                                    <item name="targetName" xsi:type="string">${ $.name }</item>
+                                    <item name="actionName" xsi:type="string">sendRequestAction</item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </container>
+            </container>
+        </fieldset>
+
+        <fieldset name="seo_generate_extended_settings">
+            <settings>
+                <label translate="true">Custom settings</label>
+                <collapsible>true</collapsible>
+                <opened>false</opened>
+            </settings>
+            <field name="openai_model" formElement="select">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="rawOptions" xsi:type="boolean">true</item>
+                        <item name="value" xsi:type="object">globalDefaultValue</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Model</label>
+                    <dataScope>openai_model</dataScope>
+                    <notice translate="true">Default AI model to use.</notice>
+                </settings>
+                <formElements>
+                    <select>
+                        <settings>
+                            <options class="MageWorx\SeoAI\Model\Source\SeoOpenAIModels"/>
+                        </settings>
+                    </select>
+                </formElements>
+            </field>
+            <field name="temperature" formElement="input">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="value" xsi:type="object">productDefaultValue</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Temperature</label>
+                    <dataScope>temperature</dataScope>
+                    <notice translate="true">By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher
+                        values like 0.8 will make the output more random, while lower values like 0.2 will make it more
+                        focused and deterministic.
+                    </notice>
+                </settings>
+            </field>
+            <field name="attributes" formElement="multiselect">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="rawOptions" xsi:type="boolean">true</item>
+                        <item name="value" xsi:type="object">productDefaultValue</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Attributes</label>
+                    <dataScope>product_attributes</dataScope>
+                    <notice translate="true">Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the
+                        content request.
+                    </notice>
+                </settings>
+                <formElements>
+                    <multiselect>
+                        <settings>
+                            <options class="MageWorx\SeoAI\Model\Source\ProductAttributes"/>
+                        </settings>
+                    </multiselect>
+                </formElements>
+            </field>
+        </fieldset>
+    </modal>
+</listing>

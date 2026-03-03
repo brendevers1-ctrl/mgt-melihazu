@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+    <group id="category" translate="label" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>Category Specific Settings</label>
+        <field id="temperature" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+            <label>Temperature</label>
+            <validate>validate-number validate-digits-range digits-range-0-2</validate>
+            <comment>By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.</comment>
+        </field>
+        <field id="attributes" translate="label comment" type="multiselect" sortOrder="20" showInDefault="0" showInWebsite="0" showInStore="0" canRestore="1">
+            <label>Category attributes that will be used for generation</label>
+            <comment>Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{category_attributes}} variable to the content request.</comment>
+            <source_model>MageWorx\SeoAI\Model\Source\CategoryAttributes</source_model>
+        </field>
+        <field id="number_of_variants" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+            <label>Number of variants in response per request</label>
+            <validate>validate-number validate-digits-range digits-range-1-10</validate>
+            <comment>A value that is too high may result in additional costs. We recommend to use the default value of 1 and only change it on a case-by-case basis from the object interface before making the request if necessary.</comment>
+        </field>
+        <!-- Content generators -->
+        <include path="MageWorx_SeoAI::system/category/generate/meta_description.xml"/>
+        <include path="MageWorx_SeoAI::system/category/generate/meta_keywords.xml"/>
+        <include path="MageWorx_SeoAI::system/category/generate/meta_title.xml"/>
+        <include path="MageWorx_SeoAI::system/category/generate/seo_name.xml"/>
+        <include path="MageWorx_SeoAI::system/category/generate/description.xml"/>
+        <!-- Content improvers -->
+        <include path="MageWorx_SeoAI::system/category/improve/meta_description.xml"/>
+        <include path="MageWorx_SeoAI::system/category/improve/meta_keywords.xml"/>
+        <include path="MageWorx_SeoAI::system/category/improve/meta_title.xml"/>
+        <include path="MageWorx_SeoAI::system/category/improve/seo_name.xml"/>
+        <include path="MageWorx_SeoAI::system/category/improve/description.xml"/>
+    </group>
+</include>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+  <table name="cms_page" resource="default">
+    <column xsi:type="varchar" name="meta_robots" nullable="false" length="255" default="" comment="Meta Robots (added by MageWorx SeoBase)"/>
+    <column xsi:type="varchar" name="mageworx_hreflang_identifier" nullable="false" comment="Added by MageWorx for Hreflang URLs" length="255" default=""/>
+  </table>
+  <table name="catalog_eav_attribute" resource="default">
+    <column xsi:type="boolean" name="layered_navigation_canonical" nullable="false" comment="Use In Canonical (added by MageWorx SeoBase)"/>
+  </table>
+  <table name="mageworx_seobase_custom_canonical" resource="default" engine="innodb" comment="mageworx_seobase_custom_canonical">
+    <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+    <column xsi:type="varchar" name="source_entity_type" nullable="false" length="32" comment="Source Entity Type Code"/>
+    <column xsi:type="int" name="source_entity_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Source Entity Id"/>
+    <column xsi:type="smallint" name="source_store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Source Store Id"/>
+    <column xsi:type="varchar" name="target_entity_type" nullable="false" length="32" comment="Target Entity Type Code"/>
+    <column xsi:type="varchar" name="target_entity_id" nullable="false" length="255" comment="Target Entity Id"/>
+    <column xsi:type="smallint" name="target_store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Target Store Id"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="entity_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOBASE_CUSTOM_CANONICAL_SOURCE_STORE_ID_STORE_STORE_ID" table="mageworx_seobase_custom_canonical" column="source_store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOBASE_CUSTOM_CANONICAL_TARGET_STORE_ID_STORE_STORE_ID" table="mageworx_seobase_custom_canonical" column="target_store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+    <constraint xsi:type="unique" referenceId="UNQ_255B1B9AFAEF3C52C61FB7D7DA93D6BD">
+      <column name="source_entity_type"/>
+      <column name="source_entity_id"/>
+      <column name="source_store_id"/>
+    </constraint>
+  </table>
+</schema>

@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Interface to model preference -->
+    <preference for="MageWorx\SeoAI\Api\Data\ProductRequestResponseLogInterface" type="MageWorx\SeoAI\Model\ProductRequestResponseLog"/>
+    <preference for="MageWorx\SeoAI\Api\Data\CategoryRequestResponseLogInterface" type="MageWorx\SeoAI\Model\CategoryRequestResponseLog"/>
+    <preference for="MageWorx\SeoAI\Api\ProductRequestResponseLogRepositoryInterface" type="MageWorx\SeoAI\Model\ProductRequestResponseLogRepository" />
+    <preference for="MageWorx\SeoAI\Api\Data\ProductRequestResponseLogSearchResultsInterface" type="MageWorx\SeoAI\Model\ProductRequestResponseLogSearchResults" />
+    <preference for="MageWorx\SeoAI\Api\CategoryRequestResponseLogRepositoryInterface" type="MageWorx\SeoAI\Model\CategoryRequestResponseLogRepository" />
+    <preference for="MageWorx\SeoAI\Api\Data\CategoryRequestResponseLogSearchResultsInterface" type="MageWorx\SeoAI\Model\CategoryRequestResponseLogSearchResults" />
+
+    <!-- Message type factory -->
+    <type name="MageWorx\SeoAI\Model\GeneratorFactory">
+        <arguments>
+            <argument name="types" xsi:type="array">
+                <!-- For product -->
+                <!-- Generators -->
+                <item name="product_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Generate\MetaDescription</item>
+                <item name="product_meta_keyword" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Generate\MetaKeywords</item>
+                <item name="product_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Generate\MetaTitle</item>
+                <item name="product_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Generate\SeoName</item>
+                <item name="product_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Generate\RegularDescription</item>
+                <item name="product_short_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Generate\RegularShortDescription</item>
+                <!-- Improvers -->
+                <item name="product_improve_short_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Improve\RegularShortDescription</item>
+                <item name="product_improve_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Improve\MetaDescription</item>
+                <item name="product_improve_meta_keyword" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Improve\MetaKeywords</item>
+                <item name="product_improve_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Improve\MetaTitle</item>
+                <item name="product_improve_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Improve\SeoName</item>
+                <item name="product_improve_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Product\Improve\RegularDescription</item>
+                <!-- For category -->
+                <item name="category_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Generate\RegularDescription</item>
+                <item name="category_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Generate\MetaTitle</item>
+                <item name="category_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Generate\MetaDescription</item>
+                <item name="category_meta_keywords" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Generate\MetaKeywords</item>
+                <item name="category_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Generate\SeoName</item>
+                <!-- Improvers -->
+                <item name="category_improve_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Improve\RegularDescription</item>
+                <item name="category_improve_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Improve\MetaTitle</item>
+                <item name="category_improve_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Improve\MetaDescription</item>
+                <item name="category_improve_meta_keywords" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Improve\MetaKeywords</item>
+                <item name="category_improve_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Generators\Category\Improve\SeoName</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- Register callback class -->
+    <type name="MageWorx\OpenAI\Model\Queue\Callback\CallbackFactory">
+        <arguments>
+            <argument name="callbacks" xsi:type="array">
+                <!-- Products: -->
+                <item name="generate_product_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_meta_keyword" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_short_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_improve_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_improve_short_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_improve_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_improve_meta_keyword" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_improve_improve_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <item name="generate_product_improve_improve_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\ProductCallback</item>
+                <!-- Categories: -->
+                <item name="generate_category_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_meta_keywords" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_improve_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_improve_meta_title" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_improve_meta_description" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_improve_meta_keywords" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+                <item name="generate_category_improve_seo_name" xsi:type="string">MageWorx\SeoAI\Model\Queue\QueueSaver\CategoryCallback</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- Configuration for generators using virtualType -->
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Generate\MetaDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Product\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">meta_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Generate Meta Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Generate\MetaKeywords"
+                 type="MageWorx\SeoAI\Model\Generators\Product\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">meta_keyword</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Generate Meta Keywords</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Generate\MetaTitle"
+                 type="MageWorx\SeoAI\Model\Generators\Product\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">meta_title</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Generate Meta Title</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Generate\SeoName"
+                 type="MageWorx\SeoAI\Model\Generators\Product\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">seo_name</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Generate SEO Name</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Generate\RegularDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Product\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Generate Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Generate\RegularShortDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Product\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">short_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Generate Short Description</argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Configuration for improvers using virtualType -->
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Improve\RegularShortDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Product\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_short_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Improve Short Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Improve\MetaDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Product\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_meta_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Improve Meta Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Improve\MetaKeywords"
+                 type="MageWorx\SeoAI\Model\Generators\Product\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_meta_keyword</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Improve Meta Keywords</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Improve\MetaTitle"
+                 type="MageWorx\SeoAI\Model\Generators\Product\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_meta_title</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Improve Meta Title</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Improve\SeoName"
+                 type="MageWorx\SeoAI\Model\Generators\Product\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_seo_name</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Improve SEO Name</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Product\Improve\RegularDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Product\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Product: Improve Description</argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Configuration for category generators using virtualType -->
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Generate\RegularDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Category\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Generate Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Generate\MetaTitle"
+                 type="MageWorx\SeoAI\Model\Generators\Category\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">meta_title</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Generate Meta Title</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Generate\MetaDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Category\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">meta_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Generate Meta Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Generate\MetaKeywords"
+                 type="MageWorx\SeoAI\Model\Generators\Category\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">meta_keywords</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Generate Meta Keywords</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Generate\SeoName"
+                 type="MageWorx\SeoAI\Model\Generators\Category\GenerateText">
+        <arguments>
+            <argument name="type" xsi:type="string">seo_name</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Generate SEO Name</argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Configuration for category improvers using virtualType -->
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Improve\RegularDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Category\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Improve Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Improve\MetaTitle"
+                 type="MageWorx\SeoAI\Model\Generators\Category\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_meta_title</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Improve Meta Title</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Improve\MetaDescription"
+                 type="MageWorx\SeoAI\Model\Generators\Category\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_meta_description</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Improve Meta Description</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Improve\MetaKeywords"
+                 type="MageWorx\SeoAI\Model\Generators\Category\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_meta_keywords</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Improve Meta Keywords</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MageWorx\SeoAI\Model\Generators\Category\Improve\SeoName"
+                 type="MageWorx\SeoAI\Model\Generators\Category\ImproveText">
+        <arguments>
+            <argument name="type" xsi:type="string">improve_seo_name</argument>
+            <argument name="label" xsi:type="string" translatable="true">Category: Improve SEO Name</argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Config options -->
+    <type name="MageWorx\SeoAI\Model\Source\SeoOpenAIModels">
+        <arguments>
+            <argument name="allowedModelsForSeo" xsi:type="array">
+                <item name="gpt-4" xsi:type="string">gpt-4</item>
+                <item name="gpt-4-1106-preview" xsi:type="string">gpt-4-1106-preview</item>
+                <item name="gpt-4o" xsi:type="string">gpt-4o</item>
+                <item name="gpt-3.5-turbo" xsi:type="string">gpt-3.5-turbo</item>
+                <item name="text-ada-001" xsi:type="string">text-ada-001</item>
+                <item name="text-davinci-003" xsi:type="string">text-davinci-003</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="MageWorx\SeoAI\Model\Source\EnabledForEntities">
+        <arguments>
+            <argument name="entities" xsi:type="array">
+                <item name="product" xsi:type="string">Product</item>
+                <item name="category" xsi:type="string">Category</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Default values configuration -->
+    <virtualType name="productDefaultValue" type="MageWorx\SeoAI\Model\Source\DefaultValue\DefaultValue">
+        <arguments>
+            <argument name="entity" xsi:type="string">product</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="categoryDefaultValue" type="MageWorx\SeoAI\Model\Source\DefaultValue\DefaultValue">
+        <arguments>
+            <argument name="entity" xsi:type="string">category</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="globalDefaultValue" type="MageWorx\SeoAI\Model\Source\DefaultValue\DefaultValue">
+        <arguments>
+            <argument name="entity" xsi:type="null"/>
+        </arguments>
+    </virtualType>
+
+    <type name="MageWorx\OpenAI\Model\Source\AllGenerationStatuses">
+        <arguments>
+            <argument name="pool" xsi:type="array">
+                <item name="seo_ai_product_category" xsi:type="object">\MageWorx\SeoAI\Model\Source\SeoGenerationStatuses</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

@@ -1,0 +1,124 @@
+Save,Speichern
+Save & Generate,Speichern & Generieren
+Edit Sitemap '%1',"Sitemap ""%1"" bearbeiten"
+New Sitemap,Neue Sitemap
+Sitemap,Sitemap
+Filename,Dateiname
+Example: %1,Beispiel: %1
+Server Path,Serverpfad
+Path to server root directory. Example: 'pub/' or 'second_website/' (path must be writeable). This path won't be added to its host links.,Pfad zum Server-Stammverzeichnis. Beispiel: 'pub/' oder 'second_website/' (Pfad muss beschreibbar sein). Dieser Pfad wird den Host-Links nicht hinzugefügt.
+Path,Pfad
+"Example: ""sitemap/"" or ""/"" for base path (path must be writeable). This path will be added to links.","Beispiel: ""sitemap/"" oder ""/"" für den Basispfad (Pfad muss beschreibbar sein). Dieser Pfad wird den Links hinzugefügt."
+Store View,Store-Ansicht
+Split Sitemap,Sitemap aufteilen
+Separate sitemaps will be created for selected entity types.,Separate Sitemaps werden für ausgewählte Entitätstypen erstellt.
+Sitemap file names will contain corresponding suffix.,Die Dateinamen der Sitemaps enthalten die entsprechenden Suffixe.
+E.g.: sitemap_products.xml,Z. B.: sitemap_products.xml
+Entity Type,Entitätstyp
+the standard Magento XML sitemap settings,die standardmäßigen XML-Sitemap-Einstellungen von Magento
+"NOTE: To specify frequency, priority, file limitations and another settings please use %1.","HINWEIS: Um Häufigkeit, Priorität, Dateibeschränkungen und andere Einstellungen festzulegen, verwenden Sie bitte %1."
+XML Sitemap by MageWorx,XML-Sitemap von MageWorx
+We can't find a sitemap to delete.,Wir können keine Sitemap zum Löschen finden.
+"The ""%1"" sitemap has been deleted.","Die Sitemap ""%1"" wurde gelöscht."
+This sitemap no longer exists.,Diese Sitemap existiert nicht mehr.
+Edit Sitemap,Sitemap bearbeiten
+"Edit Sitemap ""%s""","Sitemap ""%s"" bearbeiten"
+"Edit Sitemap ""%1""","Sitemap ""%1"" bearbeiten"
+"The sitemap ""%1"" has been generated.","Die Sitemap ""%1"" wurde generiert."
+We can't generate the sitemap right now.,Wir können die Sitemap derzeit nicht generieren.
+We can't find a sitemap to generate.,Wir können keine Sitemap zum Generieren finden.
+XML Sitemap,XML-Sitemap
+Mass Action successful on %1 records,Massenaktion erfolgreich für %1 Datensätze
+Mass Action failed.,Massenaktion fehlgeschlagen.
+A total of %1 record(s) have been deleted,Insgesamt wurden %1 Datensatz/Datensätze gelöscht
+An error occurred while deleting record(s).,Ein Fehler ist beim Löschen von Datensätzen aufgetreten.
+A total of %1 sitemap(s) have been generated.,Insgesamt wurden %1 Sitemap(s) generiert.
+An error occurred while generating sitemap(s).,Ein Fehler ist beim Generieren von Sitemap(s) aufgetreten.
+Incorrect data.,Falsche Daten.
+Sitemap %1 was successfully saved,Sitemap %1 wurde erfolgreich gespeichert
+Something went wrong while saving the sitemap.,Beim Speichern der Sitemap ist ein Fehler aufgetreten.
+Add,Hinzufügen
+Crop,Beschneiden
+Additional links,Zusätzliche Links
+Categories,Kategorien
+Other,Andere
+CMS Pages,CMS-Seiten
+Products,Produkte
+Images,Bilder
+Videos,Videos
+"Unfortunately, the process of generating sitemap(s) went wrong.",Leider ist der Prozess der Generierung von Sitemap(s) fehlgeschlagen.
+Module,Modul
+Date,Datum
+Sitemap(s) with id(s)  %1 were not updated.,Sitemap(s) mit ID(s) %1 wurden nicht aktualisiert.
+In XML Sitemap,In XML-Sitemap
+No,Nein
+Yes,Ja
+This setting was added by MageWorx XML Sitemap,Diese Einstellung wurde von MageWorx XML Sitemap hinzugefügt.
+Please choose store view,Bitte wählen Sie eine Store-Ansicht aus
+"The file with such name '%1' exists (sitemap id = %2). Please, select other name for the file.",Die Datei mit dem Namen '%1' existiert bereits (Sitemap-ID = %2). Bitte wählen Sie einen anderen Namen für die Datei.
+"Please use only letters (a-z or A-Z), numbers (0-9) or underscore (_) in the filename. No spaces or other characters are allowed.","Verwenden Sie bitte nur Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Unterstriche (_) im Dateinamen. Keine Leerzeichen oder andere Zeichen sind erlaubt."
+Please define correct path,Bitte definieren Sie den richtigen Pfad
+"Please create the specified folder ""%1"" before saving the sitemap.","Bitte erstellen Sie den angegebenen Ordner ""%1"" bevor Sie die Sitemap speichern."
+"Please make sure that ""%1"" is writable by web-server.","Bitte stellen Sie sicher, dass ""%1"" vom Webserver beschreibbar ist."
+Cache,Cache
+Original,Original
+The sitemap index file can't be created without storeBaseUrl . Process is canceled.,Die Indexdatei der Sitemap kann nicht ohne storeBaseUrl erstellt werden. Der Vorgang wird abgebrochen.
+Sitemap Writer class wasn't initialized.,Die Sitemap Writer-Klasse wurde nicht initialisiert.
+Location value '%1' is not valid.,Der Wert für den Speicherort '%1' ist ungültig.
+Changefreq value '%1' is not valid. Item url: '%2'.,Der Wert für Changefreq '%1' ist ungültig. Artikel-URL: '%2'.
+Lastmod value '%1' is not valid. Item url: '%2'.,Der Wert für Lastmod '%1' ist ungültig. Artikel-URL: '%2'.
+Priority value '%1' is not valid. Item url: '%2'.,Der Wert für die Priorität '%1' ist ungültig. Artikel-URL: '%2'.
+The following file renaming from: file %1 into %2 is impossible.,Die folgende Umbenennung der Datei von: Datei %1 in %2 ist nicht möglich.
+Relocation of the file %1 to %2 is impossible.,Die Verlagerung der Datei %1 nach %2 ist nicht möglich.
+"Delete ""${ $.$data.sitemap_filename}""","Löschen ""${ $.$data.sitemap_filename}"""
+Generate,Generieren
+Edit,Bearbeiten
+Delete,Löschen
+Are you sure you want to delete sitemap?,Möchten Sie die Sitemap wirklich löschen?
+SEO,SEO
+XML Sitemap helps the search bot index the pages including those that might have been ignored otherwise. An XML sitemap is written for the search bots (as opposed to the HTML Sitemap that is created for the real clients).,"Die XML-Sitemap hilft dem Suchroboter dabei, Seiten zu indexieren, einschließlich solcher, die sonst möglicherweise ignoriert worden wären. Eine XML-Sitemap wird für die Suchroboter geschrieben (im Gegensatz zur HTML-Sitemap, die für echte Clients erstellt wird)."
+Homepage Optimization,Optimierung der Startseite
+Сrops the identifier (like /home/) from the homepage URL and sends its priority to the highest (1.0).,Entfernt die Kennung (wie /home/) aus der URL der Startseite und setzt ihre Priorität auf das Höchste (1.0).
+Source for Product Images Links,Quelle für Produktbild-Links
+"Depends on ""Add Images into Sitemap"" Magento setting","Abhängig von der Magento-Einstellung ""Bilder zur Sitemap hinzufügen"""
+Add Product Videos,Produktvideos hinzufügen
+Add Category Images,Kategoriebilder hinzufügen
+Enable Additional Links,Zusätzliche Links aktivieren
+List of links to append to the XML Sitemap. Link without 'http[s]://' will be treated as relative to this domain.<br/> <b>NOTE!</b> http:// is required in case the page is on some other website.,"Liste der Links, die an die XML-Sitemap angehängt werden sollen. Ein Link ohne 'http[s]://' wird als relativ zu dieser Domäne behandelt.<br/> <b>HINWEIS!</b> http:// ist erforderlich, falls sich die Seite auf einer anderen Website befindet."
+Additional Links,Zusätzliche Links
+Frequency,Häufigkeit
+Priority,Priorität
+Sort the pages <b>on your store only</b> according to their importance. Won't affect your site rankings among other websites. Valid values range from 0.0 to 1.0.,Sortieren Sie die Seiten <b>nur in Ihrem Shop</b> nach ihrer Bedeutung. Dies hat keinen Einfluss auf das Ranking Ihrer Website im Vergleich zu anderen Websites. Gültige Werte reichen von 0.0 bis 1.0.
+"Exclude ""Out of Stock"" Products",Produkte nicht vorrätig ausschließen
+Meta Robots Exclusion,Meta Robots-Ausschluss
+"The pages with chosen meta robots tag won't be added to Mageworx XML sitemap. The following types of pages are supported: products, categories, CMS pages, MageWorx Landing pages, MageWorx Brands pages, Blog pages (Mirasvit and Mageplaza).","Die Seiten mit dem ausgewählten Meta Robots-Tag werden nicht zur Mageworx XML-Sitemap hinzugefügt. Folgende Arten von Seiten werden unterstützt: Produkte, Kategorien, CMS-Seiten, MageWorx Landing Pages, MageWorx Marken-Seiten, Blog-Seiten (Mirasvit und Mageplaza)."
+Enable Validate URLs,URLs validieren aktivieren
+"Select <i>No</i> if you are using the <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters"">specific literal characters</a> in the URLs.","Wählen Sie <i>Nein</i>, wenn Sie die <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters"">spezifischen Literalzeichen</a> in den URLs verwenden."
+Enable Checking URLs Availability,Überprüfung der Verfügbarkeit von URLs aktivieren
+"A check of the sitemap URLs and sitemap index URL availability will take place. If a check hasn't passed or disabled, then the standard Magento sitemap URL will be used for the sitemap link and sitemap index file.","Es wird eine Überprüfung der Verfügbarkeit der Sitemap-URLs und der Sitemap-Index-URL durchgeführt. Wenn eine Überprüfung nicht bestanden hat oder deaktiviert ist, wird die Standard-Magento-Sitemap-URL für den Sitemap-Link und die Sitemap-Index-Datei verwendet."
+Alternate Hreflang URLs,Alternative Hreflang-URLs
+"If SEO Suite Ultimate is installed and active, alternate hreflang URLs will be added. See the detailed settings in the SEO Base section above.","Wenn SEO Suite Ultimate installiert und aktiviert ist, werden alternative hreflang-URLs hinzugefügt. Weitere Einstellungen finden Sie im obigen SEO-Base-Abschnitt."
+Enable a user-friendly XML Sitemap Preview,Benutzerfreundliche Vorschau der XML-Sitemap aktivieren
+Mirasvit Blog in XML Sitemap,Mirasvit Blog in XML-Sitemap
+Add Mirasvit Blog Pages To XML Sitemap,Mirasvit Blog-Seiten zur XML-Sitemap hinzufügen
+"This setting will work if you have Mirasvit Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mirasvitblog-seo-compatibility"">github</a>.","Diese Einstellung funktioniert, wenn Sie die Mirasvit-Blog-Erweiterung und die Seo Compatibility Extension für diesen Blog von <a target=""_blank"" href=""https://github.com/mageworx/module-mirasvitblog-seo-compatibility"">github</a> haben."
+Mageplaza Blog in XML Sitemap,Mageplaza Blog in XML-Sitemap
+Add Mageplaza Blog Pages To XML Sitemap,Mageplaza Blog-Seiten zur XML-Sitemap hinzufügen
+"This setting will work if you have Mageplaza Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mageplazablog-seo-compatibility"">github</a>.","Diese Einstellung funktioniert, wenn Sie die Mageplaza-Blog-Erweiterung und die Seo Compatibility Extension für diesen Blog von <a target=""_blank"" href=""https://github.com/mageworx/module-mageplazablog-seo-compatibility"">github</a> haben."
+Aheadworks Blog in XML Sitemap,Aheadworks Blog in XML-Sitemap
+Add Aheadworks Blog Pages To XML Sitemap,Aheadworks Blog-Seiten zur XML-Sitemap hinzufügen
+"This setting will work if you have Aheadworks Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-aheadworks-seo-compatibility"">github</a>.","Diese Einstellung funktioniert, wenn Sie die Aheadworks-Blog-Erweiterung und die Seo Compatibility Extension für diesen Blog von <a target=""_blank"" href=""https://github.com/mageworx/module-aheadworks-seo-compatibility"">github</a> haben."
+Common Settings For Sitemaps,Allgemeine Einstellungen für Sitemaps
+Trailing Slash For URLs,Schrägstrich am Ende der URLs
+Note: the trailing slash can be added to pages without suffix .html or .htm,Hinweis: Der Schrägstrich am Ende kann zu Seiten ohne Suffix .html oder .htm hinzugefügt werden.
+Include in XML sitemap,In XML-Sitemap einbeziehen
+Use in XML Sitemap,In XML-Sitemap verwenden
+Include in XML Sitemap,In XML-Sitemap einbeziehen
+Add Sitemap,Sitemap hinzufügen
+Are you sure you want to delete selected sitemaps?,Möchten Sie ausgewählte Sitemaps wirklich löschen?
+Delete sitemaps,Sitemaps löschen
+ID,ID
+Sitemap Path,Sitemap-Pfad
+Link for Google,Link für Google
+Last Generated,Zuletzt generiert
+Entity breakdown,Aufschlüsselung der Entitäten

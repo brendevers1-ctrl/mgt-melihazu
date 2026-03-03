@@ -1,0 +1,43 @@
+/* progress-bar.css */
+.progress-container {
+    background-color: #f5f5f5; /* Light grey background */
+    border: 1px solid #ccc; /* Grey border */
+    border-radius: 4px; /* Rounded corners */
+    overflow: hidden; /* Clip the inner bar at the border edge */
+    position: relative;
+    height: 40px; /* Fixed height of the progress bar */
+    width: 100%; /* Full width */
+    min-width: 210px;
+    margin-bottom: 5px; /* Space below the progress bar */
+}
+
+.progress-bar {
+    background-color: green; /* Color of the progress */
+    height: 100%;
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+    text-align: center;
+    color: white; /* Text color */
+    line-height: 40px; /* Center the text vertically */
+    box-sizing: border-box; /* Include padding and border in the width */
+    transition: width 0.5s ease-in-out; /* Smooth transition for width changes */
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    user-select: none; /* Disable text selection */
+}
+
+.progress-start,
+.progress-end {
+    padding: 0 5px; /* Padding on the sides of the labels */
+}
+
+.progress-start {
+    text-align: left;
+}
+
+.progress-end {
+    text-align: right;
+}

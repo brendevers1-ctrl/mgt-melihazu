@@ -1,0 +1,124 @@
+Save,Opslaan
+Save & Generate,Opslaan & Genereren
+Edit Sitemap '%1',Sitemap '%1' bewerken
+New Sitemap,Nieuwe Sitemap
+Sitemap,Sitemap
+Filename,Bestandsnaam
+Example: %1,Voorbeeld: %1
+Server Path,Serverpad
+Path to server root directory. Example: 'pub/' or 'second_website/' (path must be writeable). This path won't be added to its host links.,Pad naar de hoofdmap van de server. Voorbeeld: 'pub/' of 'tweede_website/' (het pad moet beschrijfbaar zijn). Dit pad wordt niet toegevoegd aan de hostlinks.
+Path,Pad
+"Example: ""sitemap/"" or ""/"" for base path (path must be writeable). This path will be added to links.","Voorbeeld: ""sitemap/"" of ""/"" voor het basispad (het pad moet beschrijfbaar zijn). Dit pad wordt toegevoegd aan links."
+Store View,Winkelweergave
+Split Sitemap,Sitemap Opsplitsen
+Separate sitemaps will be created for selected entity types.,Er worden aparte sitemaps aangemaakt voor geselecteerde entiteitstypes.
+Sitemap file names will contain corresponding suffix.,De bestandsnamen van de sitemaps bevatten de bijbehorende toevoeging.
+E.g.: sitemap_products.xml,Bijv.: sitemap_products.xml
+Entity Type,Entiteitstype
+the standard Magento XML sitemap settings,De standaard Magento XML sitemap-instellingen
+"NOTE: To specify frequency, priority, file limitations and another settings please use %1.","OPMERKING: Voor het specificeren van frequentie, prioriteit, bestandsbeperkingen en andere instellingen, gebruik %1."
+XML Sitemap by MageWorx,XML Sitemap door MageWorx
+We can't find a sitemap to delete.,We kunnen geen sitemap vinden om te verwijderen.
+"The ""%1"" sitemap has been deleted.","De sitemap ""%1"" is verwijderd."
+This sitemap no longer exists.,Deze sitemap bestaat niet meer.
+Edit Sitemap,Sitemap bewerken
+"Edit Sitemap ""%s""","Sitemap ""%s"" bewerken"
+"Edit Sitemap ""%1""","Sitemap ""%1"" bewerken"
+"The sitemap ""%1"" has been generated.","De sitemap ""%1"" is gegenereerd."
+We can't generate the sitemap right now.,We kunnen de sitemap op dit moment niet genereren.
+We can't find a sitemap to generate.,We kunnen geen sitemap vinden om te genereren.
+XML Sitemap,XML Sitemap
+Mass Action successful on %1 records,Massa-actie succesvol voor %1 records
+Mass Action failed.,Massa-actie mislukt.
+A total of %1 record(s) have been deleted,Er zijn in totaal %1 record(s) verwijderd.
+An error occurred while deleting record(s).,Er is een fout opgetreden tijdens het verwijderen van record(s).
+A total of %1 sitemap(s) have been generated.,Er zijn in totaal %1 sitemap(s) gegenereerd.
+An error occurred while generating sitemap(s).,Er is een fout opgetreden tijdens het genereren van sitemap(s).
+Incorrect data.,Onjuiste gegevens.
+Sitemap %1 was successfully saved,Sitemap %1 is succesvol opgeslagen
+Something went wrong while saving the sitemap.,Er is iets misgegaan bij het opslaan van de sitemap.
+Add,Toevoegen
+Crop,Bijsnijden
+Additional links,Aanvullende links
+Categories,Categorieën
+Other,Overig
+CMS Pages,CMS-pagina's
+Products,Producten
+Images,Afbeeldingen
+Videos,Video's
+"Unfortunately, the process of generating sitemap(s) went wrong.",Helaas is het proces voor het genereren van de sitemap(s) misgegaan.
+Module,Module
+Date,Datum
+Sitemap(s) with id(s)  %1 were not updated.,Sitemap(s) met id(s) %1 zijn niet bijgewerkt.
+In XML Sitemap,In XML Sitemap
+No,Nee
+Yes,Ja
+This setting was added by MageWorx XML Sitemap,Deze instelling is toegevoegd door MageWorx XML Sitemap
+Please choose store view,Selecteer een winkelweergave
+"The file with such name '%1' exists (sitemap id = %2). Please, select other name for the file.",Het bestand met de naam '%1' bestaat al (sitemap-id = %2). Selecteer a.u.b. een andere naam voor het bestand.
+"Please use only letters (a-z or A-Z), numbers (0-9) or underscore (_) in the filename. No spaces or other characters are allowed.","Gebruik alleen letters (a-z of A-Z), cijfers (0-9) of een underscore (_) in de bestandsnaam. Geen spaties of andere tekens zijn toegestaan."
+Please define correct path,Definieer a.u.b. het juiste pad
+"Please create the specified folder ""%1"" before saving the sitemap.","Maak a.u.b. de gespecificeerde map ""%1"" aan voordat u de sitemap opslaat."
+"Please make sure that ""%1"" is writable by web-server.","Zorg ervoor dat ""%1"" beschrijfbaar is door de webserver."
+Cache,Cache
+Original,Origineel
+The sitemap index file can't be created without storeBaseUrl . Process is canceled.,Het indexbestand van de sitemap kan niet worden aangemaakt zonder storeBaseUrl. Het proces wordt geannuleerd.
+Sitemap Writer class wasn't initialized.,Sitemap Writer-klasse is niet geïnitialiseerd.
+Location value '%1' is not valid.,Locatiewaarde '%1' is niet geldig.
+Changefreq value '%1' is not valid. Item url: '%2'.,Waarde voor 'Changefreq' '%1' is niet geldig. Item-URL: '%2'.
+Lastmod value '%1' is not valid. Item url: '%2'.,Laatst gewijzigde waarde '%1' is niet geldig. Item-URL: '%2'.
+Priority value '%1' is not valid. Item url: '%2'.,Prioriteitswaarde '%1' is niet geldig. Item-URL: '%2'.
+The following file renaming from: file %1 into %2 is impossible.,Het is onmogelijk om het bestand %1 te hernoemen naar %2.
+Relocation of the file %1 to %2 is impossible.,Het is onmogelijk om het bestand %1 te verplaatsen naar %2.
+"Delete ""${ $.$data.sitemap_filename}""","Verwijder ""${ $.$data.sitemap_filename}"""
+Generate,Genereren
+Edit,Bewerken
+Delete,Verwijderen
+Are you sure you want to delete sitemap?,Weet u zeker dat u de sitemap wilt verwijderen?
+SEO,SEO
+XML Sitemap helps the search bot index the pages including those that might have been ignored otherwise. An XML sitemap is written for the search bots (as opposed to the HTML Sitemap that is created for the real clients).,"XML Sitemap helpt de zoekrobot bij het indexeren van pagina's, inclusief diegene die anders mogelijk genegeerd zouden worden. Een XML-sitemap is geschreven voor zoekrobots (in tegenstelling tot de HTML-sitemap die voor echte klanten wordt gemaakt)."
+Homepage Optimization,Optimalisatie van de startpagina
+Сrops the identifier (like /home/) from the homepage URL and sends its priority to the highest (1.0).,Verkort de identificatie (zoals /home/) van de URL van de startpagina en geef deze de hoogste prioriteit (1.0).
+Source for Product Images Links,Bron voor koppelingen van productafbeeldingen
+"Depends on ""Add Images into Sitemap"" Magento setting","Afhankelijk van de Magento-instelling ""Afbeeldingen toevoegen aan sitemap"""
+Add Product Videos,Voeg productvideo's toe
+Add Category Images,Voeg categorieafbeeldingen toe
+Enable Additional Links,Extra links inschakelen
+List of links to append to the XML Sitemap. Link without 'http[s]://' will be treated as relative to this domain.<br/> <b>NOTE!</b> http:// is required in case the page is on some other website.,Lijst met koppelingen die aan de XML-sitemap worden toegevoegd. Koppelingen zonder 'http[s]://' worden beschouwd als relatief ten opzichte van dit domein. <br/> <b>OPMERKING!</b> http:// is vereist als de pagina zich op een andere website bevindt.
+Additional Links,Extra links
+Frequency,Frequentie
+Priority,Prioriteit
+Sort the pages <b>on your store only</b> according to their importance. Won't affect your site rankings among other websites. Valid values range from 0.0 to 1.0.,"Sorteer de pagina's <b>alleen binnen uw winkel</b> op basis van hun belangrijkheid. Dit heeft geen invloed op uw positie in de ranglijst ten opzichte van andere websites. Geldige waarden variëren van 0,0 tot 1,0."
+"Exclude ""Out of Stock"" Products","Uitgesloten ""Uit voorraad"" producten"
+Meta Robots Exclusion,Meta Robots uitsluiting
+"The pages with chosen meta robots tag won't be added to Mageworx XML sitemap. The following types of pages are supported: products, categories, CMS pages, MageWorx Landing pages, MageWorx Brands pages, Blog pages (Mirasvit and Mageplaza).","Pagina's met de gekozen metarobots-tag worden niet toegevoegd aan de Mageworx XML-sitemap. De volgende paginatypes worden ondersteund: producten, categorieën, CMS-pagina's, MageWorx-landingspagina's, MageWorx-merkenpagina's, blogpagina's (Mirasvit en Mageplaza)."
+Enable Validate URLs,Controleer de URL's
+"Select <i>No</i> if you are using the <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters"">specific literal characters</a> in the URLs.","Selecteer <i>Nee</i> als u de <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters"">specifieke lettertekens</a> in de URL's gebruikt."
+Enable Checking URLs Availability,Controleer de beschikbaarheid van URL's
+"A check of the sitemap URLs and sitemap index URL availability will take place. If a check hasn't passed or disabled, then the standard Magento sitemap URL will be used for the sitemap link and sitemap index file.","Er zal een controle plaatsvinden op de beschikbaarheid van de sitemap-URL's en de URL van de sitemap-index. Als een controle niet is geslaagd of is uitgeschakeld, wordt de standaard Magento-sitemap-URL gebruikt voor de sitemap-link en sitemap-indexbestand."
+Alternate Hreflang URLs,Alternate Hreflang URL's
+"If SEO Suite Ultimate is installed and active, alternate hreflang URLs will be added. See the detailed settings in the SEO Base section above.","Als SEO Suite Ultimate is geïnstalleerd en actief is, worden alternate hreflang URL's toegevoegd. Zie de gedetailleerde instellingen in het bovenstaande SEO Base-gedeelte."
+Enable a user-friendly XML Sitemap Preview,Schakel een gebruiksvriendelijke voorbeeldweergave van XML Sitemap in
+Mirasvit Blog in XML Sitemap,Mirasvit Blog in XML Sitemap
+Add Mirasvit Blog Pages To XML Sitemap,Voeg Mirasvit Blog-pagina's toe aan de XML-sitemap
+"This setting will work if you have Mirasvit Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mirasvitblog-seo-compatibility"">github</a>.","Deze instelling werkt als u de Mirasvit Blog-extensie en de Seo Compatibility-extensie voor deze blog hebt van <a target=""_blank"" href=""https://github.com/mageworx/module-mirasvitblog-seo-compatibility"">github</a>."
+Mageplaza Blog in XML Sitemap,Mageplaza Blog in XML Sitemap
+Add Mageplaza Blog Pages To XML Sitemap,Voeg Mageplaza Blog-pagina's toe aan de XML-sitemap
+"This setting will work if you have Mageplaza Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mageplazablog-seo-compatibility"">github</a>.","Deze instelling werkt als u de Mageplaza Blog-extensie en de Seo Compatibility-extensie voor deze blog hebt van <a target=""_blank"" href=""https://github.com/mageworx/module-mageplazablog-seo-compatibility"">github</a>."
+Aheadworks Blog in XML Sitemap,Aheadworks Blog in XML Sitemap
+Add Aheadworks Blog Pages To XML Sitemap,Voeg Aheadworks Blog-pagina's toe aan de XML-sitemap
+"This setting will work if you have Aheadworks Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-aheadworks-seo-compatibility"">github</a>.","Deze instelling werkt als u de Aheadworks Blog-extensie en de Seo Compatibility-extensie voor deze blog hebt van <a target=""_blank"" href=""https://github.com/mageworx/module-aheadworks-seo-compatibility"">github</a>."
+Common Settings For Sitemaps,Algemene instellingen voor sitemaps
+Trailing Slash For URLs,Slash toevoegen aan URL's
+Note: the trailing slash can be added to pages without suffix .html or .htm,Opmerking: de slash aan het einde kan worden toegevoegd aan pagina's zonder toevoeging .html of .htm
+Include in XML sitemap,Opnemen in XML-sitemap
+Use in XML Sitemap,Gebruiken in XML Sitemap
+Include in XML Sitemap,Opnemen in XML-sitemap
+Add Sitemap,Sitemap toevoegen
+Are you sure you want to delete selected sitemaps?,Weet u zeker dat u de geselecteerde sitemaps wilt verwijderen?
+Delete sitemaps,Verwijder sitemaps
+ID,ID
+Sitemap Path,Sitemap-pad
+Link for Google,Link voor Google
+Last Generated,Laatst gegenereerd
+Entity breakdown,Entiteitsverdeling

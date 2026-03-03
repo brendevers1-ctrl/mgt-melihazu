@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Models type pool -->
+    <type name="MageWorx\OpenAI\Model\Models\ModelsFactory">
+        <arguments>
+            <argument name="types" xsi:type="array">
+                <item name="gemini-1.5-flash" xsi:type="string">MageWorx\GoogleAI\Model\Models\Gemini\GeminiFlash15</item>
+                <item name="gemini-1.5-pro" xsi:type="string">MageWorx\GoogleAI\Model\Models\Gemini\GeminiPro15</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Configure arguments for Google models -->
+    <type name="MageWorx\GoogleAI\Model\Models\Gemini\GeminiFlash15">
+        <arguments>
+            <argument name="messenger" xsi:type="object">MageWorx\GoogleAI\Model\MessengerGemini</argument>
+        </arguments>
+    </type>
+    <type name="MageWorx\GoogleAI\Model\Models\Gemini\GeminiPro15">
+        <arguments>
+            <argument name="messenger" xsi:type="object">MageWorx\GoogleAI\Model\MessengerGemini</argument>
+        </arguments>
+    </type>
+    <!-- Configuration and settings -->
+    <type name="Magento\Config\Model\Config\TypePool">
+        <arguments>
+            <argument name="sensitive" xsi:type="array">
+                <item name="mageworx_openai/main_settings/google_api_key" xsi:type="string">1</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Plugin to add new model to the source list of \MageWorx\OpenAI\Model\Source\OpenAIModels -->
+    <type name="MageWorx\OpenAI\Model\Source\OpenAIModels">
+        <plugin name="add_new_model_to_source" type="MageWorx\GoogleAI\Plugin\OpenAIModelsSourcePlugin" sortOrder="10"/>
+    </type>
+    <!-- Config options -->
+    <type name="MageWorx\SeoAI\Model\Source\SeoOpenAIModels">
+        <arguments>
+            <argument name="allowedModelsForSeo" xsi:type="array">
+                <item name="gemini-1.5-flash" xsi:type="string">gemini-1.5-flash</item>
+                <item name="gemini-1.5-pro" xsi:type="string">gemini-1.5-pro</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

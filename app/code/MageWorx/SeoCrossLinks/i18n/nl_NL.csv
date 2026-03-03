@@ -1,0 +1,95 @@
+Save Crosslink,Opslaan Kruisverwijzing
+Edit Crosslink '%1',Kruisverwijzing '%1' bewerken
+New Crosslink,Nieuwe Kruisverwijzing
+Destination,Bestemming
+Use in Product,Gebruik in Product
+Use in Category,Gebruik in Categorie
+Use in CMS Page,Gebruik in CMS-pagina
+Use in Landing Page,Gebruik in Landingspagina
+Crosslink Info,Kruisverwijzingsinformatie
+Keyword,Trefwoord
+Link Title,Linktitel
+Link Target,Linkdoel
+Store View,Winkelweergave
+NOTE: Cross Link will be build in the chosen store views.,OPMERKING: Kruisverwijzing wordt gebouwd in de gekozen winkelweergaven.
+Reference,Referentie
+NOTE: Cross link will not be shown on the page if this page is specified as target page for this keyword.,OPMERKING: Kruisverwijzing wordt niet getoond op de pagina als deze pagina is opgegeven als doelpagina voor dit trefwoord.
+Custom URL,Aangepaste URL
+Max Replacement Count per Page,Max. vervangingsaantal per pagina
+Max # of this keyword per page. 100 is the max value.,Max. # van dit trefwoord per pagina. 100 is de maximale waarde.
+Priority,Prioriteit
+100 is the highest priority.,100 is de hoogste prioriteit.
+Nofollow,Nofollow
+Is Active,Is Actief
+Select Category...,Categorie selecteren...
+Select Product...,Product selecteren...
+Select Landing Page...,Landingspagina selecteren...
+Cross Link,Kruisverwijzing
+NOTE: Enter one keyword (keyword phrase) per line. A new cross link rule will be created for each entered keyword.,OPMERKING: Voer één trefwoord (trefwoordfrase) per regel in. Er wordt een nieuwe kruisverwijzingsregel gemaakt voor elk ingevoerd trefwoord.
+"For multiple keywords use the Reduced Multisave Priority feature. It reduces the keyword priority for every next keyword on the list (thus, the most important keywords appear in the first place).",Voor meerdere trefwoorden gebruik de functie Verminderde MultiOpslaan prioriteit. Hiermee wordt de prioriteit van het trefwoord voor elk volgend trefwoord in de lijst verlaagd (zodat de belangrijkste trefwoorden als eerste verschijnen).
+"Adding '+' before or after a keyword will apply the Cross Link rule to all its variations. E.g. Entering 'iphone 5+' will apply the rule to 'iphone 5s', 'iphone 5c', etc. (but not to 'iphone 5').","Het toevoegen van '+' voor of na een trefwoord zal de Kruisverwijzing-regel toepassen op al zijn varianten. Bijvoorbeeld 'iphone 5+' zal de regel toepassen op 'iphone 5s', 'iphone 5c', enz. (maar niet op 'iphone 5')."
+"For more info, follow the %1 link %2.","Voor meer informatie, volg de %1 link %2."
+Link without 'http[s]://' as customer/account/<br>will be converted to<br>http[s]://(store_URL_here)/customer/account/,Link zonder 'http[s]://' zoals customer/account/<br>zal worden omgezet naar<br>http[s]://(winkel_URL_hier)/customer/account/
+Link with 'http[s]://' will be added as it is.,Link met 'http[s]://' wordt toegevoegd zoals het is.
+Crosslink Information,Kruisverwijzingsinformatie
+The crosslink has been deleted.,De kruisverwijzing is verwijderd.
+Crosslink not found.,Kruisverwijzing niet gevonden.
+Crosslink,Kruisverwijzing
+The crosslink no longer exists.,De kruisverwijzing bestaat niet meer.
+New Cross Link,Nieuwe Kruisverwijzing
+Crosslinks,Kruisverwijzingen
+Please correct the data sent.,Corrigeer alstublieft de verzonden gegevens.
+Something went wrong while saving the page.,Er is iets misgegaan bij het opslaan van de pagina.
+The crosslink has been saved.,De kruisverwijzing is opgeslagen.
+The crosslinks has been saved with reduce priority.,De kruisverwijzingen zijn opgeslagen met verminderde prioriteit.
+Something went wrong while saving the crosslink.,Er is iets misgegaan bij het opslaan van de kruisverwijzing.
+Product Page,Productpagina
+Category Page,Categoriepagina
+CMS Page Content,CMS-paginainhoud
+Landing Page,Landingspagina
+Product Short Description,Product Korte Beschrijving
+Product Description,Product Beschrijving
+Yes,Ja
+No,Nee
+Don't Use,Niet Gebruiken
+For Blank,Voor Leeg
+For All,Voor Alle
+Product,Product
+Category,Categorie
+_self,_self
+_blank,_blank
+"Delete ""${ $.$data.name }""","Verwijder ""${ $.$data.name }"""
+"Are you sure you want to delete the Crosslink ""${ $.$data.name }"" ?","Weet je zeker dat je de Kruisverwijzing ""${ $.$data.name }"" wilt verwijderen?"
+Edit,Bewerken
+Delete,Verwijderen
+SEO,SEO
+SEO Cross Links,SEO Kruisverwijzingen
+SEO crosslinks connect related site pages or pages with similar content by some keyword,SEO kruisverwijzingen verbinden gerelateerde sitepagina's of pagina's met vergelijkbare inhoud met een bepaald trefwoord
+Enable ▾,Inschakelen ▾
+"If <i>Enabled</i>, <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#manage-cross-links"">the created crosslinks</a> will be inserted on the fly on all the relevant pages. These crosslinks can be <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#individual-settings"">individually disabled</a> for any Product/Category page.","Indien <i>Ingeschakeld</i>, zullen <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#manage-cross-links"">de gemaakte kruisverwijzingen</a> automatisch worden ingevoegd op alle relevante pagina's. Deze kruisverwijzingen kunnen <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#individual-settings"">individueel worden uitgeschakeld</a> voor elke Product/Categorie pagina."
+Total Max Replacement Count<br>for Product Page,Totaal Max. Vervangingsaantal<br>voor Productpagina
+Cross Links are displayed in the description fields.,Kruisverwijzingen worden weergegeven in de beschrijvingsvelden.
+Total Max Replacement Count<br>for Category Page,Totaal Max. Vervangingsaantal<br>voor Categoriepagina
+Total Max Replacement Count<br>for CMS Page,Totaal Max. Vervangingsaantal<br>voor CMS-pagina
+Cross Links can be displayed in the content field (with the exception of the widget contents).<br>NOTE: Cross Links cannot be created on the homepage.,Kruisverwijzingen kunnen worden weergegeven in het inhoudsveld (met uitzondering van de widget-inhoud).<br>OPMERKING: Kruisverwijzingen kunnen niet worden gemaakt op de startpagina.
+Total Max Replacement Count<br>for Landing Page,Totaal Max. Vervangingsaantal<br>voor Landingspagina
+Cross Links can be displayed in the top/bottom blocks,Kruisverwijzingen kunnen worden weergegeven in de bovenste/onderste blokken
+Use Product/Category Name<br>in the Cross Link's Title Tag,Gebruik Product/Categorie Naam<br>in de Tegel Tag van de Kruisverwijzing
+Replace on Product Page In,Vervangen op Productpagina in
+&nbsp;&nbsp;&nbsp;&nbsp;Default Link Target,&nbsp;&nbsp;&nbsp;&nbsp;Standaard Linkdoel
+&nbsp;&nbsp;&nbsp;&nbsp;Default Link Reference,&nbsp;&nbsp;&nbsp;&nbsp;Standaard Link Referentie
+&nbsp;&nbsp;&nbsp;&nbsp;Default Replacement Count,&nbsp;&nbsp;&nbsp;&nbsp;Standaard Vervangingsaantal
+Default maximum # of time one created keyword is equipped with a crosslink per one page.,Standaard maximaal aantal keren dat één gemaakt trefwoord is uitgerust met een kruisverwijzing per één pagina.
+&nbsp;&nbsp;&nbsp;&nbsp;Default Priority,&nbsp;&nbsp;&nbsp;&nbsp;Standaard Prioriteit
+&nbsp;&nbsp;&nbsp;&nbsp;Enable by Default,&nbsp;&nbsp;&nbsp;&nbsp;Standaard Inschakelen
+"If set to <i>Yes</i>, the created crosslinks will be enabled automatically.","Indien ingesteld op <i>Ja</i>, worden de gemaakte kruisverwijzingen automatisch ingeschakeld."
+&nbsp;&nbsp;&nbsp;&nbsp;Default Values for<br>&nbsp;&nbsp;&nbsp;&nbsp;'Destination' Tab,&nbsp;&nbsp;&nbsp;&nbsp;Standaard Waarden voor<br>&nbsp;&nbsp;&nbsp;&nbsp;het Tabblad 'Bestemming'
+Use in Cross Linking,Gebruik in Kruisverwijzing
+Use in Crosslinking,Gebruik in Kruisverwijzing
+Add New Crosslink,Nieuwe Kruisverwijzing Toevoegen
+Delete items,Items verwijderen
+Are you sure you want to delete selected items?,Weet je zeker dat je de geselecteerde items wilt verwijderen?
+Disable,Uitschakelen
+Enable,Inschakelen
+ID,ID
+Replacement Count,Vervangingsaantal

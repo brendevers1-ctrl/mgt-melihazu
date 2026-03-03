@@ -1,0 +1,11 @@
+"Curl Error: %1","Curl Error: %1"
+"Gemini 1.5 Pro","Gemini 1.5 Pro"
+"Gemini 1.5 Flash","Gemini 1.5 Flash"
+"Google API KEY","Google API KEY"
+"Please specify your Google API key. You can get your API key in your account at
+<a href=""https://console.cloud.google.com/apis/credentials"" target=""_blank"">Google Cloud portal</a>. This key is required to authorize API requests from your Magento store to Google's services.","Please specify your Google API key. You can get your API key in your account at
+<a href=""https://console.cloud.google.com/apis/credentials"" target=""_blank"">Google Cloud portal</a>. This key is required to authorize API requests from your Magento store to Google's services."
+"Provided API key is not valid. You can find your key in your account at the Google AI portal.","Provided API key is not valid. You can find your key in your account at the Google AI portal."
+"Error occurred while validating the API key.","Error occurred while validating the API key."
+"The API key is valid.","The API key is valid."
+"Validate","Validate"

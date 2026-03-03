@@ -1,0 +1,99 @@
+{
+    "mageworx_seoreports_product": {
+        "column": {
+            "entity_id": true,
+            "reference_id": true,
+            "store_id": true,
+            "sku": true,
+            "url_path": true,
+            "url_path_length": true,
+            "type_id": true,
+            "name": true,
+            "prepared_name": true,
+            "name_duplicate_count": true,
+            "name_length": true,
+            "meta_title": true,
+            "prepared_meta_title": true,
+            "meta_title_length": true,
+            "meta_title_duplicate_count": true,
+            "meta_description_length": true,
+            "seo_name": true,
+            "prepared_seo_name": true,
+            "seo_name_length": true,
+            "seo_name_duplicate_count": true
+        },
+        "index": {
+            "MAGEWORX_SEOREPORTS_PRODUCT_PREPARED_NAME": true,
+            "MAGEWORX_SEOREPORTS_PRODUCT_PREPARED_META_TITLE": true,
+            "MAGEWORX_SEOREPORTS_PRODUCT_ENTITY_ID_REFERENCE_ID_STORE_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_SEOREPORTS_PRODUCT_STORE_ID_STORE_STORE_ID": true
+        }
+    },
+    "mageworx_seoreports_category": {
+        "column": {
+            "entity_id": true,
+            "reference_id": true,
+            "store_id": true,
+            "level": true,
+            "path": true,
+            "url_path": true,
+            "url_path_length": true,
+            "name": true,
+            "prepared_name": true,
+            "name_duplicate_count": true,
+            "name_length": true,
+            "meta_title": true,
+            "prepared_meta_title": true,
+            "meta_title_length": true,
+            "meta_title_duplicate_count": true,
+            "meta_description_length": true,
+            "seo_name": true,
+            "prepared_seo_name": true,
+            "seo_name_length": true,
+            "seo_name_duplicate_count": true
+        },
+        "index": {
+            "MAGEWORX_SEOREPORTS_CATEGORY_PREPARED_NAME": true,
+            "MAGEWORX_SEOREPORTS_CATEGORY_PREPARED_META_TITLE": true,
+            "MAGEWORX_SEOREPORTS_CATEGORY_ENTITY_ID_REFERENCE_ID_STORE_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_SEOREPORTS_CATEGORY_STORE_ID_STORE_STORE_ID": true
+        }
+    },
+    "mageworx_seoreports_page": {
+        "column": {
+            "entity_id": true,
+            "reference_id": true,
+            "store_id": true,
+            "url_path": true,
+            "url_path_length": true,
+            "heading": true,
+            "prepared_heading": true,
+            "heading_length": true,
+            "heading_duplicate_count": true,
+            "title": true,
+            "prepared_title": true,
+            "title_length": true,
+            "title_duplicate_count": true,
+            "meta_title": true,
+            "prepared_meta_title": true,
+            "meta_title_length": true,
+            "meta_title_duplicate_count": true,
+            "meta_description_length": true
+        },
+        "index": {
+            "MAGEWORX_SEOREPORTS_PAGE_PREPARED_HEADING": true,
+            "MAGEWORX_SEOREPORTS_PAGE_PREPARED_META_TITLE": true,
+            "MAGEWORX_SEOREPORTS_PAGE_ENTITY_ID_REFERENCE_ID_STORE_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_SEOREPORTS_PAGE_STORE_ID_STORE_STORE_ID": true
+        }
+    }
+}

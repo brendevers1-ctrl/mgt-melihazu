@@ -1,0 +1,164 @@
+Save Custom Canonical URL,Opslaan van aangepaste kanonieke URL
+Edit Custom Canonical URL,Aangepaste kanonieke URL bewerken
+New Custom Canonical URL,Nieuwe aangepaste kanonieke URL
+Canonical Information,Kanonieke informatie
+Canonical From:,Kanoniek vanaf:
+Type,Type
+Canonical To:,Kanoniek naar:
+"Link without 'http[s]://' as 'my/custom/url' 
+            will be converted to 'http[s]://(store_URL_here)/my/custom/url'<br>
+            Link with 'http[s]://' will be added as it is.","Link zonder 'http[s]://' als 'mijn/aangepaste/url' 
+            wordt omgezet naar 'http[s]://(winkel_URL_hier)/mijn/aangepaste/url'<br>
+            Link met 'http[s]://' wordt toegevoegd zoals het is."
+URL,URL
+Select Product...,Product selecteren...
+Select Category...,Categorie selecteren...
+Select Page...,Pagina selecteren...
+Store View,Winkelweergave
+Custom Canonical URL,Aangepaste kanonieke URL
+Language Code,Taalcode
+Country Code,Landcode
+Pages,Pagina's
+X-default,X-standaard
+Add,Toevoegen
+Store,Winkel
+Hreflang Code,Hreflang Code
+Product,Product
+Category,Categorie
+CMS Page,CMS-pagina
+Landing Page,Landingpagina
+ID,ID
+SKU,SKU
+Visibility,Zichtbaarheid
+Status,Status
+Marketing,Marketing
+MageWorx Canonical URLs,MageWorx Kanonieke URL's
+Сustom Сanonical URLs,Aangepaste Kanonieke URL's
+Page not found,Pagina niet gevonden
+Custom Canonical URLs,Aangepaste Kanonieke URL's
+The Custom Canonical has been deleted.,De aangepaste kanonieke URL is verwijderd.
+We can't delete the Custom Canonical right now. Please review the log and try again.,We kunnen de aangepaste kanonieke URL nu niet verwijderen. Controleer het logboek en probeer het opnieuw.
+Custom Canonical is not found.,Aangepaste kanonieke URL niet gevonden.
+A total of %1 record(s) were deleted.,In totaal %1 record(s) zijn verwijderd.
+It is impossible to save Custom Canonical for %1 Store,Het is onmogelijk om Aangepaste Kanonieke URL op te slaan voor winkel %1
+Source and target entities can't be identical!,Bron- en doelentiteiten kunnen niet identiek zijn!
+[%1 Store],[%1 Store]
+The Custom Canonical for %1 Store has been saved.,De Aangepaste Kanonieke URL voor winkel %1 is opgeslagen.
+The Custom Canonical has been saved.,De Aangepaste Kanonieke URL is opgeslagen.
+Something went wrong while saving the Custom Canonical.,Er is iets misgegaan bij het opslaan van de Aangepaste Kanonieke URL.
+Custom Canonical for this source entity already exists,Er bestaat al een Aangepaste Kanonieke URL voor deze bronentiteit
+Could not save the Custom Canonical URL: %1,Kon de Aangepaste Kanonieke URL niet opslaan: %1
+"Custom Canonical with ID ""%1"" does not exist.","Aangepaste Kanonieke URL met ID ""%1"" bestaat niet."
+Could not delete the Custom Canonical URL: %1,Kon de Aangepaste Kanonieke URL niet verwijderen: %1
+It is impossible to save Custom Canonical: Source and Target entities can't be identical!,Het is onmogelijk om Aangepaste Kanonieke URL op te slaan: Bron- en doelentiteiten kunnen niet identiek zijn!
+Canonical Tag for Pages Filtered by Layered Navigation Leads to,Kanonieke Tag voor Pagina's Gefilterd door Gelaagde Navigatie Leidt naar
+Hreflang Identifier,Hreflang Identifier
+The setting is enabled. You can see the other options in,Deze instelling is ingeschakeld. Je kunt de andere opties zien in
+This setting is disabled. You can enable it in,Deze instelling is uitgeschakeld. Je kunt deze inschakelen in
+<i>SEO -> SEO Hreflangs URLs</i> config section,<i>SEO -> SEO Hreflangs URLs</i> config sectie
+This setting was added by MageWorx SEO Suite,Deze instelling is toegevoegd door MageWorx SEO Suite
+Meta Robots,Meta Robots
+Crop,Bijsnijden
+Disable,Uitschakelen
+Filtered Page,Gefilterde Pagina
+Current Category,Huidige Categorie
+Use Longest by Path Length,Langste gebruiken op basis van padlengte
+Use Shortest by Path Length,Kortste gebruiken op basis van padlengte
+Use Longest by Categories Counter,Langste gebruiken op basis van categorieën teller
+Use Shortest by Categories Counter,Kortste gebruiken op basis van categorieën teller
+Use Root (without Categories),Root gebruiken (zonder categorieën)
+By ID,Op ID
+By URL Key,Op URL-sleutel
+By Hreflang Key,Op Hreflang-sleutel
+Custom URL,Aangepaste URL
+Use Default,Standaard gebruiken
+Use Custom,Aangepaste gebruiken
+Use Config,Configuratie gebruiken
+Checkout Pages,Afrekeningspagina's
+Contact Us Page,Neem contact met ons op pagina
+Customer Account Pages,Klantaccountpagina's
+Product Compare Pages,Vergelijk productpagina's
+RSS Feeds,RSS-feeds
+Search Pages,Zoekpagina's
+Send Product Pages,Verzend productpagina's
+Wishlist Pages,Verlanglijst pagina's
+--Please Select--,--Selecteer alstublieft--
+Global,Globaal
+Website,Website
+UNKNOWN CATEGORY,ONBEKENDE CATEGORIE
+UNKNOWN PRODUCT,ONBEKEND PRODUCT
+UNKNOWN PAGE,ONBEKENDE PAGINA
+Edit,Bewerken
+Delete,Verwijderen
+Delete Custom Canonical URL,Aangepaste kanonieke URL verwijderen
+Are you sure you want to delete the selected custom canonical url?,Weet je zeker dat je de geselecteerde aangepaste kanonieke URL wilt verwijderen?
+All Store Views,Alle winkelweergaven
+Same as Source Entity,Hetzelfde als bronentiteit
+Canonical Url,Kanonieke URL
+"Link without 'http[s]://' as 'my/custom/url'
+                            will be converted to 'http[s]://(store_URL_here)/my/custom/url'.
+                            Link with 'http[s]://' will be added as it is.","Link zonder 'http[s]://' als 'mijn/aangepaste/url'
+                            wordt omgezet naar 'http[s]://(winkel_URL_hier)/mijn/aangepaste/url'.
+                            Link met 'http[s]://' wordt toegevoegd zoals het is."
+Not Selected,Niet geselecteerd
+Choose...,Kiezen...
+Preview,Voorbeeld
+SEO,SEO
+SEO Base,SEO Basis
+Hreflang URLs Settings:,Hreflang URL-instellingen:
+"The <a target=""_blank"" href=""https://support.google.com/webmasters/answer/189077?hl=en"">hreflang tag</a> helps the Web crawler understand which version of the website should be shown for a certain location. The hreflang settings can be managed depending on the store view. To change the store view use the dropdown on the upper left side of the configuration page.","Het <a target=""_blank"" href=""https://support.google.com/webmasters/answer/189077?hl=en"">hreflang-tag</a> helpt de webcrawler begrijpen welke versie van de website voor een bepaalde locatie moet worden getoond. De hreflang-instellingen kunnen worden beheerd afhankelijk van de winkelweergave. Gebruik de vervolgkeuzelijst aan de linkerbovenkant van de configuratiepagina om de winkelweergave te wijzigen."
+Hreflang URLs Scope,Hreflang URL-bereik
+"Specify the Alternate URLs Scope. If set to <i>Website</i>, the Hreflang URLs work within one website only. If set to <i>Global</i>, the Hreflang URLs work between websites.","Specificeer het bereik van de alternatieve URL's. Als ingesteld op <i>Website</i>, werken de hreflang-URL's alleen binnen één website. Als ingesteld op <i>Globaal</i>, werken de hreflang-URL's tussen websites."
+Multi-stores CMS pages relation,Relatie meerdere winkels CMS-pagina's
+"Specifies how to identify the same CMS page for different store views. Use <i>By ID</i> if you create one page for different stores, therefore, their ID will be the same. Use <i>By URL</i> Key if you created separate pages for different stores and assign them the same URL. Use <i><a target=""_blank"" href=https://support.mageworx.com/manuals/seosuite/#cms-pages>By Hreflang Key</a></i> for the pages that are linked manually.","Geeft aan hoe dezelfde CMS-pagina voor verschillende winkelweergaven kan worden geïdentificeerd. Gebruik <i>Op ID</i> als je één pagina voor verschillende winkels maakt, zodat hun ID hetzelfde zal zijn. Gebruik <i>Op URL</i> sleutel als je afzonderlijke pagina's hebt gemaakt voor verschillende winkels en wijs ze dezelfde URL toe. Gebruik <i><a target=""_blank"" href=https://support.mageworx.com/manuals/seosuite/#cms-pages>Op Hreflang-sleutel</a></i> voor de pagina's die handmatig zijn gekoppeld."
+Overview of Alternate Hreflang Settings,Overzicht van alternatieve Hreflang-instellingen
+"To observe the changes, click the <b>Save Config</b> button.","Om de wijzigingen te bekijken, klik je op de knop <b>Configuratie opslaan</b>."
+Canonical URLs Settings:,Kanonieke URL-instellingen:
+"You need to <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-urls-settings"">disable the standard Magento canonical</a> first.","Je moet eerst de standaard Magento kanonieke <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-urls-settings"">uitschakelen</a>."
+Add Canonical URL Meta Header,Kanonieke URL Meta Header toevoegen
+"The default setting to add the <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary"">canonical</a> tag.","De standaardinstelling om het <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary"">kanonieke</a>-tag toe te voegen."
+Disable Canonical URL for Pages with NOINDEX robots,Kanonieke URL uitschakelen voor pagina's met NOINDEX robots
+Disables the canonical URL if the page has the NOINDEX meta robots tag. Useful as the NOINDEX pages won't be shown in the search results.,Schakelt de kanonieke URL uit als de pagina de NOINDEX meta robots-tag heeft. Nuttig omdat NOINDEX-pagina's niet worden weergegeven in de zoekresultaten.
+Canonical URL won't be added for these pages,Kanonieke URL wordt niet toegevoegd voor deze pagina's
+"Hides the canonical URL on the pages added in this setting.<br/>Action names allowed: use catalog_category_view for all categories, catalog_product_view for all products.","Verbergt de kanonieke URL op de pagina's die in deze instelling zijn toegevoegd.<br/>Toegestane actienamen: gebruik catalog_category_view voor alle categorieën, catalog_product_view voor alle producten."
+Cross Domain Canonical,Kanonieke kruisdomein
+Define the main storeview for the canonical URL. Useful for websites with several storeviews having the same or quite similar content. Use Custom URL to add any other website.,Definieer de belangrijkste winkelweergave voor de kanonieke URL. Nuttig voor websites met meerdere winkelweergaven met dezelfde of zeer vergelijkbare inhoud. Gebruik Aangepaste URL om een andere website toe te voegen.
+Cross Domain Canonical - Custom URL,Kanonieke kruisdomein - Aangepaste URL
+Product Canonical URL Type,Type kanonieke URL voor product
+"The options depend on the ""Use Categories Path for Product URLs"" setting.","De opties zijn afhankelijk van de instelling ""Gebruik Categorieën Pad voor Product-URL's""."
+Canonical Tag For Associated Product,Kanonieke tag voor geassocieerd product
+The associated products of the chosen product types will have the canonical tag pointed to the parent (main) product.,De geassocieerde producten van de gekozen producttypes hebben de kanonieke tag gericht op het bovenliggende (hoofd)product.
+Trailing Slash For Home Page Canonical URL,Trailing Slash voor kanonieke URL van startpagina
+The homepage can be indexed as both https://www.site.com and https://www.site.com/. The canonical can either have this trailing slash (add) or not (crop). The trailing slash can be added to the pages without suffix .html or .htm,De startpagina kan worden geïndexeerd als zowel https://www.site.com als https://www.site.com/. De kanonieke URL kan deze schuine streep aan het einde hebben (toevoegen) of niet (bijsnijden). De schuine streep kan worden toegevoegd aan de pagina's zonder suffix .html of .htm
+Trailing Slash For Canonical URLs,Trailing Slash voor kanonieke URL's
+The web pages can be indexed as both https://www.site.com/page and https://www.site.com/page/. The canonical can either have this trailing slash (add) or not (crop). The trailing slash can be added to the pages without suffix .html or .htm,De webpagina's kunnen worden geïndexeerd als zowel https://www.site.com/pagina als https://www.site.com/pagina/. De kanonieke URL kan deze schuine streep aan het einde hebben (toevoegen) of niet (bijsnijden). De schuine streep kan worden toegevoegd aan de pagina's zonder suffix .html of .htm
+Use Pager For Category Canonical URL,Pager gebruiken voor kanonieke URL van categorie
+Add or remove the pager (?p=2 etc.) parameter from the canonical tag on the category pages.,Voeg de pager-parameter (?p=2 enz.) toe of verwijder deze uit de kanonieke tag op de categoriapagina's.
+Canonical Tag for Category Layered Navigation,Kanonieke tag voor categorie gelaagde navigatie
+"To see the differences among the options, <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-tag-LN"">click here</a>. To overwrite this setting for each product attribute individually, go to <i>Attributes Grid>Attribute>Storefront Properties</i> and change the 'Canonical Tag for Pages Filtered by Layered Navigation Leads to' setting.","Om de verschillen tussen de opties te zien, <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-tag-LN"">klik hier</a>. Om deze instelling voor elke producteigenschap afzonderlijk te overschrijven, ga naar <i>Attributenoverzicht>Attribuut>Storefront-eigenschappen</i> en wijzig de instelling 'Kanonieke tag voor pagina's Gefilterd door Gelaagde Navigatie Leidt naar'."
+Canonical Tag if any LN Filter Use Multiple Selection,Kanonieke tag als een LN-filter meerdere selecties gebruikt
+"Manages the canonical for any link that has the one-time selection of the several filters options within the same filter (multi-select). This setting works with <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation extension</a>","Beheert de kanonieke tag voor elke link die de eenmalige selectie van verschillende filteropties binnen dezelfde filter (multi-select) heeft. Deze instelling werkt met <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation-extensie</a>"
+Meta Robots Settings:,Meta Robots-instellingen:
+"NOINDEX, FOLLOW Robots Meta Header<br>for Pages Without Content","NOINDEX, FOLLOW Robots Meta Header<br>voor pagina's zonder inhoud"
+"NOINDEX, FOLLOW Robots Meta Header<br>for Additional Pages","NOINDEX, FOLLOW Robots Meta Header<br>voor extra pagina's"
+"NOINDEX, NOFOLLOW Robots Meta Header<br>for Additional Pages","NOINDEX, NOFOLLOW Robots Meta Header<br>voor extra pagina's"
+Default Meta Robots For Category LN Pages,Standaard Meta Robots voor Categorie LN-pagina's
+"Count of filters for set NOINDEX, FOLLOW for LN","Aantal filters voor het instellen van NOINDEX, FOLLOW voor LN"
+Robots for Attributes Combinations,Robots voor Attributen Combinaties
+"Set NOINDEX, FOLLOW for LN Filters with Multiple Selection","Stel NOINDEX, FOLLOW in voor LN-filters met meerdere selecties"
+"If enabled, the one-time selection of the several filters options within the same filter (multi-select) hides the URL from indexation. This setting is compatible with <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation extension</a>","Indien ingeschakeld, verbergt de eenmalige selectie van de verschillende filteropties binnen dezelfde filter (multi-select) de URL voor indexering. Deze instelling is compatibel met <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation-extensie</a>"
+"Add Link Rel=""next/prev"" on the Category Page","Link Rel=""next/prev"" toevoegen op de Categoriepagina"
+"This tag points the Web crawler, where exactly the first and the last category pages are, and what page is a next or a previous one.","Deze tag geeft de webcrawler aan waar precies de eerste en de laatste categoriepagina's zijn, en welke pagina de volgende of de vorige is."
+SEO Base: Canonical Functionality / Hreflangs / Meta Robots,SEO Basis: Kanonieke functionaliteit / Hreflangs / Meta Robots
+Name,Naam
+Add New Custom Canonical URL,Nieuwe aangepaste kanonieke URL toevoegen
+Select...,Selecteren...
+Source Store View,Bron winkelweergave
+Target Store View,Doel winkelweergave
+Are you sure you want to delete selected items?,Weet je zeker dat je geselecteerde items wilt verwijderen?
+Source Entity Type,Bron-entiteitstype
+Source Entity Id,Bron-entiteit-ID
+Target Entity Type,Doel-entiteitstype
+Target Entity Id,Doel-entiteit-ID
+Cross Domain Store,Winkel kruisdomein
+Cross Domain URL,Kruisdomein URL

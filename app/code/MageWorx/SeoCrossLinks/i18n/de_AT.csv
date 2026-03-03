@@ -1,0 +1,95 @@
+Save Crosslink,Kreuzverlinkung speichern
+Edit Crosslink '%1',Kreuzverlinkung '%1' bearbeiten
+New Crosslink,Neue Kreuzverlinkung
+Destination,Ziel
+Use in Product,Verwenden in Produkt
+Use in Category,Verwenden in Kategorie
+Use in CMS Page,Verwenden in CMS-Seite
+Use in Landing Page,Verwenden in Landing Page
+Crosslink Info,Kreuzverlinkungsinformationen
+Keyword,Schlüsselwort
+Link Title,Link-Titel
+Link Target,Link-Ziel
+Store View,Shop-Ansicht
+NOTE: Cross Link will be build in the chosen store views.,HINWEIS: Die Kreuzverlinkung wird in den ausgewählten Shop-Ansichten erstellt.
+Reference,Referenz
+NOTE: Cross link will not be shown on the page if this page is specified as target page for this keyword.,"HINWEIS: Die Kreuzverlinkung wird auf der Seite nicht angezeigt, wenn diese Seite als Zielseite für dieses Schlüsselwort festgelegt ist."
+Custom URL,Benutzerdefinierte URL
+Max Replacement Count per Page,Maximale Ersatzanzahl pro Seite
+Max # of this keyword per page. 100 is the max value.,Maximale Anzahl dieses Schlüsselworts pro Seite. 100 ist der Höchstwert.
+Priority,Priorität
+100 is the highest priority.,100 ist die höchste Priorität.
+Nofollow,Nofollow
+Is Active,Ist aktiv
+Select Category...,Kategorie auswählen...
+Select Product...,Produkt auswählen...
+Select Landing Page...,Landing Page auswählen...
+Cross Link,Kreuzverlinkung
+NOTE: Enter one keyword (keyword phrase) per line. A new cross link rule will be created for each entered keyword.,HINWEIS: Geben Sie pro Zeile ein Schlüsselwort (Schlüsselwortphrase) ein. Für jedes eingegebene Schlüsselwort wird eine neue Kreuzverlinkungsregel erstellt.
+"For multiple keywords use the Reduced Multisave Priority feature. It reduces the keyword priority for every next keyword on the list (thus, the most important keywords appear in the first place).","Verwenden Sie die Funktion ""Reduzierte Mehrfachspeicher-Priorität"", wenn Sie mehrere Schlüsselwörter verwenden. Damit wird die Priorität für jedes nächste Schlüsselwort in der Liste reduziert (so werden die wichtigsten Schlüsselwörter zuerst angezeigt)."
+"Adding '+' before or after a keyword will apply the Cross Link rule to all its variations. E.g. Entering 'iphone 5+' will apply the rule to 'iphone 5s', 'iphone 5c', etc. (but not to 'iphone 5').","Ein '+' vor oder nach einem Schlüsselwort hinzufügen, wendet die Kreuzverlinkungsregel auf alle Variationen dieses Schlüsselworts an. Zum Beispiel wird das Eingeben von 'iphone 5+' die Regel auf 'iphone 5s', 'iphone 5c', usw. anwenden (aber nicht auf 'iphone 5')."
+"For more info, follow the %1 link %2.",Weitere Informationen finden Sie unter %1 Link %2.
+Link without 'http[s]://' as customer/account/<br>will be converted to<br>http[s]://(store_URL_here)/customer/account/,Link ohne 'http[s]://' wie customer/account/<br>wird konvertiert zu<br>http[s]://(store_URL_here)/customer/account/
+Link with 'http[s]://' will be added as it is.,Link mit 'http[s]://' wird unverändert hinzugefügt.
+Crosslink Information,Kreuzverlinkungsinformationen
+The crosslink has been deleted.,Die Kreuzverlinkung wurde gelöscht.
+Crosslink not found.,Kreuzverlinkung nicht gefunden.
+Crosslink,Kreuzverlinkung
+The crosslink no longer exists.,Die Kreuzverlinkung existiert nicht mehr.
+New Cross Link,Neue Kreuzverlinkung
+Crosslinks,Kreuzverlinkungen
+Please correct the data sent.,Bitte korrigieren Sie die gesendeten Daten.
+Something went wrong while saving the page.,Beim Speichern der Seite ist ein Fehler aufgetreten.
+The crosslink has been saved.,Die Kreuzverlinkung wurde gespeichert.
+The crosslinks has been saved with reduce priority.,Die Kreuzverlinkungen wurden mit reduzierter Priorität gespeichert.
+Something went wrong while saving the crosslink.,Beim Speichern der Kreuzverlinkung ist ein Fehler aufgetreten.
+Product Page,Produktseite
+Category Page,Kategorieseite
+CMS Page Content,CMS-Seiteninhalt
+Landing Page,Landing Page
+Product Short Description,Produkt Kurzbeschreibung
+Product Description,Produktbeschreibung
+Yes,Ja
+No,Nein
+Don't Use,Nicht verwenden
+For Blank,Für Leer
+For All,Für Alle
+Product,Produkt
+Category,Kategorie
+_self,_self
+_blank,_blank
+"Delete ""${ $.$data.name }""","Löschen ""${ $.$data.name }"""
+"Are you sure you want to delete the Crosslink ""${ $.$data.name }"" ?","Sind Sie sicher, dass Sie die Kreuzverlinkung ""${ $.$data.name }"" löschen möchten?"
+Edit,Bearbeiten
+Delete,Löschen
+SEO,SEO
+SEO Cross Links,SEO-Kreuzverlinkungen
+SEO crosslinks connect related site pages or pages with similar content by some keyword,SEO-Kreuzverlinkungen verknüpfen verwandte Seiten oder Seiten mit ähnlichem Inhalt über Schlüsselwörter.
+Enable ▾,Aktivieren ▾
+"If <i>Enabled</i>, <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#manage-cross-links"">the created crosslinks</a> will be inserted on the fly on all the relevant pages. These crosslinks can be <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#individual-settings"">individually disabled</a> for any Product/Category page.","Wenn <i>Aktiviert</i>, werden <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#manage-cross-links"">die erstellten Kreuzverlinkungen</a> automatisch auf allen relevanten Seiten eingefügt. Diese Kreuzverlinkungen können <a target=""_blank"" href=""https://support.mageworx.com/manuals/crosslinks/#individual-settings"">individuell deaktiviert</a> werden für jede Produkt- oder Kategorieseite."
+Total Max Replacement Count<br>for Product Page,Gesamte maximale Anzahl der Ersetzungen<br>für die Produktseite
+Cross Links are displayed in the description fields.,Kreuzverlinkungen werden in den Beschreibungsfeldern angezeigt.
+Total Max Replacement Count<br>for Category Page,Gesamte maximale Anzahl der Ersetzungen<br>für die Kategorieseite
+Total Max Replacement Count<br>for CMS Page,Gesamte maximale Anzahl der Ersetzungen<br>für die CMS-Seite
+Cross Links can be displayed in the content field (with the exception of the widget contents).<br>NOTE: Cross Links cannot be created on the homepage.,Kreuzverlinkungen können im Inhaltsfeld angezeigt werden (mit Ausnahme von Widget-Inhalten).<br>HINWEIS: Kreuzverlinkungen können nicht auf der Startseite erstellt werden.
+Total Max Replacement Count<br>for Landing Page,Gesamte maximale Anzahl der Ersetzungen<br>für die Landing Page
+Cross Links can be displayed in the top/bottom blocks,Kreuzverlinkungen können in den oberen/unteren Blöcken angezeigt werden
+Use Product/Category Name<br>in the Cross Link's Title Tag,Verwenden Sie den Produkt-/Kategoriennamen<br>für den Titel-Tag der Kreuzverlinkung
+Replace on Product Page In,Ersetzen auf der Produktseite in
+&nbsp;&nbsp;&nbsp;&nbsp;Default Link Target,&nbsp;&nbsp;&nbsp;&nbsp;Standard-Linkziel
+&nbsp;&nbsp;&nbsp;&nbsp;Default Link Reference,&nbsp;&nbsp;&nbsp;&nbsp;Standard-Referenz
+&nbsp;&nbsp;&nbsp;&nbsp;Default Replacement Count,&nbsp;&nbsp;&nbsp;&nbsp;Standard-Ersetzungsanzahl
+Default maximum # of time one created keyword is equipped with a crosslink per one page.,"Standardmäßige maximale Anzahl, wie oft ein erstelltes Schlüsselwort auf einer Seite mit einer Kreuzverlinkung ausgestattet ist."
+&nbsp;&nbsp;&nbsp;&nbsp;Default Priority,&nbsp;&nbsp;&nbsp;&nbsp;Standard-Priorität
+&nbsp;&nbsp;&nbsp;&nbsp;Enable by Default,&nbsp;&nbsp;&nbsp;&nbsp;Standardmäßig aktivieren
+"If set to <i>Yes</i>, the created crosslinks will be enabled automatically.","Wenn auf <i>Ja</i> gesetzt, werden die erstellten Kreuzverlinkungen automatisch aktiviert."
+&nbsp;&nbsp;&nbsp;&nbsp;Default Values for<br>&nbsp;&nbsp;&nbsp;&nbsp;'Destination' Tab,&nbsp;&nbsp;&nbsp;&nbsp;Standardwerte für<br>&nbsp;&nbsp;&nbsp;&nbsp; den Tab 'Ziel'
+Use in Cross Linking,Verwenden in der Kreuzverlinkung
+Use in Crosslinking,Verwenden in der Kreuzverlinkung
+Add New Crosslink,Neue Kreuzverlinkung hinzufügen
+Delete items,Elemente löschen
+Are you sure you want to delete selected items?,"Sind Sie sicher, dass Sie die ausgewählten Elemente löschen möchten?"
+Disable,Deaktivieren
+Enable,Aktivieren
+ID,ID
+Replacement Count,Ersetzungsanzahl

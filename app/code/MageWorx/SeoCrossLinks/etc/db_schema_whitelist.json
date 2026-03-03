@@ -1,0 +1,41 @@
+{
+    "mageworx_seocrosslinks_crosslink": {
+        "column": {
+            "crosslink_id": true,
+            "keyword": true,
+            "link_title": true,
+            "link_target": true,
+            "replacement_count": true,
+            "ref_static_url": true,
+            "ref_product_sku": true,
+            "ref_category_id": true,
+            "in_product": true,
+            "in_category": true,
+            "in_cms_page": true,
+            "priority": true,
+            "is_active": true,
+            "nofollow_rel": true,
+            "ref_landingpage_id": true,
+            "in_landingpage": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "mageworx_seocrosslinks_crosslink_store": {
+        "column": {
+            "crosslink_id": true,
+            "store_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "FK_3FF8B90D5A215D8798BEFF160AABBB21": true,
+            "MAGEWORX_SEOCROSSLINKS_CROSSLINK_STORE_STORE_ID_STORE_STORE_ID": true
+        }
+    },
+    "cms_page": {
+        "column": {
+            "use_in_crosslinking": true
+        }
+    }
+}

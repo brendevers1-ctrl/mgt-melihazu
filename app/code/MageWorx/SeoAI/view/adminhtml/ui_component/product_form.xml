@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <modal name="seo_generate_modal" provider="product_form.product_form_data_source">
+        <settings>
+            <options>
+                <option name="buttons" xsi:type="array">
+                    <item name="0" xsi:type="array">
+                        <item name="text" translate="true" xsi:type="string">Done</item>
+                        <item name="class" xsi:type="string">action-primary</item>
+                        <item name="actions" xsi:type="array">
+                            <item name="0" xsi:type="array">
+                                <item name="targetName" xsi:type="string">${ $.name }</item>
+                                <item name="actionName" xsi:type="string">actionDone</item>
+                            </item>
+                        </item>
+                    </item>
+                    <item name="1" xsi:type="array">
+                        <item name="text" translate="true" xsi:type="string">Cancel</item>
+                        <item name="actions" xsi:type="array">
+                            <item name="0" xsi:type="array">
+                                <item name="targetName" xsi:type="string">${ $.name }</item>
+                                <item name="actionName" xsi:type="string">actionCancel</item>
+                            </item>
+                        </item>
+                    </item>
+                </option>
+                <option name="title" xsi:type="string">AI-Powered Data Generator</option>
+            </options>
+            <onCancel>actionCancel</onCancel>
+            <dataScope>data.product.mageworx_seo</dataScope>
+        </settings>
+        <fieldset name="seo_generate">
+            <settings>
+                <label translate="true"></label>
+            </settings>
+
+            <!-- Fields with pregenerated request data -->
+            <field name="content" formElement="textarea">
+                <settings>
+                    <label translate="true">Content</label>
+                    <dataScope>pregenerated_request_data.content</dataScope>
+                    <notice translate="true">This text will be used as a request to AI model to generate a corresponding attribute value. Please be careful when editing this request as it will affect the results you get.</notice>
+                </settings>
+            </field>
+
+            <!-- Buttons -->
+            <container name="buttons_container" component="uiComponent">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="template" xsi:type="string">MageWorx_SeoAI/generate_buttons_container</item>
+                        <item name="sortOrder" xsi:type="number">10</item>
+                    </item>
+                </argument>
+                <container name="submit_request_button" component="MageWorx_SeoAI/js/product_form/element/buttons/submit-request-data-button" sortOrder="30">
+                    <argument name="data" xsi:type="array">
+                        <item name="config" xsi:type="array">
+                            <item name="title" xsi:type="string">Submit</item>
+                            <item name="buttonClasses" xsi:type="string">action-primary page-actions-buttons</item>
+                            <item name="ajaxUrl" xsi:type="url" path="mageworx_seoai/product/GenerateUsingPregeneratedRequest"/>
+                            <item name="actions" xsi:type="array">
+                                <item name="0" xsi:type="array">
+                                    <item name="targetName" xsi:type="string">${ $.name }</item>
+                                    <item name="actionName" xsi:type="string">sendRequestAction</item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </container>
+            </container>
+        </fieldset>
+        <fieldset name="seo_generate_extended_settings">
+            <settings>
+                <label translate="true">Custom settings</label>
+                <collapsible>true</collapsible>
+                <opened>false</opened>
+            </settings>
+            <field name="openai_model" formElement="select">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="rawOptions" xsi:type="boolean">true</item>
+                        <item name="value" xsi:type="object">globalDefaultValue</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Model</label>
+                    <dataScope>openai_model</dataScope>
+                    <notice translate="true">Default AI model to use.</notice>
+                </settings>
+                <formElements>
+                    <select>
+                        <settings>
+                            <options class="MageWorx\SeoAI\Model\Source\SeoOpenAIModels"/>
+                        </settings>
+                    </select>
+                </formElements>
+            </field>
+            <field name="temperature" formElement="input">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="value" xsi:type="object">productDefaultValue</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Temperature</label>
+                    <dataScope>temperature</dataScope>
+                    <notice translate="true">By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.</notice>
+                </settings>
+            </field>
+            <field name="number_of_variants" formElement="input">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="value" xsi:type="object">productDefaultValue</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Number of alternatives</label>
+                    <dataScope>number_of_results</dataScope>
+                    <notice translate="true">A number of the results you get.</notice>
+                </settings>
+            </field>
+            <field name="attributes" formElement="multiselect">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="rawOptions" xsi:type="boolean">true</item>
+                        <item name="value" xsi:type="object">productDefaultValue</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Attributes</label>
+                    <dataScope>product_attributes</dataScope>
+                    <notice translate="true">Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the content request.
+                    </notice>
+                </settings>
+                <formElements>
+                    <multiselect>
+                        <settings>
+                            <options class="MageWorx\SeoAI\Model\Source\ProductAttributes"/>
+                        </settings>
+                    </multiselect>
+                </formElements>
+            </field>
+            <container name="buttons_container" component="uiComponent">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="template" xsi:type="string">MageWorx_SeoAI/generate_buttons_container</item>
+                        <item name="sortOrder" xsi:type="number">10</item>
+                    </item>
+                </argument>
+                <container name="get_request_data_button" component="MageWorx_SeoAI/js/product_form/element/buttons/get-request-data-button" sortOrder="20">
+                    <argument name="data" xsi:type="array">
+                        <item name="config" xsi:type="array">
+                            <item name="title" xsi:type="string">Apply</item>
+                            <item name="ajaxUrl" xsi:type="url" path="mageworx_seoai/product/GetPregeneratedRequest"/>
+                            <item name="buttonClasses" xsi:type="string">page-actions-buttons</item>
+                            <item name="actions" xsi:type="array">
+                                <item name="0" xsi:type="array">
+                                    <item name="targetName" xsi:type="string">product_form.product_form.seo_generate_modal.seo_generate.content</item>
+                                    <item name="actionName" xsi:type="string">setVisible</item>
+                                    <item name="params" xsi:type="array">
+                                        <item name="0" xsi:type="boolean">true</item>
+                                    </item>
+                                </item>
+                                <item name="1" xsi:type="array">
+                                    <item name="targetName" xsi:type="string">${ $.name }</item>
+                                    <item name="actionName" xsi:type="string">sendRequestAction</item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </container>
+            </container>
+        </fieldset>
+        <fieldset name="seo_generate_system">
+            <settings>
+                <label translate="true">System settings</label>
+                <collapsible>true</collapsible>
+                <opened>false</opened>
+                <visible>false</visible>
+            </settings>
+            <field name="product_id" formElement="input">
+                <settings>
+                    <label translate="true">Product ID</label>
+                    <visible>false</visible>
+                    <dataScope>product_id</dataScope>
+                    <imports>
+                        <link name="value">${$.provider}:data.product.current_product_id</link>
+                    </imports>
+                </settings>
+            </field>
+            <field name="store_id" formElement="input">
+                <settings>
+                    <label translate="true">Store ID</label>
+                    <visible>false</visible>
+                    <dataScope>store_id</dataScope>
+                    <imports>
+                        <link name="value">${$.provider}:data.product.current_store_id</link>
+                    </imports>
+                </settings>
+            </field>
+            <field name="message_type" formElement="select" component="MageWorx_SeoAI/js/product_form/element/message-types">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="rawOptions" xsi:type="boolean">true</item>
+                    </item>
+                </argument>
+                <settings>
+                    <label translate="true">Message Type</label>
+                    <visible>false</visible>
+                    <dataScope>message_type</dataScope>
+                </settings>
+                <formElements>
+                    <select>
+                        <settings>
+                            <options class="MageWorx\SeoAI\Model\Source\ProductMessageType"/>
+                        </settings>
+                    </select>
+                </formElements>
+            </field>
+        </fieldset>
+        <fieldset name="seo_generate_results">
+            <settings>
+                <label translate="true">Results</label>
+                <collapsible>false</collapsible>
+                <opened>true</opened>
+                <visible>false</visible>
+            </settings>
+            <container name="response_container">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="component" xsi:type="string">MageWorx_SeoAI/js/product_form/components/response-container</item>
+                        <item name="template" xsi:type="string">MageWorx_SeoAI/response-container</item>
+                        <item name="exports" xsi:type="array">
+                            <item name="isVisible" xsi:type="string">${$.parentName}:visible</item>
+                        </item>
+                    </item>
+                </argument>
+            </container>
+        </fieldset>
+    </modal>
+</form>

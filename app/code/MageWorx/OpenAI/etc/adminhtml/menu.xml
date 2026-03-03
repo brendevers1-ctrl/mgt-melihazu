@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageWorx_OpenAI::menu"
+             title="MageWorx AI Integration"
+             translate="title"
+             module="MageWorx_OpenAI"
+             sortOrder="100" parent="Magento_Backend::stores"
+             resource="MageWorx_OpenAI::main"
+        />
+        <add id="MageWorx_OpenAI::generate_process"
+             title="Manage generation processes"
+             translate="title"
+             module="MageWorx_OpenAI"
+             sortOrder="30"
+             parent="MageWorx_OpenAI::menu"
+             action="mageworx_openai/process/index"
+             resource="MageWorx_OpenAI::manage_process"
+        />
+    </menu>
+</config>

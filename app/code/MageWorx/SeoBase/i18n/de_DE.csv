@@ -1,0 +1,164 @@
+Save Custom Canonical URL,Benutzerdefinierte kanonische URL speichern
+Edit Custom Canonical URL,Benutzerdefinierte kanonische URL bearbeiten
+New Custom Canonical URL,Neue benutzerdefinierte kanonische URL
+Canonical Information,Kanonische Informationen
+Canonical From:,Kanonisch von:
+Type,Typ
+Canonical To:,Kanonisch zu:
+"Link without 'http[s]://' as 'my/custom/url' 
+            will be converted to 'http[s]://(store_URL_here)/my/custom/url'<br>
+            Link with 'http[s]://' will be added as it is.","Link ohne 'http[s]://' als 'my/custom/url'
+            wird konvertiert zu 'http[s]://(store_URL_here)/my/custom/url'<br>
+            Link mit 'http[s]://' wird wie er ist hinzugefügt."
+URL,URL
+Select Product...,Produkt auswählen...
+Select Category...,Kategorie auswählen...
+Select Page...,Seite auswählen...
+Store View,Store-Ansicht
+Custom Canonical URL,Benutzerdefinierte kanonische URL
+Language Code,Sprachcode
+Country Code,Ländercode
+Pages,Seiten
+X-default,X-default
+Add,Hinzufügen
+Store,Store
+Hreflang Code,Hreflang-Code
+Product,Produkt
+Category,Kategorie
+CMS Page,CMS-Seite
+Landing Page,Landing Page
+ID,ID
+SKU,SKU
+Visibility,Sichtbarkeit
+Status,Status
+Marketing,Marketing
+MageWorx Canonical URLs,MageWorx Kanonische URLs
+Сustom Сanonical URLs,Benutzerdefinierte Kanonische URLs
+Page not found,Seite nicht gefunden
+Custom Canonical URLs,Benutzerdefinierte Kanonische URLs
+The Custom Canonical has been deleted.,Die benutzerdefinierte kanonische URL wurde gelöscht.
+We can't delete the Custom Canonical right now. Please review the log and try again.,Wir können die benutzerdefinierte kanonische URL gerade nicht löschen. Bitte überprüfen Sie das Protokoll und versuchen Sie es erneut.
+Custom Canonical is not found.,Benutzerdefinierte kanonische URL nicht gefunden.
+A total of %1 record(s) were deleted.,Insgesamt %1 Datensatz(e) wurden gelöscht.
+It is impossible to save Custom Canonical for %1 Store,"Es ist unmöglich, die benutzerdefinierte kanonische URL für den Store %1 zu speichern."
+Source and target entities can't be identical!,Quell- und Zielentitäten können nicht identisch sein!
+[%1 Store],[%1 Store]
+The Custom Canonical for %1 Store has been saved.,Die benutzerdefinierte kanonische URL für den Store %1 wurde gespeichert.
+The Custom Canonical has been saved.,Die benutzerdefinierte kanonische URL wurde gespeichert.
+Something went wrong while saving the Custom Canonical.,Beim Speichern der benutzerdefinierten kanonischen URL ist etwas schiefgegangen.
+Custom Canonical for this source entity already exists,Benutzerdefinierte kanonische URL für diese Quellentität existiert bereits
+Could not save the Custom Canonical URL: %1,Die benutzerdefinierte kanonische URL konnte nicht gespeichert werden: %1
+"Custom Canonical with ID ""%1"" does not exist.","Benutzerdefinierte kanonische URL mit ID ""%1"" existiert nicht."
+Could not delete the Custom Canonical URL: %1,Die benutzerdefinierte kanonische URL konnte nicht gelöscht werden: %1
+It is impossible to save Custom Canonical: Source and Target entities can't be identical!,"Es ist unmöglich, die benutzerdefinierte kanonische URL zu speichern: Quell- und Zielentitäten können nicht identisch sein!"
+Canonical Tag for Pages Filtered by Layered Navigation Leads to,"Kanonischer Tag für Seiten, die nach Layered Navigation gefiltert wurden, führt zu"
+Hreflang Identifier,Hreflang-Identifikator
+The setting is enabled. You can see the other options in,Die Einstellung ist aktiviert. Sie können die anderen Optionen sehen in
+This setting is disabled. You can enable it in,Diese Einstellung ist deaktiviert. Sie können sie aktivieren in
+<i>SEO -> SEO Hreflangs URLs</i> config section,<i>SEO -> SEO Hreflangs URLs</i> Konfigurationsabschnitt
+This setting was added by MageWorx SEO Suite,Diese Einstellung wurde von MageWorx SEO Suite hinzugefügt
+Meta Robots,Meta Robots
+Crop,Zuschneiden
+Disable,Deaktivieren
+Filtered Page,Gefilterte Seite
+Current Category,Aktuelle Kategorie
+Use Longest by Path Length,Verwenden Sie die längste Pfadlänge
+Use Shortest by Path Length,Verwenden Sie die kürzeste Pfadlänge
+Use Longest by Categories Counter,Verwenden Sie die längste Anzahl von Kategorien
+Use Shortest by Categories Counter,Verwenden Sie die kürzeste Anzahl von Kategorien
+Use Root (without Categories),Verwenden Sie Root (ohne Kategorien)
+By ID,Nach ID
+By URL Key,Nach URL-Schlüssel
+By Hreflang Key,Nach Hreflang-Schlüssel
+Custom URL,Benutzerdefinierte URL
+Use Default,Standard verwenden
+Use Custom,Benutzerdefiniert verwenden
+Use Config,Konfiguration verwenden
+Checkout Pages,Checkout-Seiten
+Contact Us Page,Kontaktiere uns Seite
+Customer Account Pages,Kundenkonto-Seiten
+Product Compare Pages,Produktvergleichsseiten
+RSS Feeds,RSS-Feeds
+Search Pages,Suchseiten
+Send Product Pages,Senden von Produktseiten
+Wishlist Pages,Wunschzettel-Seiten
+--Please Select--,--Bitte auswählen--
+Global,Global
+Website,Website
+UNKNOWN CATEGORY,UNBEKANNTE KATEGORIE
+UNKNOWN PRODUCT,UNBEKANNTES PRODUKT
+UNKNOWN PAGE,UNBEKANNTE SEITE
+Edit,Bearbeiten
+Delete,Löschen
+Delete Custom Canonical URL,Benutzerdefinierte kanonische URL löschen
+Are you sure you want to delete the selected custom canonical url?,"Sind Sie sicher, dass Sie die ausgewählte benutzerdefinierte kanonische URL löschen möchten?"
+All Store Views,Alle Store-Ansichten
+Same as Source Entity,Gleich wie Quellentität
+Canonical Url,Kanonische URL
+"Link without 'http[s]://' as 'my/custom/url'
+                            will be converted to 'http[s]://(store_URL_here)/my/custom/url'.
+                            Link with 'http[s]://' will be added as it is.","Link ohne 'http[s]://' als 'my/custom/url'
+                            wird konvertiert zu 'http[s]://(store_URL_here)/my/custom/url'.
+                            Link mit 'http[s]://' wird wie er ist hinzugefügt."
+Not Selected,Nicht ausgewählt
+Choose...,Auswählen...
+Preview,Vorschau
+SEO,SEO
+SEO Base,SEO-Basis
+Hreflang URLs Settings:,Hreflang-URL-Einstellungen:
+"The <a target=""_blank"" href=""https://support.google.com/webmasters/answer/189077?hl=en"">hreflang tag</a> helps the Web crawler understand which version of the website should be shown for a certain location. The hreflang settings can be managed depending on the store view. To change the store view use the dropdown on the upper left side of the configuration page.","Das <a target=""_blank"" href=""https://support.google.com/webmasters/answer/189077?hl=en"">hreflang-Tag</a> hilft dem Webcrawler zu verstehen, welche Version der Website für einen bestimmten Standort angezeigt werden soll. Die hreflang-Einstellungen können abhängig von der Store-Ansicht verwaltet werden. Um die Store-Ansicht zu ändern, verwenden Sie das Dropdown-Menü auf der oberen linken Seite der Konfigurationsseite."
+Hreflang URLs Scope,Hreflang-URL-Bereich
+"Specify the Alternate URLs Scope. If set to <i>Website</i>, the Hreflang URLs work within one website only. If set to <i>Global</i>, the Hreflang URLs work between websites.","Geben Sie den Bereich für die alternativen URLs an. Wenn auf <i>Website</i> gesetzt, funktionieren die Hreflang-URLs nur innerhalb einer Website. Wenn auf <i>Global</i> gesetzt, funktionieren die Hreflang-URLs zwischen Websites."
+Multi-stores CMS pages relation,Beziehung zu CMS-Seiten für mehrere Stores
+"Specifies how to identify the same CMS page for different store views. Use <i>By ID</i> if you create one page for different stores, therefore, their ID will be the same. Use <i>By URL</i> Key if you created separate pages for different stores and assign them the same URL. Use <i><a target=""_blank"" href=https://support.mageworx.com/manuals/seosuite/#cms-pages>By Hreflang Key</a></i> for the pages that are linked manually.","Gibt an, wie dieselbe CMS-Seite für verschiedene Store-Ansichten identifiziert werden soll. Verwenden Sie <i>Nach ID</i>, wenn Sie eine Seite für verschiedene Stores erstellen, sodass ihre ID gleich ist. Verwenden Sie <i>Nach URL-Schlüssel</i>, wenn Sie separate Seiten für verschiedene Stores erstellt und ihnen die gleiche URL zugewiesen haben. Verwenden Sie <i><a target=""_blank"" href=https://support.mageworx.com/manuals/seosuite/#cms-pages>Nach Hreflang-Schlüssel</a></i> für die manuell verlinkten Seiten."
+Overview of Alternate Hreflang Settings,Übersicht über alternative Hreflang-Einstellungen
+"To observe the changes, click the <b>Save Config</b> button.","Um die Änderungen zu beobachten, klicken Sie auf die Schaltfläche <b>Konfiguration speichern</b>."
+Canonical URLs Settings:,Kanonische URL-Einstellungen:
+"You need to <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-urls-settings"">disable the standard Magento canonical</a> first.","Sie müssen zuerst das Standard-Magento-Kanonisch <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-urls-settings"">deaktivieren</a>."
+Add Canonical URL Meta Header,Kanonische URL-Meta-Header hinzufügen
+"The default setting to add the <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary"">canonical</a> tag.","Die Standard-Einstellung, um das <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary"">kanonische</a>-Tag hinzuzufügen."
+Disable Canonical URL for Pages with NOINDEX robots,Kanonische URL für Seiten mit NOINDEX-Robots deaktivieren
+Disables the canonical URL if the page has the NOINDEX meta robots tag. Useful as the NOINDEX pages won't be shown in the search results.,"Deaktiviert die kanonische URL, wenn die Seite das NOINDEX-Robots-Meta-Tag hat. Nützlich, da NOINDEX-Seiten nicht in den Suchergebnissen angezeigt werden."
+Canonical URL won't be added for these pages,Kanonische URL wird nicht für diese Seiten hinzugefügt
+"Hides the canonical URL on the pages added in this setting.<br/>Action names allowed: use catalog_category_view for all categories, catalog_product_view for all products.","Verbirgt die kanonische URL auf den in dieser Einstellung hinzugefügten Seiten.<br/>Aktionen erlaubt: Verwendung von catalog_category_view für alle Kategorien, catalog_product_view für alle Produkte."
+Cross Domain Canonical,Cross-Domain-Kanonisch
+Define the main storeview for the canonical URL. Useful for websites with several storeviews having the same or quite similar content. Use Custom URL to add any other website.,"Definieren Sie die Hauptstore-Ansicht für die kanonische URL. Nützlich für Websites mit mehreren Store-Ansichten, die denselben oder sehr ähnlichen Inhalt haben. Verwenden Sie die benutzerdefinierte URL, um eine andere Website hinzuzufügen."
+Cross Domain Canonical - Custom URL,Cross-Domain-Kanonisch - Benutzerdefinierte URL
+Product Canonical URL Type,Produkt-Kanonische URL-Typ
+"The options depend on the ""Use Categories Path for Product URLs"" setting.","Die Optionen hängen von der Einstellung ""Pfad verwenden für Produkt-URLs"" ab."
+Canonical Tag For Associated Product,Kanonisches Tag für zugehöriges Produkt
+The associated products of the chosen product types will have the canonical tag pointed to the parent (main) product.,Die zugehörigen Produkte der ausgewählten Produkttypen haben das kanonische Tag auf das übergeordnete (Haupt-) Produkt gerichtet.
+Trailing Slash For Home Page Canonical URL,Schrägstrich am Ende der Startseite der kanonischen URL
+The homepage can be indexed as both https://www.site.com and https://www.site.com/. The canonical can either have this trailing slash (add) or not (crop). The trailing slash can be added to the pages without suffix .html or .htm,Die Startseite kann indiziert werden als sowohl https://www.site.com als auch https://www.site.com/. Das kanonische Tag kann entweder diesen abschließenden Schrägstrich haben (hinzufügen) oder nicht (kürzen). Der abschließende Schrägstrich kann zu Seiten ohne die Endung .html oder .htm hinzugefügt werden.
+Trailing Slash For Canonical URLs,Schrägstrich für kanonische URLs
+The web pages can be indexed as both https://www.site.com/page and https://www.site.com/page/. The canonical can either have this trailing slash (add) or not (crop). The trailing slash can be added to the pages without suffix .html or .htm,Die Webseiten können indiziert werden als sowohl https://www.site.com/page als auch https://www.site.com/page/. Das kanonische Tag kann entweder diesen abschließenden Schrägstrich haben (hinzufügen) oder nicht (kürzen). Der abschließende Schrägstrich kann zu Seiten ohne die Endung .html oder .htm hinzugefügt werden.
+Use Pager For Category Canonical URL,Pager für kategoriale kanonische URL verwenden
+Add or remove the pager (?p=2 etc.) parameter from the canonical tag on the category pages.,Fügen Sie den Pager-Parameter (?p=2 usw.) vom kanonischen Tag auf den Kategorieseiten hinzu oder entfernen Sie ihn.
+Canonical Tag for Category Layered Navigation,Kanonisches Tag für kategoriale Layered Navigation
+"To see the differences among the options, <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-tag-LN"">click here</a>. To overwrite this setting for each product attribute individually, go to <i>Attributes Grid>Attribute>Storefront Properties</i> and change the 'Canonical Tag for Pages Filtered by Layered Navigation Leads to' setting.","Um die Unterschiede zwischen den Optionen zu sehen, <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#canonical-tag-LN"">klicken Sie hier</a>. Um diese Einstellung für jedes Produktattribut individuell zu überschreiben, gehen Sie zu <i>Attributegruppe>Attribut>Storefront-Eigenschaften</i> und ändern Sie die Einstellung ""Kanonisches Tag für Seiten, die nach Layered Navigation gefiltert wurden, führt zu""."
+Canonical Tag if any LN Filter Use Multiple Selection,"Kanonisches Tag, wenn irgendein LN-Filter die mehrfache Auswahl verwendet"
+"Manages the canonical for any link that has the one-time selection of the several filters options within the same filter (multi-select). This setting works with <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation extension</a>","Verwaltet das kanonische Tag für jeden Link, der die einmalige Auswahl der mehreren Filteroptionen im selben Filter (Mehrfachauswahl) hat. Diese Einstellung funktioniert mit der <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation-Erweiterung</a>"
+Meta Robots Settings:,Meta Robots-Einstellungen:
+"NOINDEX, FOLLOW Robots Meta Header<br>for Pages Without Content","NOINDEX, FOLLOW Robots-Meta-Header<br>für Seiten ohne Inhalt"
+"NOINDEX, FOLLOW Robots Meta Header<br>for Additional Pages","NOINDEX, FOLLOW Robots-Meta-Header<br>für zusätzliche Seiten"
+"NOINDEX, NOFOLLOW Robots Meta Header<br>for Additional Pages","NOINDEX, NOFOLLOW Robots-Meta-Header<br>für zusätzliche Seiten"
+Default Meta Robots For Category LN Pages,Standard-Meta Robots für kategoriale LN-Seiten
+"Count of filters for set NOINDEX, FOLLOW for LN","Anzahl der Filter für NOINDEX, FOLLOW für LN setzen"
+Robots for Attributes Combinations,Robots für Attributkombinationen
+"Set NOINDEX, FOLLOW for LN Filters with Multiple Selection","Setzen Sie NOINDEX, FOLLOW für LN-Filter mit mehrfacher Auswahl"
+"If enabled, the one-time selection of the several filters options within the same filter (multi-select) hides the URL from indexation. This setting is compatible with <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation extension</a>","Wenn aktiviert, versteckt die einmalige Auswahl der mehreren Filteroptionen im selben Filter (Mehrfachauswahl) die URL vor der Indexierung. Diese Einstellung ist kompatibel mit der <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation-Erweiterung</a>"
+"Add Link Rel=""next/prev"" on the Category Page","Fügen Sie Link Rel=""next/prev"" auf der Kategorieseite hinzu"
+"This tag points the Web crawler, where exactly the first and the last category pages are, and what page is a next or a previous one.","Dieses Tag zeigt dem Webcrawler genau, wo sich die ersten und letzten Kategorieseiten befinden und welche Seite die nächste oder die vorherige ist."
+SEO Base: Canonical Functionality / Hreflangs / Meta Robots,SEO-Basis: Kanonische Funktionalität / Hreflangs / Meta Robots
+Name,Name
+Add New Custom Canonical URL,Neue benutzerdefinierte kanonische URL hinzufügen
+Select...,Auswählen...
+Source Store View,Quell-Store-Ansicht
+Target Store View,Ziel-Store-Ansicht
+Are you sure you want to delete selected items?,"Sind Sie sicher, dass Sie ausgewählte Elemente löschen möchten?"
+Source Entity Type,Quell-Entitätstyp
+Source Entity Id,Quell-Entitäts-ID
+Target Entity Type,Ziel-Entitätstyp
+Target Entity Id,Ziel-Entitäts-ID
+Cross Domain Store,Cross-Domain-Store
+Cross Domain URL,Cross-Domain-URL

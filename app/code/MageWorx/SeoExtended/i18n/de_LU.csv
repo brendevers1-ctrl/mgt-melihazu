@@ -1,0 +1,90 @@
+Continue Edit,Weiter bearbeiten
+SEO Category Filter Info,SEO Kategorie-Filter Info
+Attribute,Attribut
+Store View,Shop-Ansicht
+Save SEO Category Filter,SEO Kategorie-Filter speichern
+Unknown,Unbekannt
+All Values,Alle Werte
+Attribute Value,Attributwert
+Category Name,Kategoriename
+" - is already used for ""All Values""","- wird bereits für ""Alle Werte"" verwendet"
+Store View Name,Shop-Ansicht Name
+Meta Title,Meta-Titel
+Meta Description,Meta-Beschreibung
+Meta Keywords,Meta-Keywords
+SEO Name,SEO-Name
+Description,Beschreibung
+Dynamic variables and randomizer are available.,Dynamische Variablen und Zufallsauswähler sind verfügbar.
+See the description on the SEO XTemplates Category Filter Edit Page,Siehe die Beschreibung auf der SEO XTemplates Kategorie-Filter Bearbeiten Seite
+Marketing,Marketing
+MageWorx SEO Templates,MageWorx SEO-Vorlagen
+Category Filter Templates,Kategorie-Filter-Vorlagen
+"This setting enables the Category Filter functionality. To add, edit or delete the category filters, click %link.","Diese Einstellung aktiviert die Kategorie-Filter-Funktionalität. Klicken Sie auf den %link, um Kategorie-Filter hinzuzufügen, zu bearbeiten oder zu löschen."
+Category Filter,Kategorie-Filter
+Create Category Filter,Kategorie-Filter erstellen
+The Category Filter has been deleted.,Der Kategorie-Filter wurde gelöscht.
+Category Filter not found.,Kategorie-Filter nicht gefunden.
+Edit Category Filter,Kategorie-Filter bearbeiten
+SEO Category Filters,SEO Kategorie-Filter
+SEO Extended,SEO Erweitert
+Extended,Erweitert
+Category Filters,Kategorie-Filter
+Please correct the data sent.,Bitte korrigieren Sie die gesendeten Daten.
+Something went wrong while saving the page.,Beim Speichern der Seite ist ein Fehler aufgetreten.
+The Category Filter has been saved.,Der Kategorie-Filter wurde gespeichert.
+The Category Filters has been saved.,Die Kategorie-Filter wurden gespeichert.
+Something went wrong while saving the category filter.,Beim Speichern des Kategorie-Filters ist ein Fehler aufgetreten.
+Could not save the category filter: %1,Der Kategorie-Filter konnte nicht gespeichert werden: %1
+Requested category filter entity doesn't exist,Die angeforderte Kategorie-Filter-Entität existiert nicht
+Unable to remove category filter entity %1,Die Kategorie-Filter-Entität %1 konnte nicht entfernt werden
+Page,Seite
+All,Alle
+At the Beginning,Am Anfang
+At the End,Am Ende
+No,Nein
+Use by Attribute Position,Verwenden nach Attributposition
+Do not use,Nicht verwenden
+"Are you sure you want to delete the SEO Category Filter for ""%1"" and Category ""%2"" ?","Sind Sie sicher, dass Sie den SEO Kategorie-Filter für ""%1"" und Kategorie ""%2"" löschen möchten?"
+Edit,Bearbeiten
+Delete,Löschen
+Delete Category Filter,Kategorie-Filter löschen
+SEO,SEO
+Meta Information Express Settings:,Express-Metainformationseinstellungen:
+"The express default settings for <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary_1""> meta robots</a>. For the fine-tuning, use the <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#variables-and-randomizers""> dynamic variables</a> in the category filters. For the mass action generation of the meta information, use the <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#extension-configuration"">SEO Templates</a>.","Die Standardexpress-Einstellungen für <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary_1"">Meta Robots</a>. Verwenden Sie zur Feinabstimmung die <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#variables-and-randomizers"">dynamischen Variablen</a> in den Kategorie-Filtern. Für die massenhafte Generierung der Metainformationen verwenden Sie die <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#extension-configuration"">SEO-Vorlagen</a>."
+Add Pager Number to Meta Title,Pager-Nummer zum Meta-Titel hinzufügen
+"Manages the position of the page number for the Meta Title like ""Apparel <b>| Page 3</b>"" or ""<b>Page 3 |</b> Apparel"". Use <i>No</i> to hide the page number.","Verwaltet die Position der Seitennummer für den Meta-Titel wie ""Kleidung <b>| Seite 3</b>"" oder ""<b>Seite 3 |</b> Kleidung"". Verwenden Sie <i>Nein</i>, um die Seitennummer auszublenden."
+Add Pager Number to Meta Description,Pager-Nummer zur Meta-Beschreibung hinzufügen
+"Manages the position of the page number for the Meta Description like ""Apparel <b>| Page 3</b>"" or  ""<b>Page 3 |</b> Apparel"". Use <i>No</i> to hide the page number.","Verwaltet die Position der Seitennummer für die Meta-Beschreibung wie ""Kleidung <b>| Seite 3</b>"" oder ""<b>Seite 3 |</b> Kleidung"". Verwenden Sie <i>Nein</i>, um die Seitennummer auszublenden."
+Add Pager Number to Meta Keywords,Pager-Nummer zu Meta-Keywords hinzufügen
+"E.g. ""Apparel, clother<b>, Page 2</b>""","Zum Beispiel ""Kleidung, Kleider<b>, Seite 2</b>"""
+Remove Default Title Prefix/Suffix,Standard-Titelpräfix/-suffix entfernen
+Change to <i>Yes</i> to show the Pages block where you can specify the list of the pages where the default Magento 2 suffix/prefix should be omitted.,"Ändern Sie zu <i>Ja</i>, um den Seitenblock anzuzeigen, in dem Sie die Liste der Seiten angeben können, auf denen das Standard-Magento-2-Suffix/Präfix weggelassen werden soll."
+Pages,Seiten
+"Action names allowed: use catalog_category_view for all categories, catalog_product_view for all products.","Erlaubte Aktionen: Verwenden Sie ""catalog_category_view"" für alle Kategorien, ""catalog_product_view"" für alle Produkte."
+Enable Extended Meta Title On Category LN Pages,Erweiterten Meta-Titel auf Kategorie-LN-Seiten aktivieren
+"If set to <i>Yes</i>, the selected attributes (filters) will be dynamically added to the meta title of the category pages. Meta title may include a variety of different product attributes such as price, color, brand etc. Example: Phones <b>| Price:$300.00 and above; Color:Silver</b>","Wenn auf <i>Ja</i> gesetzt, werden die ausgewählten Attribute (Filter) dynamisch zum Meta-Titel der Kategorieseiten hinzugefügt. Der Meta-Titel kann verschiedene Produktattribute wie Preis, Farbe, Marke usw. enthalten. Beispiel: Handys <b>| Preis: $300,00 und höher; Farbe: Silber</b>"
+Enable Extended Meta Description On Category Layered Navigation Pages,Erweiterte Meta-Beschreibung auf Kategorie-LN-Seiten aktivieren
+E.g. 'Phones | <b>Price:$300.00 and above; Color:Silver</b>'</i>,"Zum Beispiel 'Handys | <b>Preis: $300,00 und höher; Farbe: Silber</b>'"
+Enable Extended Meta Keywords On Category Layered Navigation Pages,Erweiterte Meta-Keywords auf Kategorie-LN-Seiten aktivieren
+Page Number Format For Landing Pages,Seitennummerformat für Landing Pages
+Add Pager Number to Landing Page Meta Title,Pager-Nummer zum Meta-Titel der Landing Page hinzufügen
+E.g. 'Apparel <b>| Page 3</b>',Zum Beispiel 'Kleidung <b>| Seite 3</b>'
+Add Pager Number to Landing Page Meta Description,Pager-Nummer zur Meta-Beschreibung der Landing Page hinzufügen
+E.g. 'Description of apparel<b> | Page 2</b>',Zum Beispiel 'Beschreibung der Kleidung<b> | Seite 2</b>'
+Add Pager Number to Landing Page Meta Keywords,Pager-Nummer zu Meta-Keywords der Landing Page hinzufügen
+Enable Extended Meta Title On Landing Pages Layered Navigation Pages,Erweiterten Meta-Titel auf Landing Pages Layered Navigation Seiten aktivieren
+"E.g. 'Phones | <b>Price:$300.00 and above, Color:Silver</b>'</i>","Zum Beispiel 'Handys | <b>Preis: $300,00 und höher, Farbe: Silber</b>'"
+Enable Extended Meta Description On Landing Pages Layered Navigation Pages,Erweiterte Meta-Beschreibung auf Landing Pages Layered Navigation Seiten aktivieren
+Enable Extended Meta Keywords On Landing Pages Layered Navigation Pages,Erweiterte Meta-Keywords auf Landing Pages Layered Navigation Seiten aktivieren
+Category Filters:,Kategorie-Filter:
+"This feature provides the possibility to populate the particular SEO information for the specific filter+category combination. For the mass generation of such information on several (or all) categories, use the <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#category-filter-templates"">SEO Category Filter Templates</a>.","Diese Funktion ermöglicht die Zuordnung bestimmter SEO-Informationen für eine bestimmte Filter-Kategorie-Kombination. Verwenden Sie für die massenhafte Generierung solcher Informationen für mehrere (oder alle) Kategorien die <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#category-filter-templates"">SEO Kategorie-Filter-Vorlagen</a>."
+Enable Category Filter Functionality ▾,Kategorie-Filter-Funktionalität aktivieren ▾
+&nbsp;&nbsp;&nbsp;&nbsp;SEO Filters for Multiple Filter Selection,&nbsp;&nbsp;&nbsp;&nbsp;SEO-Filter für Mehrfachfilterauswahl
+"Handles the situation when several category filters are applied by the customer at the same time. Set Do Not Use to hide the SEO information in this case. Select Use By Attribute Position to show the SEO information for the filter with the highest <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/seosuite/image181.png"">attribute position</a>","Verarbeitet die Situation, wenn vom Kunden mehrere Kategorie-Filter gleichzeitig angewendet werden. Wählen Sie ""Nicht verwenden"", um die SEO-Informationen in diesem Fall auszublenden. Wählen Sie ""Verwenden nach Attributposition"", um die SEO-Informationen für den Filter mit der höchsten <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/seosuite/image181.png"">Attributposition</a> anzuzeigen."
+Add New SEO for Category Filter,Neues SEO für Kategorie-Filter hinzufügen
+Delete items,Elemente löschen
+Are you sure you want to delete selected items?,"Sind Sie sicher, dass Sie die ausgewählten Elemente löschen möchten?"
+ID,ID
+Attribute Name,Attributname
+Attribute Value Label,Attributwert-Bezeichnung
+Category ID (Name),Kategorie ID (Name)

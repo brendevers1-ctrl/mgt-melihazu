@@ -1,0 +1,15 @@
+Validate,Validate
+"Curl Error: %1","Curl Error: %1"
+"Unable to locate corresponding class for the %1 OpenAI model.","Unable to locate corresponding class for the %1 OpenAI model."
+"Max Tokens value must be greater then 1, %1 provided.","Max Tokens value must be greater then 1, %1 provided."
+"Callback is not implemented","Callback is not implemented"
+"Error processing item: %1","Error processing item: %1"
+"Error creating preprocessor of type %2 for item %3. Error message: %1","Error creating preprocessor of type %2 for item %3. Error message: %1"
+"The queue item with the ""%1"" ID doesn't exist.","The queue item with the ""%1"" ID doesn't exist."
+"Empty queue request data table name","Empty queue request data table name"
+"AI Integration Settings","AI Integration Settings"
+Settings,Settings
+"OpenAI API KEY","OpenAI API KEY"
+"Please specify your OpenAI API key. You can get your API key in your account at
+<a href=""https://platform.openai.com/account/api-keys"" target=""_blank"">OpenAI portal</a>. This key is required to authorize API requests from your Magento store to OpenAI's services.","Please specify your OpenAI API key. You can get your API key in your account at
+<a href=""https://platform.openai.com/account/api-keys"" target=""_blank"">OpenAI portal</a>. This key is required to authorize API requests from your Magento store to OpenAI's services."

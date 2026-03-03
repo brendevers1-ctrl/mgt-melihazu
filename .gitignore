@@ -4,6 +4,7 @@
 /pub/static/
 /pub/media/catalog/product/cache/
 /pub/media/tmp/
+/pub/media/
 /pub/media/customer/
 /app/etc/env.php
 /app/etc/config.php

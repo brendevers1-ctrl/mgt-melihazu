@@ -330,9 +330,9 @@ switch ($type = $block->getType()) {
                 </div>
             </div>
             <script type="text/javascript" xml="space">
-                require(['jquery', 'shopkartliteowlcarousel'], function () {
+                require(['jquery', 'shopkartliteowlcarousel'], function ($) {
                     jQuery(document).ready(function () {
-                        jQuery(".product-widget-slider").owlCarousel({
+                        $(".product-widget-slider").owlCarousel({
                             items: 4,
                             itemsDesktop: [1199, 4],
                             itemsDesktopSmall: [991, 3],
@@ -344,9 +344,9 @@ switch ($type = $block->getType()) {
                             navigation: true,
                         });
                     });
-                    jQuery(window).load(function () {
-                        jQuery('.product-widget-slider .product-slider').show();
-                    });
+                    setTimeout(function () {
+                        $('.product-widget-slider .product-slider').show();
+                    },1000);
                 });
             </script>
         <?php endif; ?>

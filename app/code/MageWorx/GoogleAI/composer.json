@@ -1,0 +1,25 @@
+{
+    "name": "mageworx/module-google-ai",
+    "description": "Google AI integration module for Magento 2",
+    "require": {
+        "magento/framework": ">=102 <104",
+        "mageworx/module-open-ai": ">=1.2.4",
+        "ext-json": "*",
+        "ext-intl": "*",
+        "ext-curl": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.2",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageWorx\\GoogleAI\\": ""
+        }
+    }
+}

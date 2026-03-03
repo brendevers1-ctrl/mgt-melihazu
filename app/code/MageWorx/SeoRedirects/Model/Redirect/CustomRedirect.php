@@ -1,0 +1,348 @@
+<?php
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+
+namespace MageWorx\SeoRedirects\Model\Redirect;
+
+use Magento\Framework\Exception\LocalizedException;
+use Magento\Framework\Filter\FilterManager;
+use Magento\Framework\Model\Context;
+use Magento\Framework\Registry;
+use Magento\Framework\Model\ResourceModel\AbstractResource;
+use Magento\Framework\Data\Collection\AbstractDb;
+use Magento\Store\Model\StoreManagerInterface;
+use MageWorx\SeoRedirects\Helper\CustomRedirect\Data as HelperData;
+use MageWorx\SeoRedirects\Api\Data\CustomRedirectInterface;
+
+class CustomRedirect extends \MageWorx\SeoRedirects\Model\Redirect implements CustomRedirectInterface
+{
+    /**
+     * Cache tag
+     *
+     * @var string
+     */
+    const CACHE_TAG = 'mageworx_seoredirects_customredirect';
+
+    /**
+     * cache tag
+     *
+     * @var string
+     */
+    protected $cacheTag = 'mageworx_seoredirects_customredirect';
+
+    /**
+     * Prefix of model events names
+     *
+     * @var string
+     */
+    protected $_eventPrefix = 'mageworx_seoredirects_customredirect';
+
+    /**
+     * filter model
+     *
+     * @var \Magento\Framework\Filter\FilterManager
+     */
+    protected $filter;
+
+    /**
+     * @var StoreManagerInterface
+     */
+    protected $storeManager;
+
+    /**
+     * @var HelperData
+     */
+    protected $helperData;
+
+    /**
+     * CustomRedirect constructor.
+     *
+     * @param FilterManager $filter
+     * @param Context $context
+     * @param Registry $registry
+     * @param StoreManagerInterface $storeManager
+     * @param HelperData $helperData
+     * @param AbstractResource|null $resource
+     * @param AbstractDb|null $resourceCollection
+     * @param array $data
+     */
+    public function __construct(
+        FilterManager $filter,
+        Context $context,
+        Registry $registry,
+        StoreManagerInterface $storeManager,
+        HelperData $helperData,
+        AbstractResource $resource = null,
+        AbstractDb $resourceCollection = null,
+        array $data = []
+    ) {
+        $this->filter       = $filter;
+        $this->helperData   = $helperData;
+        $this->storeManager = $storeManager;
+        parent::__construct($context, $registry, $resource, $resourceCollection, $data);
+    }
+
+    /**
+     * Initialize resource model
+     *
+     * @return void
+     */
+    protected function _construct(): void
+    {
+        $this->_init('MageWorx\SeoRedirects\Model\ResourceModel\Redirect\CustomRedirect');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getIdentities(): array
+    {
+        return [self::CACHE_TAG . '_' . $this->getId()];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getId(): ?int
+    {
+        return $this->getData(CustomRedirectInterface::REDIRECT_ID)
+            ? (int)$this->getData(CustomRedirectInterface::REDIRECT_ID)
+            : null;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getRedirectCode(): string
+    {
+        return (string)$this->getData(CustomRedirectInterface::REDIRECT_CODE);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getRequestEntityType(): int
+    {
+        return (int)$this->getData(CustomRedirectInterface::REQUEST_ENTITY_TYPE);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getTargetEntityType(): int
+    {
+        return (int)$this->getData(CustomRedirectInterface::TARGET_ENTITY_TYPE);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getRequestEntityIdentifier(): string
+    {
+        $requestEntityIdentifier = $this->getData(CustomRedirectInterface::REQUEST_ENTITY_IDENTIFIER);
+        if (empty($requestEntityIdentifier)) {
+            throw new LocalizedException(__('Request Entity Identifier should not be empty'));
+        }
+
+        return (string)$requestEntityIdentifier;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getTargetEntityIdentifier(): string
+    {
+        $targetEntityIdentifier = $this->getData(CustomRedirectInterface::TARGET_ENTITY_IDENTIFIER);
+        if (empty($targetEntityIdentifier)) {
+            throw new LocalizedException(__('Target Entity Identifier should not be empty'));
+        }
+
+        return (string)$targetEntityIdentifier;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getStoreId(): int
+    {
+        return (int)$this->getData(CustomRedirectInterface::STORE_ID);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getDateCreated(): string
+    {
+        return (string)$this->getData(CustomRedirectInterface::DATE_CREATED);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getDateModified(): string
+    {
+        return (string)$this->getData(CustomRedirectInterface::DATE_MODIFIED);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getIsAutogenerated(): bool
+    {
+        return (bool)$this->getData(CustomRedirectInterface::IS_AUTOGENERATED);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getIsImported(): bool
+    {
+        return (bool)$this->getData(CustomRedirectInterface::IS_IMPORTED);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getStatus(): int
+    {
+        return (int)$this->getData(CustomRedirectInterface::STATUS);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getStartAt(): ?string
+    {
+        return (int)$this->getData(CustomRedirectInterface::START_AT);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getFinishAt(): ?string
+    {
+        return (int)$this->getData(CustomRedirectInterface::FINISH_AT);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setId($id): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::REDIRECT_ID, $id);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setRedirectCode(int $code): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::REDIRECT_CODE, $code);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setRequestEntityType(int $type): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::REQUEST_ENTITY_TYPE, $type);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setTargetEntityType(int $type): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::TARGET_ENTITY_TYPE, $type);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setRequestEntityIdentifier(string $identifier): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::REQUEST_ENTITY_IDENTIFIER, $identifier);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setTargetEntityIdentifier(string $identifier): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::TARGET_ENTITY_IDENTIFIER, $identifier);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setStoreId(int $storeId): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::STORE_ID, $storeId);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setDateCreated(string $date): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::DATE_CREATED, $date);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setDateModified(string $date): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::DATE_MODIFIED, $date);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setIsAutogenerated(bool $isAutogenerated): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::IS_AUTOGENERATED, $isAutogenerated);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setIsImported(bool $isImported): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::IS_IMPORTED, $isImported);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setStatus(int $statusCode): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::STATUS, $statusCode);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setStartAt(?string $time): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::START_AT, $time);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFinishAt(?string $time): CustomRedirectInterface
+    {
+        return $this->setData(CustomRedirectInterface::FINISH_AT, $time);
+    }
+
+    /**
+     * @return array
+     */
+    public function getDefaultValues(): array
+    {
+        return ['status' => static::STATUS_ENABLED];
+    }
+}

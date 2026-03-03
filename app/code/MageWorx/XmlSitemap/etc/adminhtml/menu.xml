@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageWorx_XmlSitemap::sitemap"
+             title="Sitemap by MageWorx"
+             module="MageWorx_XmlSitemap" sortOrder="65"
+             parent="Magento_Backend::marketing_seo"
+             action="mageworx_xmlsitemap/sitemap/index/"
+             resource="MageWorx_XmlSitemap::sitemap"
+        />
+        <remove id="Magento_Sitemap::catalog_sitemap" />
+    </menu>
+</config>

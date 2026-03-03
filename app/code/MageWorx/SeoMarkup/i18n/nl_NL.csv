@@ -1,0 +1,237 @@
+brand snippet,merk snippet
+Enable to match the Brand Attribute code from Magento to %schema %link.,Inschakelen om de Merk Attribuutcode van Magento te koppelen aan %schema %link.
+category snippet,categorie snippet
+Enable to match the product category to %schema %link.,Inschakelen om de productcategorie te koppelen aan %schema %link.
+color snippet,kleur snippet
+Enable to match the Color Attribute code from Magento to %schema %link.,Inschakelen om de Kleur Attribuutcode van Magento te koppelen aan %schema %link.
+priority of the categories,prioriteit van de categorieën
+Map any existing product attribute to the Schema.org %link.,Koppel elk bestaand productattribuut aan het Schema.org %link.
+"Assign the current product attribute options to the Schema.org condition options such as %new, %used, %refurbished or %damaged.","Wijs de huidige attribuutopties van het product toe aan de Schema.org conditie-opties zoals %nieuw, %gebruikt, %gereviseerd of %beschadigd."
+Example,Voorbeeld
+"A comma-delimited list of %schema_link property name and attribute codes.%br%htmlNote%br mpn,mpn_code %br For JSON-LD will be converted to: %br { ... ""mpn"":""12343"" ... } %br","Een door komma's gescheiden lijst van %schema_link eigenschapsnaam en attribuutcodes.%br%htmlNote%br mpn,mpn_code %br Voor JSON-LD wordt dit omgezet naar: %br { ... ""mpn"":""12343"" ... } %br"
+store snippet,winkel snippet
+Populate the description property for the %schema %link.,Vul de eigenschap 'omschrijving' in voor %schema %link.
+description snippet,omschrijving snippet
+Select the Description Attribute Code from Magento match it to %schema %link,Selecteer de Omschrijving Attribuutcode van Magento en koppel deze aan %schema %link
+Free shipping markup,Gratis verzending markup
+This setting allows you to enable the %link for the products.,Deze instelling stelt je in staat om %link in te schakelen voor de producten.
+manufacurer snippet,fabrikant snippet
+Enable to match the Manufacturer code from Magento to %schema %link.,Inschakelen om de Fabrikantcode van Magento te koppelen aan %schema %link.
+Note,Opmerking
+rich snippets,rijkdom snippets
+Adds %link to your existing website HTML. %br%htmlNote adding snippets to your site in the search results may take some time as the search bots do not include this information immediately.,Voegt %link toe aan je bestaande website-HTML. %br%htmlNote het toevoegen van snippets aan je site in de zoekresultaten kan enige tijd in beslag nemen omdat zoekrobots deze informatie niet direct opnemen.
+Merchant Return Policy markup,Markup voor retoursbeleid van handelaar
+model snippet,model snippet
+Enable to match the Model Attribute code from Magento to %schema %link.,Inschakelen om de Model Attribuutcode van Magento te koppelen aan %schema %link.
+special page,speciale pagina
+Adds the snippets that will be shown on the search engine results page. The store owner can preview the snippet data on the %link.,Voegt de snippets toe die worden getoond op de zoekresultatenpagina van zoekmachines. De winkelier kan de snippetgegevens bekijken op de %link.
+"By default and without any configurations, the product entity will include the following attributes: product name, preview image, rating, price, availability and website language.","Standaard en zonder enige configuratie bevat de productentiteit de volgende attributen: productnaam, voorbeeldafbeelding, beoordeling, prijs, beschikbaarheid en website taal."
+Type (by %schema),Type (volgens %schema)
+type,type
+Select your business %link,Selecteer je bedrijf %link
+Shipping Details markup,Markup voor verzendgegevens
+SKU snippet,SKU snippet
+Enable to match the SKU Attribute code from Magento to %schema %link.,Inschakelen om de SKU Attribuutcode van Magento te koppelen aan %schema %link.
+weight snippet,gewicht snippet
+Enable to match the product weight to %schema %link.,Inschakelen om het productgewicht te koppelen aan %schema %link.
+Home,Home
+Go to Home Page,Ga naar de Startpagina
+-- Please Select --,-- Selecteer alstublieft --
+Monday,Maandag
+Tuesday,Dinsdag
+Wednesday,Woensdag
+Thursday,Donderdag
+Friday,Vrijdag
+Saturday,Zaterdag
+Sunday,Zondag
+--Please Select--,--Selecteer alstublieft--
+Page Title (%1),Paginatitel (%1)
+Content Heading (%1),Inhoudskop (%1)
+Meta Title (%1),Meta Titel (%1)
+Meta Keywords (%1),Meta Trefwoorden (%1)
+Meta Description (%1),Meta Omschrijving (%1)
+All Pages,Alle Pagina's
+Home Page,Startpagina
+lb,lb
+kg,kg
+SEO,SEO
+SEO Markup,SEO Markup
+Product,Product
+These settings are for the snippet configuration on the products pages.,Deze instellingen zijn voor de snippetconfiguratie op de productpagina's.
+Enable In Rich Snippets,Inschakelen in Rijke Snippets
+Show Product microdata for products without offers and rating,Toon Product microdata voor producten zonder aanbiedingen en beoordelingen
+Enable for Google Assistant,Inschakelen voor Google Assistant
+CSS Selectors,CSS-selectoren
+You can specify a few values separated by commas.,"Je kunt enkele waarden opgeven, gescheiden door komma's."
+Best Rating,Beste Beoordeling
+Add Review Markup,Voeg Beoordelingsmarkup toe
+Disable Default Review Markup,Schakel Standaard Beoordelingsmarkup uit
+Disabled review markup added by theme.,Uitgeschakelde beoordelingsmarkup toegevoegd door thema.
+Use Multiple Offer for Configurable Product,Gebruik Meerdere Aanbiedingen voor Configurabel Product
+"Add several offers, one for each child product","Voeg meerdere aanbiedingen toe, één voor elk kindproduct"
+Description Attribute Code,Attribuutcode voor Omschrijving
+Crop HTML tags from Description,Knip HTML-tags van Omschrijving af
+Add SKU,Voeg SKU toe
+SKU Attribute Code,SKU Attribuutcode
+Select the SKU Attribute Code from Magento.,Selecteer de SKU Attribuutcode van Magento.
+Add Category,Voeg Categorie toe
+Use Deepest Category,Gebruik Diepste Categorie
+Handles the situation if some product is assigned to different categories.,Handelt de situatie af als een product aan verschillende categorieën is toegewezen.
+Add Color,Voeg Kleur toe
+Color Attribute Code,Kleur Attribuutcode
+Select the Color Attribute Code from Magento.,Selecteer de Kleur Attribuutcode van Magento.
+Add Manufacturer,Voeg Fabrikant toe
+Manufacturer Attribute Code,Fabrikant Attribuutcode
+Select the Manufacturer Attribute Code from Magento.,Selecteer de Fabrikant Attribuutcode van Magento.
+Add Brand,Voeg Merk toe
+Brand Attribute Code,Merk Attribuutcode
+Select the Brand Attribute Code from Magento.,Selecteer de Merk Attribuutcode van Magento.
+Add Model,Voeg Model toe
+Model Attribute Code,Model Attribuutcode
+Select the Model Attribute Code from Magento.,Selecteer de Model Attribuutcode van Magento.
+Add Gtin,Voeg Gtin toe
+"The GTIN is a globally unique 14-digit number used to identify trade items, products, or services. Please use digits only when you add the GTIN for your products otherwise it will not be shown in the microdata.","De GTIN is een wereldwijd uniek 14-cijferig nummer dat wordt gebruikt om handelsartikelen, producten of diensten te identificeren. Gebruik alleen cijfers bij het toevoegen van de GTIN voor je producten, anders wordt deze niet weergegeven in de microdata."
+Gtin Attribute Code,Gtin Attribuutcode
+Select the GTIN Attribute Code from Magento.,Selecteer de GTIN Attribuutcode van Magento.
+Add Weight,Voeg Gewicht toe
+Use Special Price functionality for Price Valid Until,Gebruik Functionaliteit voor Speciale Prijs voor Prijs Geldig Tot
+Price Valid Until Default Value,Standaardwaarde Prijs Geldig Tot
+Product ID Attribute Code,Product ID Attribuutcode
+"This value will be used as productID in the Rich Snippets and as retailer_item_id in the Open Graph tags.<br/>
+                                Recommended attributes are: sku, gtin, isbn, etc.","Deze waarde wordt gebruikt als productID in de Rijke Snippets en als retailer_item_id in de Open Graph-tags.<br/>
+                                Aanbevolen attributen zijn: sku, gtin, isbn, etc."
+Add Condition,Voeg Staat toe
+Condition Attribute Code,Staat Attribuutcode
+Condition Value For New,Waarde Voor Nieuw
+Condition Value For Used,Waarde Voor Gebruikt
+Condition Value For Damaged,Waarde Voor Beschadigd
+Condition Value For Refurbished,Waarde Voor Gereviseerd
+Default Option For Condition,Standaard Optie Voor Staat
+Specify the default condition option for the product if it doesn't have the condition attribute assigned.,Specificeer de standaard staatsoptie voor het product als het geen staatattribuut heeft toegewezen.
+Add Custom Properties,Voeg Aangepaste Eigenschappen toe
+Custom Properties,Aangepaste Eigenschappen
+Shipping Details,Verzendgegevens
+Enable Shipping Details,Verzendgegevens Inschakelen
+Enable Free Shipping,Gratis Verzending Inschakelen
+Free Shipping Attribute,Gratis Verzendattribuut
+"This setting allows you to select the free shipping attribute, which will be used to determine the products with the free shipping option. <br/><b>Note:</b> only attributes of ""Yes/No"" type are shown here.","Deze instelling stelt je in staat om het gratis verzendattribuut te selecteren, dat zal worden gebruikt om de producten met de gratis verzendoptie te bepalen. <br/><b>Opmerking:</b> alleen attributen van het type ""Ja/Nee"" worden hier weergegeven."
+Shipping Cost,Verzendkosten
+Max Shipping Cost,Maximale Verzendkosten
+Shipping Country,Verzendland
+This field is <b>required</b>.,Dit veld is <b>vereist</b>.
+Min Days for Handling Time,Minimale Dagen voor Verwerkingstijd
+Max Days for Handling Time,Maximale Dagen voor Verwerkingstijd
+Min Days for Transit Time,Minimale Dagen voor Transittijd
+Max Days for Transit Time,Maximale Dagen voor Transittijd
+Business Days,Werkdagen
+Cutoff Time,Uitsnijtijd
+<b>Example:</b> 13:30:00,<b>Voorbeeld:</b> 13:30:00
+Merchant Return Policy,Teruggavebeleid van Handelaar
+Enable Merchant Return Policy,Retourneer Teruggavebeleid Inschakelen
+Merchant Return Policy Attribute,Attribuut Teruggavebeleid van Handelaar
+"This setting allows you to select the merchant return policy attribute, which will be used to determine the products with the merchant return policy option. <br/><b>Note:</b> only attributes of ""Yes/No"" type are shown here.","Deze instelling stelt je in staat om het attribuut teruggavebeleid van de handelaar te selecteren, dat zal worden gebruikt om de producten met de optie teruggavebeleid van de handelaar te bepalen. <br/><b>Opmerking:</b> alleen attributen van het type ""Ja/Nee"" worden hier weergegeven."
+Applicable Country,Toepasselijk Land
+Return Policy Category,Terugkeercategorie
+Merchant Return Days,Dagen voor Terugkeer door Handelaar
+Return Method,Terugkeermethode
+Return Fees,Terugkeerkosten
+Shipping Fees Amount,Verzendkosten Bedrag
+Category (Product List),Categorie (Productenlijst)
+These settings are for the snippet configuration on the category pages.,Deze instellingen zijn voor de snippetconfiguratie op de categoriepagina's.
+"Adds the snippets that will be shown on the search engine results page. The store owner can preview the snippet data on the <a target=""_blank"" href=""https://search.google.com/structured-data/testing-tool"">special page</a>.","Voegt de snippets toe die worden getoond op de zoekresultatenpagina van zoekmachines. De winkelier kan de snippetgegevens bekijken op de <a target=""_blank"" href=""https://search.google.com/structured-data/testing-tool"">speciale pagina</a>."
+Show Product Offers,Toon Productaanbiedingen
+"Informs search engines about the special <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image08.png"">product offers</a>","Informeer zoekmachines over de speciale <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image08.png"">productaanbiedingen</a>"
+"Adds the beta support for the recently added <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/speakable"">speakable markup</a>.","Voegt de bèta-ondersteuning toe voor de recent toegevoegde <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/speakable"">speakable markup</a>."
+Add any CSS Selectors that the store owner wishes to be spoken aloud by Google Assistant/Google Home. You can specify a few values separated by commas.,"Voeg eventuele CSS-selectoren toe die de winkelier hardop uitgesproken wil hebben door Google Assistant/Google Home. Je kunt enkele waarden opgeven, gescheiden door komma's."
+Disable for NOINDEX Robots,Uitschakelen voor NOINDEX Robots
+"If set to Yes, hides the snippets on the categories that are not indexed.","Als ingesteld op Ja, verbergt het de snippets op de categorieën die niet geïndexeerd zijn."
+Landing Page,Landingpagina
+Enable In Open Graph,Inschakelen in Open Graph
+"Adding <a target=""_blank"" href=""http://ogp.me/"">these tags</a> helps the Facebook Crawler pick up the correct title, description and the suitable preview image for the shared page.","Het toevoegen van <a target=""_blank"" href=""http://ogp.me/"">deze tags</a> helpt de Facebook Crawler om de juiste titel, omschrijving en geschikte voorbeeldafbeelding voor de gedeelde pagina te selecteren."
+Page,Pagina
+These settings are for the snippet configuration on the CMS pages.,Deze instellingen zijn voor de snippetconfiguratie op de CMS-pagina's.
+Website,Website
+Enable In Rich Snippets ▾,Inschakelen in Rijke Snippets ▾
+Enable Search Box,Inschakelen Zoekvak
+Website Logo,Website Logo
+"Upload your website logo for the correct sharing on Facebook and using in OpenGraph markup. Allowed file types: PNG, GIF, JPG, JPEG","Upload je website logo voor de juiste deling op Facebook en gebruik in OpenGraph markup. Toegestane bestandstypes: PNG, GIF, JPG, JPEG"
+Facebook App Id,Facebook App Id
+"Can be taken from the <a target=""_blank"" href=""https://developers.facebook.com/apps/"">facebook for developers</a> website.","Kan worden verkregen van de <a target=""_blank"" href=""https://developers.facebook.com/apps/"">facebook for developers</a> website."
+Website Name,Website Naam
+Website About,Website Over
+Seller,Verkoper
+These settings are for the snippet configuration of the entire store (your organization).,Deze instellingen zijn voor de snippetconfiguratie van de hele winkel (je organisatie).
+"Snippet will be added to the home page only. The store owner can preview the snippet data on the <a target=""_blank"" href=""https://search.google.com/structured-data/testing-tool"">special page</a>.","Snippet wordt alleen toegevoegd aan de startpagina. De winkelier kan de snippetgegevens bekijken op de <a target=""_blank"" href=""https://search.google.com/structured-data/testing-tool"">speciale pagina</a>."
+Show Seller Markup on,Toon Verkoper Markup op
+Name,Naam
+Image,Afbeelding
+"If the seller rich snippet is enabled, this field is <b>required</b>.<br/>Allowed file types: PNG, GIF, JPG, JPEG.","Als de verkopersnippet is ingeschakeld, is dit veld <b>vereist</b>.<br/>Toegestane bestandstypes: PNG, GIF, JPG, JPEG."
+Description,Omschrijving
+Opening Hours,Openingstijden
+"The list of opening hours <br /><b>Example:</b><br />Mo-Fr 10:00-19:00<br />Sa,Su 10:00-22:00","De lijst met openingstijden <br /><b>Voorbeeld:</b><br />Ma-Vr 10:00-19:00<br />Za, Zo 10:00-22:00"
+Social Links,Sociale Links
+The list of social media links <br /><b>Example:</b><br />https://twitter.com/mageworxteam<br />https://www.facebook.com/mageworx,De lijst met links naar sociale media <br /><b>Voorbeeld:</b><br />https://twitter.com/mageworxteam<br />https://www.facebook.com/mageworx
+Phone,Telefoon
+This field is <b>recommended</b>.,Dit veld is <b>aanbevolen</b>.
+Fax,Fax
+Email,E-mail
+Country,Land
+Location,Locatie
+This field is <b>recommended</b>.<br/>Example:</b> Seattle,Dit veld is <b>aanbevolen</b>.<br/>Voorbeeld:</b> Seattle
+Region,Regio
+This field is <b>recommended</b>.<br/><b>Example:</b> WA,Dit veld is <b>aanbevolen</b>.<br/><b>Voorbeeld:</b> WA
+Street,Straat
+This field is <b>recommended</b>.<br/><b>Example:</b><br>20341 Whitworth Institute<br>405 N. Whitworth,Dit veld is <b>aanbevolen</b>.<br/><b>Voorbeeld:</b><br>20341 Whitworth Institute<br>405 N. Whitworth
+ZIP Code,Postcode
+Price Range,Prijsklasse
+This field is <b>recommended</b>.<br/>Example:</b><br />$$$<br />$31-60,Dit veld is <b>aanbevolen</b>.<br/><b>Voorbeeld:</b><br />$$$<br />$31-60
+Breadcrumbs,Breadcrumbs
+"The breadcrumbs settings add the <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/breadcrumb"">breadcrumb snippet support</a>.","De breadcrumb-instellingen voegen de ondersteuning voor <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/breadcrumb"">breadcrumb-snippets</a> toe."
+Enable,Inschakelen
+"The breadcrumbs will be visible on the <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image14.png"">search results page</a>","De breadcrumbs zijn zichtbaar op de <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image14.png"">zoekresultatenpagina</a>"
+OpenGraph,OpenGraph
+"These settings let the store owner to deliver the highest quality posts on Facebook or other social networks and sharing the product links in messengers. Adding Open Graph tags to the store pages will help the Facebook Crawler pick up the right title and description for the shared page, as well as supply them with the most suitable preview image. Visit <a target=""_blank"" href=""https://ogp.me/"">this page</a> to learn more about the way Open Graph tags work.","Deze instellingen stellen de winkelier in staat om de hoogste kwaliteit berichten op Facebook of andere sociale netwerken te leveren en de productlinks te delen in berichten-apps. Het toevoegen van Open Graph-tags aan de winkelpagina's helpt de Facebook Crawler om de juiste titel en omschrijving voor de gedeelde pagina te selecteren, evenals om ze te voorzien van de meest geschikte voorbeeldafbeelding. Bezoek <a target=""_blank"" href=""https://ogp.me/"">deze pagina</a> om meer te leren over hoe Open Graph-tags werken."
+Enable Product OG,Inschakelen Product OG
+This setting will disable the default magento Open Graph output if enabled,Deze instelling zal de standaard Magento Open Graph-uitvoer uitschakelen als deze is ingeschakeld
+Product OG Title,Product OG Titel
+This setting allows you to select what product attribute will be used in OG title for product pages.,Deze instelling stelt je in staat om te selecteren welk productattribuut wordt gebruikt in de OG-titel voor productpagina's.
+Product OG Description,Product OG Omschrijving
+This setting allows you to select what product attribute will be used in OG description for product pages.,Deze instelling stelt je in staat om te selecteren welk productattribuut wordt gebruikt in de OG-omschrijving voor productpagina's.
+Product OG Description Length,Product OG Omschrijving Lengte
+Please specify a number of characters to crop og:description.,Specificeren van het aantal tekens om og:omschrijving bij te snijden.
+Enable Category OG,Inschakelen Categorie OG
+Category OG Title,Categorie OG Titel
+This setting allows you to select what category attribute will be used in OG title for category pages.,Deze instelling stelt je in staat om te selecteren welk categorieattribuut wordt gebruikt in de OG-titel voor categoriepagina's.
+Category OG Description,Categorie OG Omschrijving
+This setting allows you to select what category attribute will be used in OG description for category pages.,Deze instelling stelt je in staat om te selecteren welk categorieattribuut wordt gebruikt in de OG-omschrijving voor categoriepagina's.
+Category OG Description Length,Categorie OG Omschrijving Lengte
+Enable Page OG,Inschakelen Pagina OG
+Page OG Title,Pagina OG Titel
+This setting allows you to select what page attribute will be used in OG title for CMS pages.,Deze instelling stelt je in staat om te selecteren welk pagina-attribuut wordt gebruikt in de OG-titel voor CMS-pagina's.
+Page OG Description,Pagina OG Omschrijving
+This setting allows you to select what page attribute will be used in OG description for CMS pages.,Deze instelling stelt je in staat om te selecteren welk pagina-attribuut wordt gebruikt in de OG-omschrijving voor CMS-pagina's.
+Enable Website OG,Inschakelen Website OG
+Twitter Cards,Twitter-kaarten
+"These settings provide a media-rich experience to those who view your Twitter content. If enabled, the standard Tweet with the website URL will be transformed into the Summary Card and accompanied with an additional title, an extra up-to-200 words description, and an image. To enable the feature, make sure you enter Twitter Username. Visit <a target=""_blank"" href=""https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started"">this page</a> to learn more about Twitter Cards.","Deze instellingen bieden een rijke media-ervaring voor degenen die je Twitter-content bekijken. Als deze zijn ingeschakeld, wordt de standaard Tweet met de website-URL omgezet in de Samenvattingskaart en vergezeld van een extra titel, een extra omschrijving tot 200 woorden en een afbeelding. Om de functie in te schakelen, zorg ervoor dat je een Twitter-gebruikersnaam invoert. Bezoek <a target=""_blank"" href=""https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started"">deze pagina</a> om meer te leren over Twitter-kaarten."
+Enable Product,Inschakelen Product
+"To enable the feature, make sure you enter Twitter Username.","Om de functie in te schakelen, zorg ervoor dat je een Twitter-gebruikersnaam invoert."
+Product Title,Producttitel
+This setting allows you to select what product attribute will be used in Twitter Cards as the title for product pages.,Deze instelling stelt je in staat om te selecteren welk productattribuut wordt gebruikt in Twitter-kaarten als de titel voor productpagina's.
+Product Description,Productomschrijving
+This setting allows you to select what product attribute will be used in Twitter Cards as the description for product pages.,Deze instelling stelt je in staat om te selecteren welk productattribuut wordt gebruikt in Twitter-kaarten als de omschrijving voor productpagina's.
+Product Description Length,Productomschrijving Lengte
+Please specify a number of characters to crop description.,Specificeren van het aantal tekens om de omschrijving bij te snijden.
+Enable Category,Ingeschakeld voor Categorie
+Category Title,Categorietitel
+This setting allows you to select what category attribute will be used in Twitter Cards as the title for category pages.,Deze instelling stelt je in staat om te selecteren welk categoriekenmerk wordt gebruikt in Twitter Cards als titel voor categoriapagina's.
+Category Description,Categoriebeschrijving
+This setting allows you to select what category attribute will be used in Twitter Cards as description for category pages.,Deze instelling stelt je in staat om te selecteren welk categoriekenmerk wordt gebruikt in Twitter Cards als beschrijving voor categoriapagina's.
+Category Description Length,Lengte Categoriebeschrijving
+Enable Page,Ingeschakeld voor Pagina
+"Visit <a target=""_blank"" href=""https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started"">this page</a> to learn more about Twitter Cards. To enable the feature, make sure you enter Twitter Username.","Bezoek <a target=""_blank"" href=""https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started"">deze pagina</a> om meer te weten te komen over Twitter Cards. Om deze functie in te schakelen, zorg ervoor dat je je Twitter gebruikersnaam invoert."
+Page Title,Paginatitel
+This setting allows you to select what page attribute will be used in Twitter Cards as the title for CMS pages.,Deze instelling stelt je in staat om te selecteren welk paginakenmerk wordt gebruikt in Twitter Cards als titel voor CMS-pagina's.
+Page Description,Paginabeschrijving
+This setting allows you to select what page attribute will be used in Twitter Cards as the description for CMS pages.,Deze instelling stelt je in staat om te selecteren welk paginakenmerk wordt gebruikt in Twitter Cards als beschrijving voor CMS-pagina's.
+Enable Website,Ingeschakeld voor Website
+Twitter Username,Twitter Gebruikersnaam

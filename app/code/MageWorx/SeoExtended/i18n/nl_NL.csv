@@ -1,0 +1,90 @@
+Continue Edit,Doorgaan met bewerken
+SEO Category Filter Info,SEO Categorie Filterinformatie
+Attribute,Attribuut
+Store View,Winkelweergave
+Save SEO Category Filter,SEO Categorie Filter opslaan
+Unknown,Onbekend
+All Values,Alle Waarden
+Attribute Value,Attribuutwaarde
+Category Name,Categorienaam
+" - is already used for ""All Values"""," - wordt al gebruikt voor ""Alle Waarden"""
+Store View Name,Winkelweergavenaam
+Meta Title,Meta Titel
+Meta Description,Meta Omschrijving
+Meta Keywords,Meta Trefwoorden
+SEO Name,SEO Naam
+Description,Omschrijving
+Dynamic variables and randomizer are available.,Dynamische variabelen en willekeurige waardes zijn beschikbaar.
+See the description on the SEO XTemplates Category Filter Edit Page,Zie de omschrijving op de SEO XTemplate Categorie Filter Bewerk Pagina
+Marketing,Marketing
+MageWorx SEO Templates,MageWorx SEO Sjablonen
+Category Filter Templates,Categorie Filter Sjablonen
+"This setting enables the Category Filter functionality. To add, edit or delete the category filters, click %link.","Deze instelling schakelt de Categorie Filter functionaliteit in. Om categorie filters toe te voegen, te bewerken of te verwijderen, klik op %link."
+Category Filter,Categorie Filter
+Create Category Filter,Categorie Filter Aanmaken
+The Category Filter has been deleted.,Het Categorie Filter is verwijderd.
+Category Filter not found.,Categorie Filter niet gevonden.
+Edit Category Filter,Bewerk Categorie Filter
+SEO Category Filters,SEO Categorie Filters
+SEO Extended,SEO Uitgebreid
+Extended,Uitgebreid
+Category Filters,Categorie Filters
+Please correct the data sent.,Corrigeer alstublieft de verzonden gegevens.
+Something went wrong while saving the page.,Er is iets misgegaan bij het opslaan van de pagina.
+The Category Filter has been saved.,Het Categorie Filter is opgeslagen.
+The Category Filters has been saved.,De Categorie Filters zijn opgeslagen.
+Something went wrong while saving the category filter.,Er is iets misgegaan bij het opslaan van het categorie filter.
+Could not save the category filter: %1,Kan het categorie filter niet opslaan: %1
+Requested category filter entity doesn't exist,Gevraagde categorie filter entiteit bestaat niet
+Unable to remove category filter entity %1,Kan categorie filter entiteit %1 niet verwijderen
+Page,Pagina
+All,Alle
+At the Beginning,Aan het Begin
+At the End,Aan het Einde
+No,Nee
+Use by Attribute Position,Gebruik volgens Attribuutpositie
+Do not use,Niet gebruiken
+"Are you sure you want to delete the SEO Category Filter for ""%1"" and Category ""%2"" ?","Weet je zeker dat je het SEO Categorie Filter voor ""%1"" en Categorie ""%2"" wilt verwijderen?"
+Edit,Bewerken
+Delete,Verwijderen
+Delete Category Filter,Categorie Filter Verwijderen
+SEO,SEO
+Meta Information Express Settings:,Snelinstellingen voor Meta-informatie:
+"The express default settings for <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary_1""> meta robots</a>. For the fine-tuning, use the <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#variables-and-randomizers""> dynamic variables</a> in the category filters. For the mass action generation of the meta information, use the <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#extension-configuration"">SEO Templates</a>.","De standaardinstellingen voor <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#glossary_1""> meta robots</a>. Voor het fijnafstemmen, gebruik de <a target=""blank"" href=""https://support.mageworx.com/manuals/seosuite/#variables-and-randomizers""> dynamische variabelen</a> in de categorie filters. Voor de massale generatie van de meta-informatie, gebruik de <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#extension-configuration"">SEO Sjablonen</a>."
+Add Pager Number to Meta Title,Pager Nummer toevoegen aan Meta Titel
+"Manages the position of the page number for the Meta Title like ""Apparel <b>| Page 3</b>"" or ""<b>Page 3 |</b> Apparel"". Use <i>No</i> to hide the page number.","Beheert de positie van het paginanummer voor de Meta Titel zoals ""Kleding <b>| Pagina 3</b>"" of ""<b>Pagina 3 |</b> Kleding"". Gebruik <i>Nee</i> om het paginanummer te verbergen."
+Add Pager Number to Meta Description,Pager Nummer toevoegen aan Meta Omschrijving
+"Manages the position of the page number for the Meta Description like ""Apparel <b>| Page 3</b>"" or  ""<b>Page 3 |</b> Apparel"". Use <i>No</i> to hide the page number.","Beheert de positie van het paginanummer voor de Meta Omschrijving zoals ""Kleding <b>| Pagina 3</b>"" of ""<b>Pagina 3 |</b> Kleding"". Gebruik <i>Nee</i> om het paginanummer te verbergen."
+Add Pager Number to Meta Keywords,Pager Nummer toevoegen aan Meta Trefwoorden
+"E.g. ""Apparel, clother<b>, Page 2</b>""","Bijv. ""Kleding, kleren<b>, Pagina 2</b>"""
+Remove Default Title Prefix/Suffix,Standaard Titel Voorvoegsel/Achtervoegsel verwijderen
+Change to <i>Yes</i> to show the Pages block where you can specify the list of the pages where the default Magento 2 suffix/prefix should be omitted.,Verander naar <i>Ja</i> om het Blok Pagina's te tonen waar je de lijst van pagina's kunt specificeren waar de standaard Magento 2 voorvoegsel/achtervoegsel moet worden weggelaten.
+Pages,Pagina's
+"Action names allowed: use catalog_category_view for all categories, catalog_product_view for all products.","Toegestane actienamen: gebruik catalog_category_view voor alle categorieën, catalog_product_view voor alle producten."
+Enable Extended Meta Title On Category LN Pages,Uitgebreide Meta Titel inschakelen op Categorie LN Pagina's
+"If set to <i>Yes</i>, the selected attributes (filters) will be dynamically added to the meta title of the category pages. Meta title may include a variety of different product attributes such as price, color, brand etc. Example: Phones <b>| Price:$300.00 and above; Color:Silver</b>","Indien ingesteld op <i>Ja</i>, zullen de geselecteerde attributen (filters) dynamisch worden toegevoegd aan de meta titel van de categorie pagina's. De meta titel kan verschillende productattributen bevatten zoals prijs, kleur, merk, etc. Voorbeeld: Telefoons <b>| Prijs:$300,00 en meer; Kleur:Zilver</b>"
+Enable Extended Meta Description On Category Layered Navigation Pages,Uitgebreide Meta Omschrijving inschakelen op Categorie LN Pagina's
+E.g. 'Phones | <b>Price:$300.00 and above; Color:Silver</b>'</i>,"Bijv. 'Telefoons | <b>Prijs:$300,00 en meer; Kleur:Zilver</b>'</i>"
+Enable Extended Meta Keywords On Category Layered Navigation Pages,Uitgebreide Meta Trefwoorden inschakelen op Categorie LN Pagina's
+Page Number Format For Landing Pages,Paginanummervormat voor Landingspagina's
+Add Pager Number to Landing Page Meta Title,Pager Nummer toevoegen aan Meta Titel van Landingspagina
+E.g. 'Apparel <b>| Page 3</b>',Bijv. 'Kleding <b>| Pagina 3</b>'
+Add Pager Number to Landing Page Meta Description,Pager Nummer toevoegen aan Meta Omschrijving van Landingspagina
+E.g. 'Description of apparel<b> | Page 2</b>',Bijv. 'Omschrijving van kleding<b> | Pagina 2</b>'
+Add Pager Number to Landing Page Meta Keywords,Pager Nummer toevoegen aan Meta Trefwoorden van Landingspagina
+Enable Extended Meta Title On Landing Pages Layered Navigation Pages,Uitgebreide Meta Titel inschakelen op Landingspagina's Layered Navigation Pagina's
+"E.g. 'Phones | <b>Price:$300.00 and above, Color:Silver</b>'</i>","Bijv. 'Telefoons | <b>Prijs:$300,00 en meer, Kleur:Zilver</b>'</i>"
+Enable Extended Meta Description On Landing Pages Layered Navigation Pages,Uitgebreide Meta Omschrijving inschakelen op Landingspagina's Layered Navigation Pagina's
+Enable Extended Meta Keywords On Landing Pages Layered Navigation Pages,Uitgebreide Meta Trefwoorden inschakelen op Landingspagina's Layered Navigation Pagina's
+Category Filters:,Categorie Filters:
+"This feature provides the possibility to populate the particular SEO information for the specific filter+category combination. For the mass generation of such information on several (or all) categories, use the <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#category-filter-templates"">SEO Category Filter Templates</a>.","Deze functie biedt de mogelijkheid om specifieke SEO-informatie voor de specifieke filter+categorie combinatie te genereren. Voor de massale generatie van dergelijke informatie op meerdere (of alle) categorieën, gebruik de <a target=""_blank"" href=""https://support.mageworx.com/manuals/templates/#category-filter-templates"">SEO Categorie Filter Sjablonen</a>."
+Enable Category Filter Functionality ▾,Functionaliteit Categorie Filters inschakelen ▾
+&nbsp;&nbsp;&nbsp;&nbsp;SEO Filters for Multiple Filter Selection,&nbsp;&nbsp;&nbsp;&nbsp;SEO Filters voor Meervoudige Filterselectie
+"Handles the situation when several category filters are applied by the customer at the same time. Set Do Not Use to hide the SEO information in this case. Select Use By Attribute Position to show the SEO information for the filter with the highest <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/seosuite/image181.png"">attribute position</a>","Beheert de situatie waarin verschillende categorie filters tegelijkertijd door de klant worden toegepast. Stel Niet Gebruiken in om de SEO-informatie in dit geval te verbergen. Selecteer Gebruiken volgens Attribuutpositie om de SEO-informatie te tonen voor de filter met de hoogste <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/seosuite/image181.png"">attribuutpositie</a>"
+Add New SEO for Category Filter,Nieuwe SEO voor Categorie Filter Toevoegen
+Delete items,Items verwijderen
+Are you sure you want to delete selected items?,Weet je zeker dat je de geselecteerde items wilt verwijderen?
+ID,ID
+Attribute Name,Attribuut Naam
+Attribute Value Label,Attribuutwaarde Label
+Category ID (Name),Categorie ID (Naam)

@@ -1,0 +1,29 @@
+"Brand ID","Brand ID"
+Status,Status
+Enabled,Enabled
+Disabled,Disabled
+Attribute,Attribute
+Brand,Brand
+ID,ID
+"Landing Page","Landing Page"
+"Attribute Value","Attribute Value"
+Root,Root
+"Use Config","Use Config"
+"All Values","All Values"
+"UNKNOWN CATEGORY","UNKNOWN CATEGORY"
+"UNKNOWN PRODUCT","UNKNOWN PRODUCT"
+"All Store Views","All Store Views"
+SEO,SEO
+"SEO Common Settings","SEO Common Settings"
+"These settings can be used in the other SEO extensions.","These settings can be used in the other SEO extensions."
+"Length settings for Properties","Length settings for Properties"
+"Please note that the settings below are used for the SEO reports only to find the values which exceed the specified limits.</br>
+                        You can't use these settings to set the specific length for your meta values and URLs.","Please note that the settings below are used for the SEO reports only to find the values which exceed the specified limits.</br>
+                        You can't use these settings to set the specific length for your meta values and URLs."
+"Meta Title Max Length","Meta Title Max Length"
+"Meta Description Max Length","Meta Description Max Length"
+"Meta Keywords Max Length","Meta Keywords Max Length"
+"H1 Tag Max Length","H1 Tag Max Length"
+"URL Path Max Length","URL Path Max Length"
+"Disable SEO Features for logged customer","Disable SEO Features for logged customer"
+"Choose the functionalities which will be disabled for the logged in customers to improve the performance.","Choose the functionalities which will be disabled for the logged in customers to improve the performance."

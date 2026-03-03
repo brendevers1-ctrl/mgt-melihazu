@@ -1,0 +1,227 @@
+"%1 categories were added to the queue.","%1 categories were added to the queue."
+"SEO AI Request Logs for Categories","SEO AI Request Logs for Categories"
+"%1 products were added to the queue.","%1 products were added to the queue."
+"SEO AI Request Logs for Products","SEO AI Request Logs for Products"
+"Could not save the log: %1","Could not save the log: %1"
+"The log with ID ""%1"" does not exist.","The log with ID ""%1"" does not exist."
+"Could not delete the log: %1","Could not delete the log: %1"
+"Unable to locate instance ""%1"" .","Unable to locate instance ""%1"" ."
+"Callback data is invalid","Callback data is invalid"
+"Callback data has error","Callback data has error"
+"Category Meta Description","Category Meta Description"
+"Category Meta Keywords","Category Meta Keywords"
+"Category Meta Title","Category Meta Title"
+"Category Seo Name","Category Seo Name"
+"Category Description","Category Description"
+"Product Meta Description","Product Meta Description"
+"Product Meta Keywords","Product Meta Keywords"
+"Product Meta Title","Product Meta Title"
+"Product Seo Name","Product Seo Name"
+"Product Description","Product Description"
+"Product Short Description","Product Short Description"
+"Product: Generate Meta Description","Product: Generate Meta Description"
+"Product: Generate Meta Keywords","Product: Generate Meta Keywords"
+"Product: Generate Meta Title","Product: Generate Meta Title"
+"Product: Generate SEO Name","Product: Generate SEO Name"
+"Product: Generate Description","Product: Generate Description"
+"Product: Generate Short Description","Product: Generate Short Description"
+"Product: Improve Short Description","Product: Improve Short Description"
+"Product: Improve Meta Description","Product: Improve Meta Description"
+"Product: Improve Meta Keywords","Product: Improve Meta Keywords"
+"Product: Improve Meta Title","Product: Improve Meta Title"
+"Product: Improve SEO Name","Product: Improve SEO Name"
+"Product: Improve Description","Product: Improve Description"
+"Category: Generate Description","Category: Generate Description"
+"Category: Generate Meta Title","Category: Generate Meta Title"
+"Category: Generate Meta Description","Category: Generate Meta Description"
+"Category: Generate Meta Keywords","Category: Generate Meta Keywords"
+"Category: Generate SEO Name","Category: Generate SEO Name"
+"Category: Improve Description","Category: Improve Description"
+"Category: Improve Meta Title","Category: Improve Meta Title"
+"Category: Improve Meta Description","Category: Improve Meta Description"
+"Category: Improve Meta Keywords","Category: Improve Meta Keywords"
+"Category: Improve SEO Name","Category: Improve SEO Name"
+"AI-Powered Generator","AI-Powered Generator"
+"AI Express Generator","AI Express Generator"
+"Improve with AI","Improve with AI"
+"Text successfully copied to clipboard.","Text successfully copied to clipboard."
+"Failed to copy text to clipboard.","Failed to copy text to clipboard."
+Apply,Apply
+Copy,Copy
+"Text successfully copied to clipboard. You can paste result where you want using the page builder.","Text successfully copied to clipboard. You can paste result where you want using the page builder."
+"Failed to copy text to clipboard. Please do it manually and paste the result where you want using the page builder.","Failed to copy text to clipboard. Please do it manually and paste the result where you want using the page builder."
+"MageWorx SEO AI Integration","MageWorx SEO AI Integration"
+"Request Logs: Product","Request Logs: Product"
+"Request Logs: Category","Request Logs: Category"
+"SEO AI","SEO AI"
+Enable,Enable
+"Enable the AI features for the administrator.
+                    When disabled you will no longer see the “Generate using AI” buttons in product and category form.
+                    All previously generated data will still be available.","Enable the AI features for the administrator.
+                    When disabled you will no longer see the “Generate using AI” buttons in product and category form.
+                    All previously generated data will still be available."
+"Enable for","Enable for"
+"Using this field you can enable or disable the ""Generate"" functionality for specific entities.","Using this field you can enable or disable the ""Generate"" functionality for specific entities."
+"Open AI Model","Open AI Model"
+"<b>GPT-4</b> More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Availability depends on your pricing plan.
+For many basic tasks, the difference between GPT-4 and GPT-3.5 models is not significant.<br>
+
+<b>GPT-3.5</b> - A set of models that improve on GPT-3 and can understand as well as generate natural language or code<br>
+
+<b>GPT-3.5 turbo</b> (recommended) - Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with our latest model iteration 2 weeks after it is released.<br>
+
+<b>Text ADA 001</b> - Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.<br>
+
+<b>Text Davinci 003</b> - Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. Also supports some additional features such as inserting text.<br>
+
+<b>Gemini 1.5 Pro</b> - Optimized for complex reasoning tasks such as code and text generation, text editing, problem solving, data extraction and generation.<br>
+
+<b>Gemini 1.5 Flash</b> - Optimized for fast and versatile performance across a diverse variety of tasks","<b>GPT-4</b> More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Availability depends on your pricing plan.
+For many basic tasks, the difference between GPT-4 and GPT-3.5 models is not significant.<br>
+
+<b>GPT-3.5</b> - A set of models that improve on GPT-3 and can understand as well as generate natural language or code<br>
+
+<b>GPT-3.5 turbo</b> (recommended) - Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with our latest model iteration 2 weeks after it is released.<br>
+
+<b>Text ADA 001</b> - Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.<br>
+
+<b>Text Davinci 003</b> - Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. Also supports some additional features such as inserting text.<br>
+
+<b>Gemini 1.5 Pro</b> - Optimized for complex reasoning tasks such as code and text generation, text editing, problem solving, data extraction and generation.<br>
+
+<b>Gemini 1.5 Flash</b> - Optimized for fast and versatile performance across a diverse variety of tasks"
+Description,Description
+"Max Length","Max Length"
+Content,Content
+"This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{category_name}} - name of the category you generate data for
+                    {{category_description}} - description of the category you generate data for
+                    {{category_products}} - 10 first products assigned to the category.
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get.","This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{category_name}} - name of the category you generate data for
+                    {{category_description}} - description of the category you generate data for
+                    {{category_products}} - 10 first products assigned to the category.
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get."
+"Meta Description","Meta Description"
+"Meta Keywords","Meta Keywords"
+"Meta Title","Meta Title"
+"SEO Name","SEO Name"
+"Improve Description","Improve Description"
+"Improve Meta Description","Improve Meta Description"
+"Improve Meta Keywords","Improve Meta Keywords"
+"Improve Meta Title","Improve Meta Title"
+"Improve SEO Name","Improve SEO Name"
+"Category Specific Settings","Category Specific Settings"
+Temperature,Temperature
+"By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.","By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic."
+"Category attributes that will be used for generation","Category attributes that will be used for generation"
+"Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{category_attributes}} variable to the content request.","Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{category_attributes}} variable to the content request."
+"Number of variants in response per request","Number of variants in response per request"
+"A value that is too high may result in additional costs. We recommend to use the default value of 1 and only change it on a case-by-case basis from the object interface before making the request if necessary.","A value that is too high may result in additional costs. We recommend to use the default value of 1 and only change it on a case-by-case basis from the object interface before making the request if necessary."
+"This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{product_name}} - name of the product you generate data for
+                    {{short_description}} - short description of the product you generate data for
+                    {{description}} - description of the product you generate data for
+                    {{product_price}} - price of the product you generate data for
+                    {{categories_list}} - list of the categories the product is assigned to
+                    {{product_attributes}} - list of available product attributes in a title:value format
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get.","This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{product_name}} - name of the product you generate data for
+                    {{short_description}} - short description of the product you generate data for
+                    {{description}} - description of the product you generate data for
+                    {{product_price}} - price of the product you generate data for
+                    {{categories_list}} - list of the categories the product is assigned to
+                    {{product_attributes}} - list of available product attributes in a title:value format
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get."
+"Short Description","Short Description"
+"Improve Short Description","Improve Short Description"
+"Product Specific Settings","Product Specific Settings"
+"Product attributes that will be used for generation","Product attributes that will be used for generation"
+"Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{product_attributes}} variable to the content request in a title:value format.","Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{product_attributes}} variable to the content request in a title:value format."
+Done,Done
+Cancel,Cancel
+"AI-Powered Data Generator","AI-Powered Data Generator"
+"This text will be used as a request to AI model to generate a corresponding attribute value. Please be careful when editing this request as it will affect the results you get.","This text will be used as a request to AI model to generate a corresponding attribute value. Please be careful when editing this request as it will affect the results you get."
+Submit,Submit
+"Custom settings","Custom settings"
+"Default AI model to use.","Default AI model to use."
+"Number of alternatives","Number of alternatives"
+"A number of the results you get.","A number of the results you get."
+Attributes,Attributes
+"
+                    Please select attributes that will be used in the generation request.
+                    These attributes data will be added instead of the {{category_attributes}} variable to the content request.
+                    ","
+                    Please select attributes that will be used in the generation request.
+                    These attributes data will be added instead of the {{category_attributes}} variable to the content request.
+                    "
+"System settings","System settings"
+"Category ID","Category ID"
+"Store ID","Store ID"
+"Message Type","Message Type"
+Results,Results
+ID,ID
+"Message type","Message type"
+"Request Message","Request Message"
+"Response Message","Response Message"
+"Variant Index","Variant Index"
+Created,Created
+"Product ID","Product ID"
+"Generate with AI","Generate with AI"
+"Please specify entity, select
+                            necessary stores and click 'Submit' button.
+                        ","Please specify entity, select
+                            necessary stores and click 'Submit' button.
+                        "
+Entity,Entity
+"Store View","Store View"
+Model,Model
+"Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{category_attributes}} variable to the content request.
+                    ","Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{category_attributes}} variable to the content request.
+                    "
+"Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the content request.
+                    ","Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the content request.
+                    "
+"By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher
+                        values like 0.8 will make the output more random, while lower values like 0.2 will make it more
+                        focused and deterministic.
+                    ","By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher
+                        values like 0.8 will make the output more random, while lower values like 0.2 will make it more
+                        focused and deterministic.
+                    "
+"Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the
+                        content request.
+                    ","Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the
+                        content request.
+                    "
+"
+To activate and use the SEO AI module features, please get your OpenAI API key by visiting
+<a href=""https://platform.openai.com/account/api-keys"" target=""_blank"">the OpenAI portal</a>.
+Once you have your API key, please specify it in the <a href=""{{config path='web/secure/base_url'}}admin/system_config/edit/section/mageworx_openai"">'OpenAI Integration Settings'</a> section.
+","
+To activate and use the SEO AI module features, please get your OpenAI API key by visiting
+<a href=""https://platform.openai.com/account/api-keys"" target=""_blank"">the OpenAI portal</a>.
+Once you have your API key, please specify it in the <a href=""{{config path='web/secure/base_url'}}admin/system_config/edit/section/mageworx_openai"">'OpenAI Integration Settings'</a> section.
+"

@@ -1,0 +1,6 @@
+<!-- ko foreach: responses -->
+<div class="response-item">
+    <span data-bind="text: $data"></span>
+    <button data-bind="click: $parent.selectResponse.bind($parent), attr: {title: $parent.applyText}, text: $parent.applyText">Apply</button>
+</div>
+<!-- /ko -->

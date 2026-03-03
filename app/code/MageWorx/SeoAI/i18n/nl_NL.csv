@@ -1,0 +1,152 @@
+Seo AI Request Logs for Category,Seo AI Verzoeklogs voor Categorie
+Seo AI Request Logs for Products,Seo AI Verzoeklogs voor Producten
+Could not save the log: %1,Kon het logbestand niet opslaan: %1
+"The log with ID ""%1"" does not exist.","Het logboek met ID ""%1"" bestaat niet."
+Could not delete the log: %1,Kon het logbestand niet verwijderen: %1
+"Unable to locate instance ""%1"" .","Kan de instantie ""%1"" niet vinden."
+Category Meta Description,Categorie Meta-beschrijving
+Category Meta Keywords,Categorie Meta-trefwoorden
+Category Meta Title,Categorie Meta-titel
+Category Seo Name,Categorie SEO Naam
+Category Description,Categorie Beschrijving
+Product Meta Description,Product Meta-beschrijving
+Product Meta Keywords,Product Meta-trefwoorden
+Product Meta Title,Product Meta-titel
+Product Seo Name,Product SEO Naam
+Product Description,Productbeschrijving
+Product Short Description,Korte productbeschrijving
+AI-Powered Generator,AI-Gestuurde Generator
+AI Express Generator,AI Express Generator
+Product attributes,Productattributen
+Message Type,Berichttype
+OpenAI Model,OpenAI Model
+Text successfully copied to clipboard.,Tekst succesvol naar klembord gekopieerd.
+Failed to copy text to clipboard.,Kopiëren mislukt naar klembord.
+Apply,Toepassen
+Copy,Kopiëren
+Text successfully copied to clipboard. You can paste result where you want using the page builder.,Tekst succesvol naar klembord gekopieerd. U kunt het resultaat plakken waar u maar wilt met de paginabouwer.
+Failed to copy text to clipboard. Please do it manually and paste the result where you want using the page builder.,Kopiëren naar klembord is mislukt. Doe dit handmatig en plak het resultaat waar u maar wilt met de paginabouwer.
+MageWorx SEO AI Integration,MageWorx SEO AI-integratie
+Request Logs: Product,Verzoeklogs: Product
+Request Logs: Category,Verzoeklogs: Categorie
+SEO AI,SEO AI
+Enable,Inschakelen
+"Enable the Open AI features for the administrator.
+                        When disabled you will no longer see the ""Generate using Open AI"" buttons in product and category form.
+                        All previously generated data still be available.","Schakel de Open AI-functies in voor de beheerder.
+                        Als dit is uitgeschakeld, ziet u de knoppen ""Genereren met Open AI"" niet meer in de product- en categorieformulieren.
+                        Alle eerder gegenereerde gegevens blijven beschikbaar."
+Enable for,Inschakelen voor
+"Using this field you can enable or disable the ""Generate"" functionality for specific entities.","Met dit veld kunt u de ""Genereren""-functionaliteit in- of uitschakelen voor specifieke entiteiten."
+Open AI Model,Open AI-model
+"<b>GPT-4</b> More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Availability depends on your pricing plan.
+For many basic tasks, the difference between GPT-4 and GPT-3.5 models is not significant.<br>
+
+<b>GPT-3.5</b> - A set of models that improve on GPT-3 and can understand as well as generate natural language or code<br>
+
+<b>GPT-3.5 turbo</b> (recommended) - Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with our latest model iteration 2 weeks after it is released.<br>
+
+<b>Text ADA 001</b> - Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.<br>
+
+<b>Text Davinci 003</b> - Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. Also supports some additional features such as inserting text.","<b>GPT-4</b> Capabeler dan elk GPT-3.5 model, in staat tot complexere taken en geoptimaliseerd voor chat. Beschikbaarheid is afhankelijk van uw prijsplan.
+Voor veel basis taken is het verschil tussen GPT-4 en GPT-3.5 modellen niet significant.<br>
+
+<b>GPT-3.5</b> - Een reeks modellen die GPT-3 verbeteren en zowel natuurlijke taal als code kunnen begrijpen en genereren.<br>
+
+<b>GPT-3.5 turbo</b> (aanbevolen) - Meest capabele GPT-3.5 model en geoptimaliseerd voor chat tegen 1/10e van de kosten van text-davinci-003. Zal worden bijgewerkt met onze nieuwste modeliteratie 2 weken na de release.<br>
+
+<b>Text ADA 001</b> - In staat tot zeer eenvoudige taken, meestal het snelste model in de GPT-3 serie en de laagste kosten.<br>
+
+<b>Text Davinci 003</b> - Kan elke taak met betere kwaliteit, langere output en consistente instructieopvolging uitvoeren dan de Curie, Babbage of Ada modellen. Ondersteunt ook enkele extra functies zoals het invoegen van tekst."
+Description,Beschrijving
+Max Length,Maximale lengte
+Content,Inhoud
+"This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{category_name}} - name of the category you generate data for
+                    {{category_description}} - description of the category you generate data for
+                    {{category_products}} - 10 first products assigned to the category.
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get.","Deze tekst wordt gebruikt als verzoek aan OpenAI om een overeenkomstige attribuutwaarde te genereren.
+                    De volgende variabelen zijn toegestaan:
+                    {{category_name}} - naam van de categorie waarvoor u gegevens genereert
+                    {{category_description}} - beschrijving van de categorie waarvoor u gegevens genereert
+                    {{category_products}} - de eerste 10 producten die aan de categorie zijn toegewezen.
+                    {{max_length}} - maximale lengte van het resultaat
+
+                    Wees voorzichtig bij het bewerken van dit verzoek, want het heeft invloed op de resultaten die u krijgt."
+Meta Description,Meta-beschrijving
+Meta Keywords,Meta-trefwoorden
+Meta Title,Meta-titel
+SEO Name,SEO-naam
+Category Specific Settings,Categorie-specifieke instellingen
+Temperature,Temperatuur
+"By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.","Volgens de OpenAI-documenten: Welke bemonsteringstemperatuur moet worden gebruikt, tussen 0 en 2. Hogere waarden zoals 0,8 maken de uitvoer meer willekeurig, terwijl lagere waarden zoals 0,2 deze meer gefocust en deterministisch maken."
+Category attributes that will be used for generation,Categorieattributen die voor generatie worden gebruikt
+"Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{category_attributes}} variable to the content request.","Selecteer attributen die in het generatieverzoek zullen worden gebruikt.
+                Deze attribuutgegevens worden toegevoegd in plaats van de {{category_attributes}} variabele aan het inhoudsverzoek."
+Number of variants in response per request,Aantal varianten in reactie per verzoek
+A value that is too high may result in additional costs. We recommend to use the default value of 1 and only change it on a case-by-case basis from the object interface before making the request if necessary.,"Een te hoge waarde kan leiden tot extra kosten. We raden aan de standaardwaarde van 1 te gebruiken en deze alleen in specifieke gevallen te wijzigen via de objectinterface voordat u het verzoek doet, indien nodig."
+"This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{product_name}} - name of the product you generate data for
+                    {{short_description}} - short description of the product you generate data for
+                    {{description}} - description of the product you generate data for
+                    {{product_price}} - price of the product you generate data for
+                    {{categories_list}} - list of the categories the product is assigned to
+                    {{product_attributes}} - list of available product attributes in a title:value format
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get.","Deze tekst wordt gebruikt als verzoek aan OpenAI om een overeenkomstige attribuutwaarde te genereren.
+                    De volgende variabelen zijn toegestaan:
+                    {{product_name}} - naam van het product waarvoor u gegevens genereert
+                    {{short_description}} - korte beschrijving van het product waarvoor u gegevens genereert
+                    {{description}} - beschrijving van het product waarvoor u gegevens genereert
+                    {{product_price}} - prijs van het product waarvoor u gegevens genereert
+                    {{categories_list}} - lijst van de categorieën waaraan het product is toegewezen
+                    {{product_attributes}} - lijst van beschikbare productattributen in een titel:waarde formaat
+                    {{max_length}} - maximale lengte van het resultaat
+
+                    Wees voorzichtig bij het bewerken van dit verzoek, want het heeft invloed op de resultaten die u krijgt."
+Short Description,Korte beschrijving
+Product Specific Settings,Product-specifieke instellingen
+Product attributes that will be used for generation,Productattributen die voor generatie worden gebruikt
+"Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{product_attributes}} variable to the content request in a title:value format.","Selecteer attributen die in het generatieverzoek zullen worden gebruikt.
+                Deze attribuutgegevens worden in plaats van de {{product_attributes}} variabele toegevoegd aan het inhoudsverzoek in een titel:waarde formaat."
+Done,Klaar
+Cancel,Annuleren
+AI-Powered Data Generator,AI-Gestuurde Gegevensgenerator
+This text will be used as a request to AI model to generate a corresponding attribute value. Please be careful when editing this request as it will affect the results you get.,"Deze tekst wordt gebruikt als verzoek aan OpenAI om een overeenkomstige attribuutwaarde te genereren. Wees voorzichtig bij het bewerken van dit verzoek, want het heeft invloed op de resultaten die u krijgt."
+Submit,Verzenden
+Custom settings,Aangepaste instellingen
+Default AI model to use.,Standaard Open AI-model om te gebruiken.
+Number of alternatives,Aantal alternatieven
+A number of the results you get.,Het aantal resultaten dat u krijgt.
+Attributes,Attributen
+"
+                    Please select attributes that will be used in the generation request.
+                    These attributes data will be added instead of the {{category_attributes}} variable to the content request.
+                    ","
+                    Selecteer attributen die in het generatieverzoek zullen worden gebruikt.
+                    Deze attribuutgegevens worden in plaats van de {{category_attributes}} variabele toegevoegd aan het inhoudsverzoek.
+                    "
+System settings,Systeeminstellingen
+Category ID,Categorie-ID
+Store ID,Winkel-ID
+Results,Resultaten
+ID,ID
+Message type,Berichttype
+Request Message,Verzoekbericht
+Response Message,Antwoordbericht
+Variant Index,Variant Index
+Created,Aangemaakt
+Product ID,Product-ID
+Model,Model
+"Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the content request.
+                    ","Selecteer attributen die in het generatieverzoek zullen worden gebruikt.
+                        Deze attribuutgegevens worden in plaats van de {{product_attributes}} variabele toegevoegd aan het inhoudsverzoek.
+                    "

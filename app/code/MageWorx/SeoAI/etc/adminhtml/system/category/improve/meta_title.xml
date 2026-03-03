@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+    <group id="improve_meta_title" translate="label" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>Improve Meta Title</label>
+        <field id="max_length" translate="label" sortOrder="10" type="text" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+            <label>Max Length</label>
+            <validate>validate-number validate-zero-or-greater</validate>
+        </field>
+        <field id="content" translate="label comment" sortOrder="20" type="textarea" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+            <label>Content</label>
+            <comment><![CDATA[]]></comment>
+        </field>
+    </group>
+</include>

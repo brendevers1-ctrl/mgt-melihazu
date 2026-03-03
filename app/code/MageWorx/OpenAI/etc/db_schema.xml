@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <!-- Queue table -->
+    <table name="mageworx_openai_queue_item" resource="default" engine="innodb"
+           comment="MageWorx OpenAI Queue Item Table">
+        <!-- ids -->
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="int" name="process_id" padding="10" unsigned="true" nullable="true" comment="Process ID"/>
+        <column xsi:type="int" name="request_data_id" padding="10" unsigned="true" nullable="false" comment="Request Data ID"/>
+        <!-- ids end -->
+
+        <!-- Time -->
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Update Time"/>
+        <!-- Time end -->
+
+        <!-- Queue direct params -->
+        <column xsi:type="int" name="status" nullable="false" comment="Status"/>
+        <column xsi:type="boolean" name="requires_approval" nullable="false" default="false" comment="Requires Approval by Human"/>
+        <column xsi:type="int" name="position" padding="10" nullable="false" default="0" comment="Position"/>
+        <column xsi:type="varchar" name="model" nullable="false" length="255" comment="Model name"/>
+        <column xsi:type="varchar" name="preprocessor" nullable="true" length="255" comment="Preprocessor for request"/>
+        <column xsi:type="varchar" name="callback" nullable="true" length="255" comment="Callback function instructions"/>
+        <column xsi:type="varchar" name="error_handler" nullable="true" length="255" comment="Error handler"/>
+        <column xsi:type="text" name="response" nullable="true" comment="Response"/>
+        <column xsi:type="json" name="additional_data" nullable="true" comment="Additional data (json)"/>
+        <!-- Queue direct params end -->
+
+        <!-- Keys -->
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <!-- Foreign keys -->
+        <constraint xsi:type="foreign"
+                    referenceId="MAGEWORX_OPENAI_QUEUE_PROCESS_ENTITY_ID"
+                    table="mageworx_openai_queue_item"
+                    column="process_id"
+                    referenceTable="mageworx_openai_queue_process"
+                    referenceColumn="entity_id"
+                    onDelete="CASCADE"/>
+        <constraint xsi:type="foreign" referenceId="MAGEWORX_OPENAI_REQUEST_DATA_ENTITY_ID"
+                    table="mageworx_openai_queue_item"
+                    column="request_data_id"
+                    referenceTable="mageworx_openai_request_data"
+                    referenceColumn="entity_id"
+                    onDelete="CASCADE"/>
+    </table>
+    <!-- Queue processes to calculate progress per each process -->
+    <table name="mageworx_openai_queue_process" resource="default" engine="innodb" comment="MW Queue Process Table">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Process Name Visible for User"/>
+        <column xsi:type="varchar" name="code" nullable="true" length="255" comment="Process Code"/>
+        <column xsi:type="varchar" name="type" nullable="false" length="255" comment="Process Type"
+                onCreate="migrateDataFrom(name)"/>
+        <column xsi:type="varchar" name="module" nullable="true" length="32" comment="Module"/>
+        <column xsi:type="int" name="status" nullable="false" default="1" comment="Status"/>
+        <column xsi:type="varchar" name="callback" nullable="true" length="255" comment="Callback function instructions"/>
+        <column xsi:type="int" name="size" nullable="false" comment="Number of Items in Queue"/>
+        <column xsi:type="int" name="processed" nullable="false" comment="Number of Processed Items"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Creation Time"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Update Time"/>
+        <column xsi:type="json" name="additional_data" nullable="true" comment="Additional JSON Data"/>
+
+        <!-- Keys -->
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="MAGEWORX_OPENAI_QUEUE_PROCESS_CODE">
+            <column name="code"/>
+        </constraint>
+        <index referenceId="MAGEWORX_OPENAI_QUEUE_MODULE" indexType="btree">
+            <column name="module"/>
+        </index>
+        <index referenceId="MAGEWORX_OPENAI_QUEUE_PROCESS_TYPE" indexType="btree">
+            <column name="type"/>
+        </index>
+    </table>
+    <!-- Request Data table, separated because I don't want to move big text data on each load when it is not necessary -->
+    <table name="mageworx_openai_request_data" resource="default" engine="innodb" comment="MageWorx OpenAI Request Data Table">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="text" name="content" nullable="false" comment="Content"/>
+        <column xsi:type="text" name="context" nullable="true" comment="Context"/>
+        <column xsi:type="text" name="options" nullable="false" comment="Options"/>
+
+        <!-- Keys -->
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+    </table>
+    <!-- Table describing dependencies for queue item from another queue items. Queue item should not be processed before all of its dependencies are ready. -->
+    <table name="mageworx_openai_queue_dependencies" resource="default" engine="innodb" comment="MW Queue Dependencies Table">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="int" name="queue_item_id" padding="10" unsigned="true" nullable="false" comment="Main Queue Item ID"/>
+        <column xsi:type="int" name="dependency_item_id" padding="10" unsigned="true" nullable="false" comment="Dependency Queue Item ID. When ready - main queue item could be processed."/>
+
+        <!-- Keys -->
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+
+        <!-- Foreign keys -->
+        <constraint xsi:type="foreign" referenceId="FK_QUEUE_ITEM_ID"
+                    table="mageworx_openai_queue_dependencies"
+                    column="queue_item_id"
+                    referenceTable="mageworx_openai_queue_item"
+                    referenceColumn="entity_id"
+                    onDelete="CASCADE"/>
+        <constraint xsi:type="foreign" referenceId="FK_DEPENDENCY_ITEM_ID"
+                    table="mageworx_openai_queue_dependencies"
+                    column="dependency_item_id"
+                    referenceTable="mageworx_openai_queue_item"
+                    referenceColumn="entity_id"
+                    onDelete="CASCADE"/>
+    </table>
+
+    <table name="mageworx_openai_presets" resource="default" engine="innodb" comment="MageWorx OpenAI Presets Table">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="varchar" name="code" nullable="false" length="255" comment="Preset Code"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Preset Name"/>
+        <column xsi:type="int" name="group_id" padding="10" unsigned="true" nullable="false" comment="Preset Group ID"/>
+        <column xsi:type="smallint" name="store_id" padding="5" nullable="false" unsigned="true" comment="Store ID"/>
+        <column xsi:type="text" name="content" nullable="false" comment="Prompt Content"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Creation Time"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Update Time"/>
+
+        <!-- Keys -->
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="UNQ_MAGEWORX_OPENAI_PRESETS_CODE_GROUP_ID_STORE_ID">
+            <column name="code"/>
+            <column name="group_id"/>
+            <column name="store_id"/>
+        </constraint>
+        <constraint xsi:type="foreign" referenceId="FK_MAGEWORX_OPENAI_PRESETS_GROUP_ID_OPENAI_PRESET_GROUPS_GROUP_ID"
+                    table="mageworx_openai_presets"
+                    column="group_id"
+                    referenceTable="mageworx_openai_preset_groups"
+                    referenceColumn="group_id"
+                    onDelete="CASCADE"/>
+        <constraint xsi:type="foreign" referenceId="FK_MAGEWORX_OPENAI_PRESETS_STORE_ID_STORE_STORE_ID"
+                    table="mageworx_openai_presets"
+                    column="store_id"
+                    referenceTable="store"
+                    referenceColumn="store_id"
+                    onDelete="CASCADE"/>
+    </table>
+
+    <table name="mageworx_openai_preset_groups" resource="default" engine="innodb" comment="MageWorx OpenAI Preset Groups Table">
+        <column xsi:type="int" name="group_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Group ID"/>
+        <column xsi:type="varchar" name="code" nullable="false" length="255" comment="Group Code"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Group Name"/>
+
+        <!-- Keys -->
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="group_id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="UNQ_MAGEWORX_OPENAI_PRESET_GROUP_CODE">
+            <column name="code"/>
+        </constraint>
+    </table>
+
+</schema>

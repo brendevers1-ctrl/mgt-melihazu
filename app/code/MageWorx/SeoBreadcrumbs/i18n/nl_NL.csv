@@ -1,0 +1,22 @@
+"If enabled, the system will use the %link to choose the breadcrumbs","Indien ingeschakeld, zal het systeem de %link gebruiken om de broodkruimels te kiezen."
+Breadcrumbs Priority for Categories,Broodkruimels Prioriteit voor Categorieën
+Please correct the sent data.,Corrigeer de verzonden gegevens alstublieft.
+Something went wrong while saving the category.,Er is iets fout gegaan tijdens het opslaan van de categorie.
+Default,Standaard
+Use Shortest,Kortste gebruiken
+Use Longest,Langste gebruiken
+SEO,SEO
+SEO Breadcrumbs,SEO Broodkruimels
+"Adds and manages the <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#seo-breadcrumbs"">SEO Breadcrumbs</a> on the website.","Voegt de <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#seo-breadcrumbs"">SEO Broodkruimels</a> toe en beheert deze op de website."
+Enable SEO Breadcrumbs ▾,SEO Broodkruimels inschakelen ▾
+Enables the advanced breadcrumbs populated by means of our extension and disables the default ones.,Schakelt de geavanceerde broodkruimels in die worden gegenereerd door onze extensie en schakelt de standaard broodkruimels uit.
+Type,Type
+"Handles the situation when some product is assigned to several categories. Select <i>Default</i> to use the default Magento breadcrumbs, <i>Use Shortest</i> to utilize the <b>short</b> version of breadcrumbs (like Store > Category > Product), <i>Use Longest</i> to utilize the <b>full path</b> of breadcrumbs (like Store > Category > Subcategory 1 > Product).","Handelt de situatie af wanneer een product aan meerdere categorieën is toegewezen. Selecteer <i>Standaard</i> om de standaard Magento broodkruimels te gebruiken, <i>Kortste gebruiken</i> om de <b>korte</b> versie van broodkruimels te gebruiken (zoals Winkel > Categorie > Product), <i>Langste gebruiken</i> om het <b>volledige pad</b> van broodkruimels te gebruiken (zoals Winkel > Categorie > Subcategorie 1 > Product)."
+Use Category Priority,Categorieprioriteit gebruiken
+Breadcrumbs Priority,Broodkruimels Prioriteit
+Edit,Bewerken
+ID,ID
+Path,Pad
+Level,Niveau
+Category Name,Categorienaam
+Status,Status

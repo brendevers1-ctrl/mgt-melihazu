@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+  <table name="mageworx_seoreports_product" resource="default" engine="innodb" comment="mageworx_seoreports_product">
+    <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+    <column xsi:type="int" name="reference_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Product ID"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Store ID"/>
+    <column xsi:type="varchar" name="sku" nullable="false" length="64" comment="Product SKU"/>
+    <column xsi:type="text" name="url_path" nullable="false" comment="Product URL Path"/>
+    <column xsi:type="smallint" name="url_path_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Product URL Path Length"/>
+    <column xsi:type="varchar" name="type_id" nullable="false" length="32" comment="Product Type"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="1024" comment="Product Name"/>
+    <column xsi:type="varchar" name="prepared_name" nullable="false" length="1024" comment="Product Prepared Name"/>
+    <column xsi:type="smallint" name="name_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Product Name Duplicate Count"/>
+    <column xsi:type="smallint" name="name_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Product Name Length"/>
+    <column xsi:type="varchar" name="seo_name" nullable="true" length="1024" comment="SEO Name"/>
+    <column xsi:type="varchar" name="prepared_seo_name" nullable="true" length="1024" comment="Prepared SEO Name"/>
+    <column xsi:type="smallint" name="seo_name_length" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="SEO Name Length"/>
+    <column xsi:type="smallint" name="seo_name_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="SEO Name Duplicate Count"/>
+    <column xsi:type="varchar" name="meta_title" nullable="true" length="1024" comment="Product Meta Title"/>
+    <column xsi:type="varchar" name="prepared_meta_title" nullable="false" length="1024" comment="Product Prepared Meta Title"/>
+    <column xsi:type="smallint" name="meta_title_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Product Meta Title Length"/>
+    <column xsi:type="smallint" name="meta_title_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Product Meta Title Duplicate Count"/>
+    <column xsi:type="smallint" name="meta_description_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Product Meta Description Length"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="entity_id"/>
+      <column name="entity_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOREPORTS_PRODUCT_STORE_ID_STORE_STORE_ID" table="mageworx_seoreports_product" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+    <index referenceId="MAGEWORX_SEOREPORTS_PRODUCT_PREPARED_NAME" indexType="btree">
+      <column name="prepared_name"/>
+      <column name="prepared_name"/>
+    </index>
+    <index referenceId="MAGEWORX_SEOREPORTS_PRODUCT_PREPARED_META_TITLE" indexType="btree">
+      <column name="prepared_meta_title"/>
+      <column name="prepared_meta_title"/>
+    </index>
+    <index referenceId="MAGEWORX_SEOREPORTS_PRODUCT_ENTITY_ID_REFERENCE_ID_STORE_ID" indexType="btree">
+      <column name="entity_id"/>
+      <column name="reference_id"/>
+      <column name="store_id"/>
+      <column name="entity_id"/>
+      <column name="reference_id"/>
+      <column name="store_id"/>
+    </index>
+  </table>
+  <table name="mageworx_seoreports_category" resource="default" engine="innodb" comment="mageworx_seoreports_category">
+    <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+    <column xsi:type="int" name="reference_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Category ID"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Store ID"/>
+    <column xsi:type="smallint" name="level" padding="5" unsigned="true" nullable="false" identity="false" comment="Category Level"/>
+    <column xsi:type="varchar" name="path" nullable="false" length="255" comment="Category Path"/>
+    <column xsi:type="text" name="url_path" nullable="false" comment="Category URL Path"/>
+    <column xsi:type="smallint" name="url_path_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Category URL Path Length"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="1024" comment="Category Name"/>
+    <column xsi:type="varchar" name="prepared_name" nullable="false" length="1024" comment="Category Prepared Name"/>
+    <column xsi:type="smallint" name="name_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Category Name Duplicate Count"/>
+    <column xsi:type="smallint" name="name_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Category Name Length"/>
+    <column xsi:type="varchar" name="seo_name" length="1024" nullable="true" comment="SEO Name"/>
+    <column xsi:type="varchar" name="prepared_seo_name" length="1024" nullable="true" comment="Prepared SEO Name"/>
+    <column xsi:type="smallint" name="seo_name_length" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="SEO Name Length"/>
+    <column xsi:type="smallint" name="seo_name_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="SEO Name Duplicate Count"/>
+    <column xsi:type="varchar" name="meta_title" nullable="false" length="1024" comment="Category Meta Title"/>
+    <column xsi:type="varchar" name="prepared_meta_title" nullable="false" length="1024" comment="Category Prepared Meta Title"/>
+    <column xsi:type="smallint" name="meta_title_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Category Meta Title Length"/>
+    <column xsi:type="smallint" name="meta_title_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Category Meta Title Duplicate Count"/>
+    <column xsi:type="smallint" name="meta_description_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Category Meta Description Length"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="entity_id"/>
+      <column name="entity_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOREPORTS_CATEGORY_STORE_ID_STORE_STORE_ID" table="mageworx_seoreports_category" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+    <index referenceId="MAGEWORX_SEOREPORTS_CATEGORY_PREPARED_NAME" indexType="btree">
+      <column name="prepared_name"/>
+      <column name="prepared_name"/>
+    </index>
+    <index referenceId="MAGEWORX_SEOREPORTS_CATEGORY_PREPARED_META_TITLE" indexType="btree">
+      <column name="prepared_meta_title"/>
+      <column name="prepared_meta_title"/>
+    </index>
+    <index referenceId="MAGEWORX_SEOREPORTS_CATEGORY_ENTITY_ID_REFERENCE_ID_STORE_ID" indexType="btree">
+      <column name="entity_id"/>
+      <column name="reference_id"/>
+      <column name="store_id"/>
+      <column name="entity_id"/>
+      <column name="reference_id"/>
+      <column name="store_id"/>
+    </index>
+  </table>
+  <table name="mageworx_seoreports_page" resource="default" engine="innodb" comment="mageworx_seoreports_page">
+    <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+    <column xsi:type="smallint" name="reference_id" padding="6" unsigned="false" nullable="false" identity="false" comment="Page ID"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Store ID"/>
+    <column xsi:type="text" name="url_path" nullable="false" comment="Page URL Path"/>
+    <column xsi:type="smallint" name="url_path_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Page URL Key Length"/>
+    <column xsi:type="varchar" name="heading" nullable="false" length="1024" comment="Page Heading"/>
+    <column xsi:type="varchar" name="prepared_heading" nullable="false" length="1024" comment="Page Prepared Heading"/>
+    <column xsi:type="smallint" name="heading_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Page Heading Length"/>
+    <column xsi:type="smallint" name="heading_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Page Heading Duplicate Count"/>
+    <column xsi:type="varchar" name="title" nullable="false" length="1024" comment="Page Title"/>
+    <column xsi:type="varchar" name="prepared_title" nullable="false" length="1024" comment="Page Prepared Title"/>
+    <column xsi:type="smallint" name="title_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Page Title Length"/>
+    <column xsi:type="smallint" name="title_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Page Title Duplicate Count"/>
+    <column xsi:type="varchar" name="meta_title" nullable="false" length="1024" comment="Page Meta Title"/>
+    <column xsi:type="varchar" name="prepared_meta_title" nullable="false" length="1024" comment="Page Prepared Meta Title"/>
+    <column xsi:type="smallint" name="meta_title_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Page Meta Title Length"/>
+    <column xsi:type="smallint" name="meta_title_duplicate_count" padding="5" unsigned="true" nullable="false" identity="false" default="0" comment="Page Meta Title Duplicate Count"/>
+    <column xsi:type="smallint" name="meta_description_length" padding="5" unsigned="true" nullable="false" identity="false" comment="Page Meta Description Length"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="entity_id"/>
+      <column name="entity_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOREPORTS_PAGE_STORE_ID_STORE_STORE_ID" table="mageworx_seoreports_page" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+    <index referenceId="MAGEWORX_SEOREPORTS_PAGE_PREPARED_HEADING" indexType="btree">
+      <column name="prepared_heading"/>
+      <column name="prepared_heading"/>
+    </index>
+    <index referenceId="MAGEWORX_SEOREPORTS_PAGE_PREPARED_META_TITLE" indexType="btree">
+      <column name="prepared_meta_title"/>
+      <column name="prepared_meta_title"/>
+    </index>
+    <index referenceId="MAGEWORX_SEOREPORTS_PAGE_ENTITY_ID_REFERENCE_ID_STORE_ID" indexType="btree">
+      <column name="entity_id"/>
+      <column name="reference_id"/>
+      <column name="store_id"/>
+      <column name="entity_id"/>
+      <column name="reference_id"/>
+      <column name="store_id"/>
+    </index>
+  </table>
+</schema>

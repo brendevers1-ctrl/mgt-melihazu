@@ -1,0 +1,318 @@
+We add the special <b>SEO Name</b> attribute that can be used instead of the real Product name (populates the H1 tag).,We voegen het speciale <b>SEO Naam</b> attribuut toe dat in plaats van de echte productnaam kan worden gebruikt (vult de H1-tag in).
+Choose the desired Product on the %productGridLink and click the Search Engine Optimization tab.,Kies het gewenste product in de %productGridLink en klik op het tabblad Zoekmachineoptimalisatie.
+SEO Name allows you keeping the product names short and relevant but optimize the H1 tag on the product pages at the same time.,SEO Naam maakt het mogelijk om de productnamen kort en relevant te houden en tegelijkertijd de H1-tag op de productpagina's te optimaliseren.
+start typing to search category,begin met typen om te zoeken naar categorie
+Continue,Doorgaan
+Edit Brand Page Template '%1',Bewerk Merk Pagina Sjabloon '%1'
+New Template,Nieuw Sjabloon
+Brand Page Template Info,Merk Pagina Sjabloon Info
+Reference,Referentie
+Store View,Winkelweergave
+"NOTE: ""All Store Views"" - Template will be written to the store view level.","OPMERKING: ""Alle Winkelweergaven"" - Sjabloon wordt geschreven op winkelweergaveniveau."
+"""Default Values"" - Template will be written for default values field.",Standaardwaarden - Sjabloon wordt geschreven voor velden met standaardwaarden.
+Default value is used if the store view value is empty.,Standaardwaarde wordt gebruikt als de waarde voor de winkelweergave leeg is.
+Brand Page Templates,Merk Pagina Sjablonen
+Brand Page Template Information,Merk Pagina Sjabloon Informatie
+Save Brand Page Template,Sla Merk Pagina Sjabloon op
+Brand ID,Merk ID
+Brand,Merk
+Status,Status
+Brands,Merken
+See the changed tab in the tab list,Bekijk het gewijzigde tabblad in de tabellijst
+Name,Naam
+Template Rule,Sjabloonregel
+Apply For,Toepassen op
+Apply By Cron,Toepassen via Cron
+Brand Page Template,Merk Pagina Sjabloon
+"Edit ""%1"" Template for Single-Store Mode","Bewerk ""%1"" Sjabloon voor Enkelvoudige Winkelweergave"
+"Edit ""%1"" Template for Default Values","Bewerk ""%1"" Sjabloon voor Standaardwaarden"
+"Edit ""%1"" Template for All Store Views","Bewerk ""%1"" Sjabloon voor Alle Winkelweergaven"
+"Edit ""%1"" Template for ""%2"" Store View","Bewerk ""%1"" Sjabloon voor Winkelweergave ""%2"""
+SEO XTemplates: Unknow Brand Page Template Type,SEO XTemplates: Onbekend Type Merk Pagina Sjabloon
+inserts all chosen attributes of LN on the brand.,voegt alle gekozen attributen van LN toe op het merk.
+Example:,Voorbeeld:
+"If ""color"", ""occasion"", and ""shoe size"" attributes are chosen, on the frontend you will see:","Als ""kleur"", ""gelegenheid"" en ""schoenmaat"" attributen zijn gekozen, ziet u op de frontend:"
+"""Shoes – parameters: Color Red, Occasion Casual, Shoe Size 6.5""","Schoenen - parameters: Kleur Rood, Gelegenheid Casual, Schoenmaat 6.5"
+"If no attributes are chosen, you will see: ""Shoes"".","Als er geen attributen zijn gekozen, ziet u: ""Schoenen""."
+insert attribute value if exists.,voegt attribuutwaarde toe als deze bestaat.
+"Will translate to ""Shoes in Color Red"" on the frontend.","Wordt op de frontend ""Schoenen in Kleur Rood""."
+Note: The variables [%s] and [%s] will be replaced by their values Only on the front-end.,Opmerking: De variabelen [%s] en [%s] worden alleen op de frontend vervangen door hun waarden.
+"So, in the backend you will still see [%s] and [%s].",Dus in de backend ziet u nog steeds [%s] en [%s].
+Randomizer feature is available. The construction like [Buy||Order||Purchase] will use a randomly picked word.,De Randomizer-functie is beschikbaar. De constructie zoals [Kopen||Bestellen||Aanschaffen] zal een willekeurig gekozen woord gebruiken.
+"
+        Also randomizers can be used within other template variables, ex: [-parameters:||-filters: {filter_all}]. Number of randomizers blocks is not limited within the template.","
+        Ook kunnen willekeurige elementen worden gebruikt binnen andere sjabloonvariabelen, bijvoorbeeld: [-parameters:||-filters: {filter_all}]. Het aantal willekeurige elementen is niet beperkt binnen het sjabloon."
+Edit Category Template '%1',Bewerk Categorie Sjabloon '%1'
+Category Template Info,Categorie Sjabloon Informatie
+NOTE: Template will be added to the store view level.,NOTITIE: Het sjabloon wordt toegevoegd op het niveau van de winkelweergave.
+Category Templates,Categorie Sjablonen
+Category Template Information,Categorie Sjabloon Informatie
+Save Category Template,Sla Categorie Sjabloon op
+Categories,Categorieën
+SEO XTemplates: Unknow Category Template Type,SEO XTemplates: Onbekend Categorie Sjabloon Type
+inserts all chosen attributes of LN on the category page.,voegt alle gekozen attributen van LN in op de categoriepagina.
+Randomizer feature is available. The construction like %1 will use a randomly picked word.,Willekeurige generator is beschikbaar. De constructie zoals %1 zal een willekeurig gekozen woord gebruiken.
+"Also randomizers can be used within other template variables, ex: %1. Number of randomizers blocks is not limited within the template.","Ook kunnen willekeurige generatoren worden gebruikt binnen andere sjabloonvariabelen, bijvoorbeeld %1. Het aantal willekeurige generatoren is niet beperkt binnen het sjabloon."
+Category Filter Template Info,Categorie Filter Sjabloon Informatie
+-- Please Select --,-- Maak een Keuze --
+Attribute,Attribuut
+Category Filter Template,Categorie Filter Sjabloon
+Category Filter Template Information,Categorie Filter Sjabloon Informatie
+Save Category Filter Template,Sla Categorie Filter Sjabloon op
+Edit Category Filter Template '%1',Bewerk Categorie Filter Sjabloon '%1'
+Attribute Value,Attribuut Waarde
+Each store,Elke winkel
+"Edit ""%1"" Template for ""%2"" Store View and ""%3"" Attribute","Bewerk ""%1"" Sjabloon voor ""%2"" Winkelweergave en ""%3"" Attribuut"
+Edit Landing Page Template '%1',Bewerk Landingspagina Sjabloon '%1'
+Landing Page Template Info,Landingspagina Sjabloon Informatie
+Landing Page Templates,Landingspagina Sjablonen
+Landing Page Template Information,Landingspagina Sjabloon Informatie
+Save Landing Page Template,Sla Landingspagina Sjabloon op
+ID,ID
+Title,Titel
+Landing Pages,Landingspagina's
+Landing Page Template,Landingspagina Sjabloon
+SEO XTemplates: Unknow Landing Page Template Type,SEO XTemplates: Onbekend Landingspagina Sjabloon Type
+inserts all chosen attributes of LN on the landing page.,voegt alle gekozen attributen van LN in op de landingspagina.
+Edit Product Template '%1',Bewerk Product Sjabloon '%1'
+Product Template Info,Product Sjabloon Informatie
+Product Templates,Product Sjablonen
+Product template Information,Product sjabloon Informatie
+Save Product Template,Sla Product Sjabloon op
+Attribute Set,Attribuut Set
+Attribute Sets,Attribuut Sets
+Type,Type
+Visibility,Zichtbaarheid
+SKU,SKU
+Price,Prijs
+Products,Producten
+"Template ""%1"" has been applied.","Sjabloon ""%1"" is toegepast."
+We can't find a brand page template to apply.,We kunnen geen merkpagina sjabloon vinden om toe te passen.
+Create Template,Maak een Sjabloon
+The template no longer exists.,Het sjabloon bestaat niet meer.
+New Brand Page Template,Nieuw Merkpagina Sjabloon
+"The ""%1"" template has been deleted.","Het sjabloon ""%1"" is verwijderd."
+We can't find a brand page template to delete.,We kunnen geen merkpagina sjabloon vinden om te verwijderen.
+Edit Template,Bewerk Sjabloon
+SEO Brand Page Templates,SEO Merkpagina Sjablonen
+Templates for Brand,Sjablonen voor Merk
+"The ""%1"" template has been saved.","Het sjabloon ""%1"" is opgeslagen."
+Something went wrong while saving the template.,Er is iets misgegaan bij het opslaan van het sjabloon.
+We can't find a category template to apply.,We kunnen geen categorie sjabloon vinden om toe te passen.
+Template,Sjabloon
+New Category Template,Nieuw Categorie Sjabloon
+There are either no assigned categories for the current template or no values that could have been modified by the template.,"Er zijn ofwel geen toegewezen categorieën voor het huidige sjabloon, of geen waarden die door het sjabloon kunnen worden gewijzigd."
+We can't find a category template to delete.,We kunnen geen categorie sjabloon vinden om te verwijderen.
+SEO Category Templates,SEO Categorie Sjablonen
+Templates for Category,Sjablonen voor Categorie
+Please correct the data sent.,Corrigeer de verzonden gegevens a.u.b.
+Something went wrong while saving the category template.,Er is iets misgegaan bij het opslaan van het categorie sjabloon.
+We can't find a category filter  template to apply.,We kunnen geen categorie filter sjabloon vinden om toe te passen.
+We can't find a category filter template to delete.,We kunnen geen categorie filter sjabloon vinden om te verwijderen.
+SEO Category Filter Templates,SEO Categorie Filter Sjablonen
+Something went wrong while saving the category filter template.,Er is iets misgegaan bij het opslaan van het categorie filter sjabloon.
+We can't find a landing page template to apply.,We kunnen geen landingspagina sjabloon vinden om toe te passen.
+New Landing Page Template,Nieuw Landingspagina Sjabloon
+We can't find a landingpage template to delete.,We kunnen geen landingspagina sjabloon vinden om te verwijderen.
+SEO Landing Page Templates,SEO Landingspagina Sjablonen
+Templates for Landing Page,Sjablonen voor Landingspagina
+We can't find a product template to apply.,We kunnen geen product sjabloon vinden om toe te passen.
+New Product Template,Nieuw Product Sjabloon
+There are either no assigned products for the current template or no values that could have been modified by the template.,"Er zijn ofwel geen toegewezen producten voor het huidige sjabloon, of geen waarden die door het sjabloon kunnen worden gewijzigd."
+We can't find a product template to delete.,We kunnen geen product sjabloon vinden om te verwijderen.
+SEO Product Templates,SEO Product Sjablonen
+Templates for Product,Sjablonen voor Product
+Something went wrong while saving the product template.,Er is iets misgegaan bij het opslaan van het product sjabloon.
+Template can be used if Single Store Mode is disabled only.,Dit sjabloon kan alleen worden gebruikt als de modus voor enkele winkel is uitgeschakeld.
+Template can be used if Single Store Mode is enabled only.,Dit sjabloon kan alleen worden gebruikt als de modus voor enkele winkel is ingeschakeld.
+Static Template variables:,Statische sjabloonvariabelen:
+their values are written in brand attributes in the backend.,hun waarden worden geschreven in merkattributen in de backend.
+The values of randomizer feature will also be written in the attributes.,De waarden van de willekeurige generatormogelijkheid worden ook geschreven in de attributen.
+Dynamic Template variables:,Dynamische sjabloonvariabelen:
+their values will only be seen on the frontend. In the backend you’ll see the variables themselves.,hun waarden worden alleen weergegeven op de frontend. In de backend ziet u de variabelen zelf.
+Here randomizer values will change with every page refresh.,Hier zullen de waarden van de willekeurige generator veranderen bij elke paginavernieuwing.
+output a brand name,uitvoer van een merknaam
+output a brand meta title,uitvoer van een merk metatitel
+output a brand meta description,uitvoer van een merk metabeschrijving
+output a brand meta keywords,uitvoer van merk metakeywords
+output a brand page title,uitvoer van een merkpagina titel
+output a current website name,uitvoer van de huidige website naam
+output a current store name,uitvoer van de huidige winkelnaam
+output a current store view name,uitvoer van de huidige winkelweergave naam
+inserts mentioned product attribute label on the brand LN page.,voegt de genoemde productattribuutlabel in op de merk LN pagina.
+inserts mentioned product attribute value on the brand LN page.,voegt de genoemde productattribuutwaarde in op de merk LN pagina.
+"
+        Also randomizers can be used within other template variables, ex: [Name:||Title: {brand}]. Number of randomizers blocks is not limited within the template.","Ook willekeurige generatoren kunnen worden gebruikt binnen andere sjabloonvariabelen, bijv: [Naam:||Titel: {brand}]. Het aantal willekeurige generatorblokken is niet beperkt binnen het sjabloon."
+their values are written in product/category attributes in the backend.,hun waarden worden geschreven in product-/categorie-attributen in de backend.
+output a current category name,voert een huidige categorie naam uit
+output a current categories chain starting from the first parent category and ending a current category,"voert een huidige categorieketen uit, beginnend bij de eerste bovenliggende categorie en eindigend bij de huidige categorie"
+output a parent category name,voert een bovenliggende categorienaam uit
+outputs the 1st parent category name. It equals to [parent_category],geeft de naam van de 1e bovenliggende categorie uit. Het komt overeen met [parent_category]
+outputs the 2st parent category name,geeft de naam van de 2e bovenliggende categorie uit
+etc.,enz.
+The orders of the parent categories is as follows: <br>&nbsp;&nbsp;&nbsp;&nbsp; yoursite/parent_category_3/parent_category_2/parent_category_1/category.html,De volgorde van de bovenliggende categorieën is als volgt: <br>     yoursite/bovenliggende_categorie_3/bovenliggende_categorie_2/bovenliggende_categorie_1/categorie.html
+output a list of subcategories for a current category,voert een lijst van subcategorieën uit voor een huidige categorie
+inserts mentioned product attribute label on the category LN page.,voegt genoemde productattribuutlabel in op de categorie LN-pagina.
+inserts mentioned product attribute value on the category LN page.,voegt genoemde productattribuutwaarde in op de categorie LN-pagina.
+their values are written in landing page attributes in the backend.,hun waarden worden geschreven in landingspagina-attributen in de backend.
+output a landing page title,voert een landingspagina titel uit
+output a landing page meta title,voert een landingspagina metatitel uit
+output a landing page meta description,voert een landingspagina metabeschrijving uit
+output a landing page meta keywords,voert landingspagina metakeywords uit
+output a landing page header,voert landingspagina kop uit
+output a landing page text variable 1,voert landingspagina tekstvariabele 1 uit
+output a landing page text variable 2,voert landingspagina tekstvariabele 2 uit
+output a landing page text variable 3,voert landingspagina tekstvariabele 3 uit
+output a landing page text variable 4,voert landingspagina tekstvariabele 4 uit
+inserts mentioned product attribute label on the landing page LN page.,voegt genoemde productattribuutlabel in op de landingspagina LN-pagina.
+inserts mentioned product attribute value on the landing page LN page.,voegt genoemde productattribuutwaarde in op de landingspagina LN-pagina.
+"
+        Also randomizers can be used within other template variables, ex: [Name:||Title: {landing_page}]. Number of randomizers blocks is not limited within the template.","
+        Ook willekeurige generatoren kunnen worden gebruikt binnen andere sjabloonvariabelen, bijv: [Naam:||Titel: {landing_page}]. Het aantal willekeurige generatorblokken is niet beperkt binnen het sjabloon."
+Example,Voorbeeld
+will be transformed into,zal worden omgezet in
+SEO XTemplates: Unknow Product Template Type,SEO XTemplates: Onbekend Product Sjabloon Type
+Template variables,Sjabloonvariabelen
+will be replaced with the respective product attribute value or removed if value is not available,worden vervangen door de respectievelijke productattribuutwaarde of verwijderd als de waarde niet beschikbaar is
+if the first attribute value is not available for the product the second will be used and so on untill it finds a value,"als de eerste attribuutwaarde niet beschikbaar is voor het product, wordt de tweede gebruikt en zo verder totdat een waarde wordt gevonden"
+"if an attribute value is available it will be prepended with prefix and appended with suffix, either prefix or suffix can be used alone","als een attribuutwaarde beschikbaar is, wordt deze voorafgegaan door een voorvoegsel en gevolgd door een achtervoegsel, waarbij zowel het voorvoegsel als het achtervoegsel afzonderlijk kunnen worden gebruikt"
+Additional variables available,Aanvullende variabelen beschikbaar
+Note: The variables [category] and [categories] should be used when categories are added in product path only to avoid duplicates in meta tags,Let op: de variabelen [category] en [categories] moeten alleen worden gebruikt wanneer categorieën worden toegevoegd aan het productpad om duplicaten in metatags te voorkomen
+Randomizer feature is available. The construction like [Buy||Order||Purchase] will use a randomly picked word for each next item when applying a template.,Willekeurige generatormogelijkheid is beschikbaar. De constructie zoals [Kopen||Bestellen||Aanschaffen] zal voor elk volgend item een willekeurig gekozen woord gebruiken bij het toepassen van een sjabloon.
+"Also randomizers can be used within other template variables, ex: ","Ook willekeurige generatoren kunnen worden gebruikt binnen andere sjabloonvariabelen, bijv:"
+Number of randomizers blocks is not limited within the template.,Het aantal willekeurige generatorblokken is niet beperkt binnen het sjabloon.
+Additional variable available,Aanvullende variabele beschikbaar
+Brand Title,Merknaam
+Store ID,Winkel-ID
+Store Name,Winkelnaam
+Target,Doel
+Current Store Value,Huidige Winkelwaarde
+New Store Value,Nieuwe Winkelwaarde
+Single-Store Mode,Modus voor Enkele Winkel
+Attribute ID,Attribuut-ID
+Attribute Code,Attribuut Code
+Category ID,Categorie-ID
+Category Name,Categorienaam
+SEO Filter ID,SEO Filter ID
+Attribute Value ID,Attribuutwaarde-ID
+Attribute Value Label,Attribuutwaarde Label
+Target Property,Doel Eigenschap
+Landing Page ID,Landing Pagina-ID
+Landing Page Title,Landing Pagina Titel
+Product ID,Product-ID
+Product Name,Productnaam
+File,Bestand
+Position,Positie
+All,Alles
+Unknown,Onbekend
+The template cannot be saved. There is another template assigned for all categories.,Het sjabloon kan niet worden opgeslagen. Er is al een sjabloon toegewezen voor alle categorieën.
+The template was saved without assigned products. Please add categories manually.,Het sjabloon is opgeslagen zonder toegewezen producten. Voeg categorieën handmatig toe.
+"Template ""%1"" was successfully saved","Sjabloon ""%1"" is succesvol opgeslagen"
+All Brands,Alle Merken
+Specific Brands,Specifieke Merken
+Brand Page Title,Merk Pagina Titel
+Brand Meta Title,Merk Metatitel
+Brand Meta Description,Merk Metabeschrijving
+Brand Meta Keywords,Merk Metakeywords
+All Categories,Alle Categorieën
+Specific Categories,Specifieke Categorieën
+Category SEO Name,Categorie SEO Naam
+Category Description,Categorie Beschrijving
+Category Meta Title,Categorie Metatitel
+Category Meta Description,Categorie Metabeschrijving
+Category Meta Keywords,Categorie Metakeywords
+The template was saved without assigned category. Please add categories manually.,Het sjabloon is opgeslagen zonder toegewezen categorie. Voeg categorieën handmatig toe.
+Category Filter Description,Categorie Filter Beschrijving
+Category Filter Meta Title,Categorie Filter Metatitel
+Category Filter Meta Description,Categorie Filter Metabeschrijving
+Category Filter Meta Keywords,Categorie Filter Metakeywords
+All Landing Pages,Alle Landingspagina's
+Specific Landing Pages,Specifieke Landingspagina's
+Landing Page Header,Landingspagina Kop
+Landing Page Meta Title,Landingspagina Metatitel
+Landing Page Meta Description,Landingspagina Metabeschrijving
+Landing Page Meta Keywords,Landingspagina Metakeywords
+Landing Page Url Key,Landingspagina URL Sleutel
+Landing Page Text #1,Landingspagina Tekst #1
+Landing Page Text #2,Landingspagina Tekst #2
+Landing Page Text #3,Landingspagina Tekst #3
+Landing Page Text #4,Landingspagina Tekst #4
+The template cannot be saved. There is another template assigned for all products.,Het sjabloon kan niet worden opgeslagen. Er is al een sjabloon toegewezen voor alle producten.
+The template was saved without assigned products. Please add products manually.,Het sjabloon is opgeslagen zonder toegewezen producten. Voeg producten handmatig toe.
+All Products,Alle Producten
+By Attribute Set,Per Attribuut Set
+Specific Products,Specifieke Producten
+--Please Select--,--Maak een Keuze--
+Product SEO Name,Product SEO Naam
+Product URL Key,Product URL Sleutel
+Product Short Description,Product Korte Beschrijving
+Product Description,Product Beschrijving
+Product Meta Title,Product Metatitel
+Product Meta Description,Product Metabeschrijving
+Product Meta Keywords,Product Metakeywords
+Product Image Alt Text,Product Afbeelding Alt Tekst
+Empty,Leeg
+No,Nee
+Yes,Ja
+For Default Values,Voor Standaardwaarden
+For each store,Voor elke winkel
+Edit,Bewerken
+Delete,Verwijderen
+"Delete ""${ $.$data.name }""","Verwijder ""${ $.$data.name }"""
+Test Apply,Test Toepassen
+Apply,Toepassen
+"Apply ""${ $.$data.name }""","Toepassen ""${ $.$data.name }"""
+"Are you sure you want to apply the Brand Page Template ""${ $.$data.name }"" ? This action cannot be canceled.","Weet u zeker dat u het Merkpagina Sjabloon ""${ $.$data.name }"" wilt toepassen? Deze actie kan niet ongedaan worden gemaakt."
+"Are you sure you want to delete the Brand Page Template ""${ $.$data.name }"" ?","Weet u zeker dat u het Merkpagina Sjabloon ""${ $.$data.name }"" wilt verwijderen?"
+"Are you sure you want to apply the Category Template ""${ $.$data.name }"" ? This action cannot be canceled.","Weet u zeker dat u het Categorie Sjabloon ""${ $.$data.name }"" wilt toepassen? Deze actie kan niet ongedaan worden gemaakt."
+"Are you sure you want to delete the Category Template ""${ $.$data.name }"" ?","Weet u zeker dat u het Categorie Sjabloon ""${ $.$data.name }"" wilt verwijderen?"
+"Are you sure you want to apply the Category Filter Template ""${ $.$data.name }"" ? This action cannot be canceled.","Weet u zeker dat u het Categorie Filter Sjabloon ""${ $.$data.name }"" wilt toepassen? Deze actie kan niet ongedaan worden gemaakt."
+"Are you sure you want to delete the Category Filter Template ""${ $.$data.name }"" ?","Weet u zeker dat u het Categorie Filter Sjabloon ""${ $.$data.name }"" wilt verwijderen?"
+"Are you sure you want to apply the Landing Page Template ""${ $.$data.name }"" ? This action cannot be canceled.","Weet u zeker dat u het Landingspagina Sjabloon ""${ $.$data.name }"" wilt toepassen? Deze actie kan niet ongedaan worden gemaakt."
+"Are you sure you want to delete the Landing Page Template ""${ $.$data.name }"" ?","Weet u zeker dat u het Landingspagina Sjabloon ""${ $.$data.name }"" wilt verwijderen?"
+"Are you sure you want to apply the Product Template ""${ $.$data.name }"" ? This action cannot be canceled.","Weet u zeker dat u het Product Sjabloon ""${ $.$data.name }"" wilt toepassen? Deze actie kan niet ongedaan worden gemaakt."
+"Are you sure you want to delete the Product Template ""${ $.$data.name }"" ?","Weet u zeker dat u het Product Sjabloon ""${ $.$data.name }"" wilt verwijderen?"
+No records found.,Geen records gevonden.
+Recent items,Recente items
+Show all...,Alles weergeven...
+SEO,SEO
+SEO Extended Templates,SEO Uitgebreide Sjablonen
+"Provides templates for any product/category meta information and other important SEO elements, such as product name, product URL key, etc. Optimizes the meta information and description for any filtered page on any store view.","Biedt sjablonen voor product-/categorie-meta-informatie en andere belangrijke SEO-elementen, zoals productnaam, product-URL-sleutel, etc. Optimaliseert de meta-informatie en beschrijving voor elke gefilterde pagina op elke winkelweergave."
+Use Product SEO Name for Product Pages,Gebruik Product SEO Naam voor Productpagina's
+We add the special <b>SEO Name</b> attribute that can be used instead of the real Product name (populates the H1 tag). Choose the desired Product on the Products Grid and click the Search Engine Optimization tab. SEO Name allows you keeping the product names short and relevant but optimize the H1 tag on the product pages at the same time.,"We voegen het speciale <b>SEO Naam</b> attribuut toe dat in plaats van de werkelijke productnaam kan worden gebruikt (vult de H1-tag in). Kies het gewenste product in het productoverzicht en klik op het tabblad Zoekmachineoptimalisatie. Met SEO Naam kunt u de productnamen kort en relevant houden, maar tegelijkertijd de H1-tag op de productpagina's optimaliseren."
+Use Category SEO Name for Category Pages,Gebruik Categorie SEO Naam voor Categoriepagina's
+We add the special <b>SEO Name</b> attribute that can be used instead of the real Category name (populates the H1 tag). Choose the desired category on the Categories tree and click the Search Engine Optimization tab.,We voegen het speciale <b>SEO Naam</b> attribuut toe dat in plaats van de werkelijke categorienaam kan worden gebruikt (vult de H1-tag in). Kies de gewenste categorie in de categorieboom en klik op het tabblad Zoekmachineoptimalisatie.
+Crop Root Category from Category Template Variable [categories],Vervolg de wortelcategorie uit Sjabloonvariabele [categories]
+"If <i>enabled</i>, eliminates the possible problem with the incorrect output from the [categories] variable.","Als <i>ingeschakeld</i>, elimineert het mogelijk problemen met de onjuiste uitvoer van de [categories] variabele."
+Crop Meta Title ▾,Verkorte Meta Titel ▾
+"If <i>enabled</i>, allows specifying the length of the meta title. The words that exceed the max length will be cropped.","Als <i>ingeschakeld</i>, kunt u de lengte van de metatitel specificeren. Woorden die de maximale lengte overschrijden, worden afgekapt."
+&nbsp;&nbsp;&nbsp;&nbsp;Max Length for Meta&nbsp;Title,&nbsp;&nbsp;&nbsp;&nbsp;Maximale Lengte voor Meta Titel
+Recommended length is up to 70 characters.,Aanbevolen lengte is tot 70 tekens.
+Crop Meta Description ▾,Verkorte Meta Beschrijving ▾
+"If <i>enabled</i>, allows specifying the length of the meta description. The words that exceed the max length will be cropped.","Als <i>ingeschakeld</i>, kunt u de lengte van de metabeschrijving specificeren. Woorden die de maximale lengte overschrijden, worden afgekapt."
+&nbsp;&nbsp;&nbsp;&nbsp;Max Length for Meta&nbsp;Description,&nbsp;&nbsp;&nbsp;&nbsp;Maximale Lengte voor Meta Beschrijving
+Recommended length is up to 150 characters.,Aanbevolen lengte is tot 150 tekens.
+Enable E-mail <br> Error Notification ▾,E-mailmelding bij Fout inschakelen <br> ▾
+"If <i>enabled</i>, sends the error reports regarding the problems with the templates to the store owner","Als <i>ingeschakeld</i>, worden foutmeldingen met betrekking tot problemen met de sjablonen naar de eigenaar van de winkel gestuurd"
+&nbsp;&nbsp;&nbsp;&nbsp;Error Email Recipient,&nbsp;&nbsp;&nbsp;&nbsp;Foutmelding E-mail Ontvanger
+Put the valid e-mail here,Vul hier het geldige e-mailadres in
+&nbsp;&nbsp;&nbsp;&nbsp;Error Email Sender,&nbsp;&nbsp;&nbsp;&nbsp;Foutmelding E-mail Verzender
+ SEO Name,SEO Naam
+SEO Name,SEO Naam
+SEO Name Problems,Problemen met SEO Naam
+Add New Brand Page Template,Nieuw Merkpagina Sjabloon toevoegen
+Delete templates,Sjablonen verwijderen
+Are you sure you want to delete selected templates?,Weet u zeker dat u geselecteerde sjablonen wilt verwijderen?
+Code,Code
+Assign For,Toewijzen Voor
+Priority,Prioriteit
+Write for,Schrijven voor
+Date Modified,Datum Gewijzigd
+Date Apply Start,Datum Toepassing Start
+Date Apply Finish,Datum Toepassing Einde
+Use Cron,Gebruik Cron
+Add New Category Template,Nieuw Categorie Sjabloon toevoegen
+Add New Category Filter Template,Nieuw Categorie Filter Sjabloon toevoegen
+Attribute Name,Attribuut Naam
+Add New Landing Page Template,Nieuw Landingspagina Sjabloon toevoegen
+Add New Product Template,Nieuw Product Sjabloon toevoegen

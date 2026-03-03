@@ -1,0 +1,29 @@
+Brand ID,Merk ID
+Status,Status
+Enabled,Ingeschakeld
+Disabled,Uitgeschakeld
+Attribute,Kenmerk
+Brand,Merk
+ID,ID
+Landing Page,Landingpagina
+Attribute Value,Kenmerkwaarde
+Root,Root
+Use Config,Gebruik Configuratie
+All Values,Alle Waarden
+UNKNOWN CATEGORY,ONBEKENDE CATEGORIE
+UNKNOWN PRODUCT,ONBEKEND PRODUCT
+All Store Views,Alle Winkelweergaven
+SEO,SEO
+SEO Common Settings,Algemene SEO-instellingen
+These settings can be used in the other SEO extensions.,Deze instellingen kunnen worden gebruikt in andere SEO-extensies.
+Length settings for Properties,Lengte-instellingen voor Eigenschappen
+"Please note that the settings below are used for the SEO reports only to find the values which exceed the specified limits.</br>
+                        You can't use these settings to set the specific length for your meta values and URLs.","Let op: de onderstaande instellingen worden alleen gebruikt voor de SEO-rapporten om waarden te vinden die de opgegeven limieten overschrijden.</br>
+                        Je kunt deze instellingen niet gebruiken om de specifieke lengte van je meta-waarden en URL's in te stellen."
+Meta Title Max Length,Maximale lengte Meta Titel
+Meta Description Max Length,Maximale lengte Meta Omschrijving
+Meta Keywords Max Length,Maximale lengte Meta Trefwoorden
+H1 Tag Max Length,Maximale lengte H1 Tag
+URL Path Max Length,Maximale lengte URL-pad
+Disable SEO Features for logged customer,SEO-functies uitschakelen voor ingelogde klanten
+Choose the functionalities which will be disabled for the logged in customers to improve the performance.,Kies de functionaliteiten die worden uitgeschakeld voor ingelogde klanten om de prestaties te verbeteren.

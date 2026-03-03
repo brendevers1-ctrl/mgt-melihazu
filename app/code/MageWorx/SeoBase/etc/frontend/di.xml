@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © 2015 MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+
+    <type name="MageWorx\SeoBase\Model\RobotsFactory">
+        <arguments>
+            <argument name="map" xsi:type="array">
+                <item name="catalog_product_view" xsi:type="string">MageWorx\SeoBase\Model\Robots\Product</item>
+                <item name="catalog_category_view" xsi:type="string">MageWorx\SeoBase\Model\Robots\Category</item>
+                <item name="cms_index_index" xsi:type="string">MageWorx\SeoBase\Model\Robots\Page</item>
+                <item name="cms_page_view" xsi:type="string">MageWorx\SeoBase\Model\Robots\Page</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="MageWorx\SeoBase\Model\NextPrevFactory">
+        <arguments>
+            <argument name="map" xsi:type="array">
+                <item name="catalog_category_view" xsi:type="string">MageWorx\SeoBase\Model\NextPrev\Category</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\App\Response\Http">
+        <plugin name="MageWorx_SeoBase::responseHttpBefore" type="MageWorx\SeoBase\Plugin\NextPrev\ResponseHttpBefore" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="MageWorx\SeoMarkup\Block\Head\SocialMarkup\Category">
+        <plugin name="MageWorx_SeoBase::use_canonical_url_in_category_social_markup"
+                type="MageWorx\SeoBase\Plugin\UseCanonicalUrlInCategorySocialMarkupPlugin"/>
+    </type>
+    <type name="MageWorx\SeoMarkup\Helper\DataProvider\Product">
+        <plugin name="MageWorx_SeoBase::use_canonical_url_in_product_markup"
+                type="MageWorx\SeoBase\Plugin\UseCanonicalUrlInProductMarkupPlugin"/>
+    </type>
+    <type name="MageWorx\SeoMarkup\Block\Head\SocialMarkup\Page\DefaultPage">
+        <plugin name="MageWorx_SeoBase::use_canonical_url_in_cms_page_social_markup"
+                type="MageWorx\SeoBase\Plugin\UseCanonicalUrlInCmsPageSocialMarkupPlugin"/>
+    </type>
+    <type name="MageWorx\SeoMarkup\Block\Head\SocialMarkup\Page\Home">
+        <plugin name="MageWorx_SeoBase::use_canonical_url_in_home_page_social_markup"
+                type="MageWorx\SeoBase\Plugin\UseCanonicalUrlInHomePageSocialMarkupPlugin"/>
+    </type>
+</config>

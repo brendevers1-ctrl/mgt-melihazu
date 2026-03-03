@@ -1,0 +1,16 @@
+{
+    "sitemap": {
+        "column": {
+            "count_by_entity": true,
+            "entity_type": true,
+            "sitemap_filename": true,
+            "server_path": true,
+            "sitemap_link": true
+        }
+    },
+    "cms_page": {
+        "column": {
+            "in_xml_sitemap": true
+        }
+    }
+}

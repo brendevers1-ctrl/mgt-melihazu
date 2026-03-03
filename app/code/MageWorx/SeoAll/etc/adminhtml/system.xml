@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mageworx" sortOrder="2001">
+            <label>MageWorx</label>
+        </tab>
+        <section id="mageworx_seo" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>SEO</label>
+            <tab>mageworx</tab>
+            <resource>MageWorx_SeoAll::config_seoall</resource>
+            <group id="all" translate="label comment" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>SEO Common Settings</label>
+                <comment><![CDATA[These settings can be used in the other SEO extensions.]]></comment>
+                <group id="length" translate="label comment" type="text" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Length settings for Properties</label>
+                    <comment>
+                        <![CDATA[Please note that the settings below are used for the SEO reports only to find the values which exceed the specified limits.</br>
+                        You can't use these settings to set the specific length for your meta values and URLs.]]>
+                    </comment>
+                    <field id="meta_title_max" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                        <label><![CDATA[Meta Title Max Length]]></label>
+                        <validate>validate-number validate-zero-or-greater</validate>
+                    </field>
+                    <field id="meta_description_max" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                        <label><![CDATA[Meta Description Max Length]]></label>
+                        <validate>validate-number validate-zero-or-greater</validate>
+                    </field>
+                    <field id="meta_keywords_max" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                        <label><![CDATA[Meta Keywords Max Length]]></label>
+                        <validate>validate-number validate-zero-or-greater</validate>
+                    </field>
+                    <field id="h1_max" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                        <label><![CDATA[H1 Tag Max Length]]></label>
+                        <validate>validate-number validate-zero-or-greater</validate>
+                    </field>
+                    <field id="url_max" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+                        <label><![CDATA[URL Path Max Length]]></label>
+                        <validate>validate-number validate-zero-or-greater</validate>
+                    </field>
+                </group>
+                <field id="disable_seo_features" translate="label comment" type="multiselect" sortOrder="60" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label><![CDATA[Disable SEO Features for logged customer]]></label>
+                    <comment><![CDATA[Choose the functionalities which will be disabled for the logged in customers to improve the performance. Usually, crawlers have no access to a customer area and defined as visitors. So, it's safe to disable these features for logged in customers, as this change won't affect on to how the crawlers see your website.]]></comment>
+                    <source_model>MageWorx\SeoAll\Model\Source\DisableSeoFeatures</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

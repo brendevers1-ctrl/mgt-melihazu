@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+  <table name="mageworx_seoxtemplates_template_product" resource="default" engine="innodb" comment="Template Product Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Template ID"/>
+    <column xsi:type="smallint" name="type_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Template Type"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Template Name"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Store ID"/>
+    <column xsi:type="text" name="code" nullable="false" comment="Template Code"/>
+    <column xsi:type="smallint" name="assign_type" padding="5" unsigned="true" nullable="false" identity="false" comment="Assign Type"/>
+    <column xsi:type="smallint" name="priority" padding="5" unsigned="true" nullable="false" identity="false" comment="Priority"/>
+    <column xsi:type="datetime" name="date_modified" on_update="false" nullable="true" comment="Last Modify Date"/>
+    <column xsi:type="datetime" name="date_apply_start" on_update="false" nullable="true" comment="Last Apply Start Date"/>
+    <column xsi:type="datetime" name="date_apply_finish" on_update="false" nullable="true" comment="Last Apply Finish Date"/>
+    <column xsi:type="smallint" name="scope" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Scope"/>
+    <column xsi:type="smallint" name="is_use_cron" padding="5" unsigned="true" nullable="false" identity="false" default="2" comment="Is Use Cron"/>
+    <column xsi:type="boolean" name="is_single_store_mode" nullable="false" comment="Is Single-Store Mode"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="template_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOXTEMPLATES_TEMPLATE_PRODUCT_STORE_ID_STORE_STORE_ID" table="mageworx_seoxtemplates_template_product" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_relation_product" resource="default" engine="innodb" comment="Template Product To Product Link Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Template ID"/>
+    <column xsi:type="int" name="product_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Product ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_680C6EE467DAB93590B48E6BBACBE689" table="mageworx_seoxtemplates_template_relation_product" column="template_id" referenceTable="mageworx_seoxtemplates_template_product" referenceColumn="template_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="FK_38FE35F1A07A7B77B34165C4496C36C7" table="mageworx_seoxtemplates_template_relation_product" column="product_id" referenceTable="catalog_product_entity" referenceColumn="entity_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_relation_attributeset" resource="default" engine="innodb" comment="Template Product To Product Attribute Set Link Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Template ID"/>
+    <column xsi:type="smallint" name="attributeset_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Attribute Set ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_49375704E06B0B80A580FC86DE817E0A" table="mageworx_seoxtemplates_template_relation_attributeset" column="template_id" referenceTable="mageworx_seoxtemplates_template_product" referenceColumn="template_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="FK_6F114ABDC1AC37831363C14C24A85561" table="mageworx_seoxtemplates_template_relation_attributeset" column="attributeset_id" referenceTable="eav_attribute_set" referenceColumn="attribute_set_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_category" resource="default" engine="innodb" comment="Template Category Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Template ID"/>
+    <column xsi:type="smallint" name="type_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Template Type"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Template Name"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Store ID"/>
+    <column xsi:type="text" name="code" nullable="false" comment="Template Code"/>
+    <column xsi:type="smallint" name="assign_type" padding="5" unsigned="true" nullable="false" identity="false" comment="Assign Type"/>
+    <column xsi:type="smallint" name="priority" padding="5" unsigned="true" nullable="false" identity="false" comment="Priority"/>
+    <column xsi:type="datetime" name="date_modified" on_update="false" nullable="true" comment="Last Modify Date"/>
+    <column xsi:type="datetime" name="date_apply_start" on_update="false" nullable="true" comment="Last Apply Start Date"/>
+    <column xsi:type="datetime" name="date_apply_finish" on_update="false" nullable="true" comment="Last Apply Finish Date"/>
+    <column xsi:type="smallint" name="scope" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Scope"/>
+    <column xsi:type="smallint" name="is_use_cron" padding="5" unsigned="true" nullable="false" identity="false" default="2" comment="Is Use Cron"/>
+    <column xsi:type="boolean" name="is_single_store_mode" nullable="false" comment="Is Single-Store Mode"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="template_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOXTEMPLATES_TEMPLATE_CATEGORY_STORE_ID_STORE_STORE_ID" table="mageworx_seoxtemplates_template_category" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_relation_category" resource="default" engine="innodb" comment="Template Category To Category Link Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Template ID"/>
+    <column xsi:type="int" name="category_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Category ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_1996A41DB807A08B60328D35F4CF434F" table="mageworx_seoxtemplates_template_relation_category" column="template_id" referenceTable="mageworx_seoxtemplates_template_category" referenceColumn="template_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="FK_DA58B0960A9CC56C1783E23DCC4F2354" table="mageworx_seoxtemplates_template_relation_category" column="category_id" referenceTable="catalog_category_entity" referenceColumn="entity_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_categoryfilter" resource="default" engine="innodb" comment="Template Category Filter Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Template ID"/>
+    <column xsi:type="smallint" name="attribute_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Category Attribute ID"/>
+    <column xsi:type="smallint" name="type_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Template Type"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Template Name"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Store ID"/>
+    <column xsi:type="text" name="code" nullable="false" comment="Template Code"/>
+    <column xsi:type="smallint" name="assign_type" padding="5" unsigned="true" nullable="false" identity="false" comment="Assign Type"/>
+    <column xsi:type="smallint" name="priority" padding="5" unsigned="true" nullable="false" identity="false" comment="Priority"/>
+    <column xsi:type="datetime" name="date_modified" on_update="false" nullable="true" comment="Last Modify Date"/>
+    <column xsi:type="datetime" name="date_apply_start" on_update="false" nullable="true" comment="Last Apply Start Date"/>
+    <column xsi:type="datetime" name="date_apply_finish" on_update="false" nullable="true" comment="Last Apply Finish Date"/>
+    <column xsi:type="smallint" name="scope" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Scope"/>
+    <column xsi:type="smallint" name="is_use_cron" padding="5" unsigned="true" nullable="false" identity="false" default="2" comment="Is Use Cron"/>
+    <column xsi:type="int" name="attribute_option_id" padding="9" unsigned="true" nullable="false" identity="false" default="0" comment="Attribute Option ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="template_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_395C730EF142BAD7E4DF0F2B1B81702F" table="mageworx_seoxtemplates_template_categoryfilter" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="FK_C0E1DC0F8B333434CC8A8752D3032AD8" table="mageworx_seoxtemplates_template_categoryfilter" column="attribute_id" referenceTable="eav_attribute" referenceColumn="attribute_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_relation_categoryfilter" resource="default" engine="innodb" comment="Template Category To Category Link Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Template ID"/>
+    <column xsi:type="int" name="category_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Category ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_FD4714F52CA1A671B427C5EB085865A8" table="mageworx_seoxtemplates_template_relation_categoryfilter" column="template_id" referenceTable="mageworx_seoxtemplates_template_categoryfilter" referenceColumn="template_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="FK_914897F23A418A34EEF40CECD8C78E29" table="mageworx_seoxtemplates_template_relation_categoryfilter" column="category_id" referenceTable="catalog_category_entity" referenceColumn="entity_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_landingpage" resource="default" engine="innodb" comment="Template Landing Page Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Template ID"/>
+    <column xsi:type="smallint" name="attribute_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Landing Page Attribute ID"/>
+    <column xsi:type="smallint" name="type_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Template Type"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Template Name"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Store ID"/>
+    <column xsi:type="boolean" name="use_for_default_value" nullable="true" comment="Use for default value"/>
+    <column xsi:type="text" name="code" nullable="false" comment="Template Code"/>
+    <column xsi:type="smallint" name="assign_type" padding="5" unsigned="true" nullable="false" identity="false" comment="Assign Type"/>
+    <column xsi:type="smallint" name="priority" padding="5" unsigned="true" nullable="false" identity="false" comment="Priority"/>
+    <column xsi:type="datetime" name="date_modified" on_update="false" nullable="true" comment="Last Modify Date"/>
+    <column xsi:type="datetime" name="date_apply_start" on_update="false" nullable="true" comment="Last Apply Start Date"/>
+    <column xsi:type="datetime" name="date_apply_finish" on_update="false" nullable="true" comment="Last Apply Finish Date"/>
+    <column xsi:type="smallint" name="scope" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Scope"/>
+    <column xsi:type="smallint" name="is_use_cron" padding="5" unsigned="true" nullable="false" identity="false" default="2" comment="Is Use Cron"/>
+    <column xsi:type="boolean" name="is_single_store_mode" nullable="false" default="true" comment="Is Single-Store Mode"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="template_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_2684F446095C12B20B258FB608107CA6" table="mageworx_seoxtemplates_template_landingpage" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_relation_landingpage" resource="default" engine="innodb" comment="Template Landing Page To Landing Page Link Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Template ID"/>
+    <column xsi:type="int" name="landingpage_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Landing Page ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_2C2FF2462BB6E340F680E3BFDB301978" table="mageworx_seoxtemplates_template_relation_landingpage" column="template_id" referenceTable="mageworx_seoxtemplates_template_landingpage" referenceColumn="template_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_brand" resource="default" engine="innodb" comment="Template Brands Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Template ID"/>
+    <column xsi:type="smallint" name="attribute_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Brand Attribute ID"/>
+    <column xsi:type="smallint" name="type_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Template Type"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Template Name"/>
+    <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Store ID"/>
+    <column xsi:type="boolean" name="use_for_default_value" nullable="true" comment="Use for default value"/>
+    <column xsi:type="text" name="code" nullable="false" comment="Template Code"/>
+    <column xsi:type="smallint" name="assign_type" padding="5" unsigned="true" nullable="false" identity="false" comment="Assign Type"/>
+    <column xsi:type="smallint" name="priority" padding="5" unsigned="true" nullable="false" identity="false" comment="Priority"/>
+    <column xsi:type="datetime" name="date_modified" on_update="false" nullable="true" comment="Last Modify Date"/>
+    <column xsi:type="datetime" name="date_apply_start" on_update="false" nullable="true" comment="Last Apply Start Date"/>
+    <column xsi:type="datetime" name="date_apply_finish" on_update="false" nullable="true" comment="Last Apply Finish Date"/>
+    <column xsi:type="smallint" name="scope" padding="5" unsigned="true" nullable="false" identity="false" default="1" comment="Scope"/>
+    <column xsi:type="smallint" name="is_use_cron" padding="5" unsigned="true" nullable="false" identity="false" default="2" comment="Is Use Cron"/>
+    <column xsi:type="boolean" name="is_single_store_mode" nullable="false" default="true" comment="Is Single-Store Mode"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="template_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGEWORX_SEOXTEMPLATES_TEMPLATE_BRAND_STORE_ID_STORE_STORE_ID" table="mageworx_seoxtemplates_template_brand" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
+  </table>
+  <table name="mageworx_seoxtemplates_template_relation_brand" resource="default" engine="innodb" comment="Template Brand To Brands Link Table (created by MageWorx SeoXTemplates extension)">
+    <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+    <column xsi:type="int" name="template_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Template ID"/>
+    <column xsi:type="int" name="brand_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Brand ID"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="FK_05096F004D12B3219F45CDA16148AA9F" table="mageworx_seoxtemplates_template_relation_brand" column="template_id" referenceTable="mageworx_seoxtemplates_template_brand" referenceColumn="template_id" onDelete="CASCADE"/>
+  </table>
+</schema>

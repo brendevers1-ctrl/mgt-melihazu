@@ -1,0 +1,40 @@
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+.preview {
+    font-family: arial, sans-serif;
+}
+.preview .admin__field-value {
+    padding-top: 0;
+}
+
+.preview.preview_url {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #3C4043;
+    font-style: normal;
+    margin-bottom: 0;
+}
+.preview.preview_url > .admin__field-label,.preview.preview_title > .admin__field-label {
+    line-height: 1.3;
+}
+
+.preview.preview_title {
+    font-size: 20px;
+    line-height: 1.3;
+    padding-top: 4px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    color: #1a0dab;
+}
+
+.preview.preview_description {
+    line-height: 1.58;
+    color: #3C4043;
+    margin-top: 0;
+    font-size: 14px;
+}
+.preview_description .admin__field-value {
+    max-width: 48em;
+}

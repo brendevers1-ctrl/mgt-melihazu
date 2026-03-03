@@ -1,0 +1,4 @@
+"Request Identifier","Target URL","Redirect Code","Store View Code","Active From (UTC)","Active To (UTC)"
+"test","http://site.com/test.html","301","default"
+"iphone_8","http://site.com/iphone_x","302","second","2020-04-02 21:39:08","2021-04-02"
+"tablets","http://site.com/smartphones","301","all","2020-05-02"

@@ -1,0 +1,19 @@
+#row_mageworx_seo_base_hreflangs_hreflang_settings .label,
+#row_mageworx_seo_base_hreflangs_hreflang_settings .value {
+    padding: 2.2rem 1.5rem 0 0;
+}
+
+#row_mageworx_seo_base_hreflangs_hreflang_settings .label {
+    width: 13%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#row_mageworx_seo_base_hreflangs_hreflang_settings .value {
+    width: 85%;
+    display: inline-block;
+}
+
+#mageworx_seo_base_hreflangs_hreflang_settings .pages {
+    width: 125px;
+}

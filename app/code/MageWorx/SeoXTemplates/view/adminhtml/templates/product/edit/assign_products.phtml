@@ -1,0 +1,31 @@
+<?php
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+
+/** @var \MageWorx\SeoXTemplates\Block\Adminhtml\Template\Product\AssignProducts $block */
+
+/** @var \MageWorx\SeoXTemplates\Block\Adminhtml\Template\Product\Edit\Tab\Products $blockGrid */
+$blockGrid        = $block->getBlockGrid();
+$gridJsObjectName = $blockGrid->getJsObjectName();
+
+?>
+
+<?= $block->getGridHtml() ?>
+
+<input type="hidden" name="template_products" id="in_template_products" data-form-part="edit_form" value="" />
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "MageWorx_SeoXTemplates/js/assign-products": {
+                "selectedProducts": <?= /* @noEscape */ $block->getProductsJson() ?>,
+                "gridJsObjectName": <?= '"' . $block->escapeJs($gridJsObjectName) . '"' ?: '{}' ?>
+            }
+        }
+    }
+</script>
+
+<script>
+    require('mage/apply/main').apply();
+</script>

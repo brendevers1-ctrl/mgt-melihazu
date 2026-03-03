@@ -1,0 +1,22 @@
+"If enabled, the system will use the %link to choose the breadcrumbs","Wenn aktiviert, wird das System den %link verwenden, um die Brotkrumen auszuwählen."
+Breadcrumbs Priority for Categories,Priorität der Brotkrumen für Kategorien
+Please correct the sent data.,Bitte korrigieren Sie die gesendeten Daten.
+Something went wrong while saving the category.,Beim Speichern der Kategorie ist etwas schiefgegangen.
+Default,Standard
+Use Shortest,Kürzeste verwenden
+Use Longest,Längste verwenden
+SEO,SEO
+SEO Breadcrumbs,SEO-Brotkrumen
+"Adds and manages the <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#seo-breadcrumbs"">SEO Breadcrumbs</a> on the website.","Fügt auf der Website <a target=""_blank"" href=""https://support.mageworx.com/manuals/seosuite/#seo-breadcrumbs"">SEO-Brotkrumen</a> hinzu und verwaltet sie."
+Enable SEO Breadcrumbs ▾,SEO-Brotkrumen aktivieren ▾
+Enables the advanced breadcrumbs populated by means of our extension and disables the default ones.,"Aktiviert die erweiterten Brotkrumen, die durch unsere Erweiterung erstellt werden, und deaktiviert die Standardbrotkrumen."
+Type,Typ
+"Handles the situation when some product is assigned to several categories. Select <i>Default</i> to use the default Magento breadcrumbs, <i>Use Shortest</i> to utilize the <b>short</b> version of breadcrumbs (like Store > Category > Product), <i>Use Longest</i> to utilize the <b>full path</b> of breadcrumbs (like Store > Category > Subcategory 1 > Product).","Behandelt die Situation, wenn ein Produkt mehreren Kategorien zugeordnet ist. Wählen Sie <i>Standard</i>, um die Standard-Magento-Brotkrumen zu verwenden, <i>Kürzeste verwenden</i>, um die <b>kurze</b> Version der Brotkrumen zu verwenden (wie Store > Kategorie > Produkt), <i>Längste verwenden</i>, um den <b>vollen Pfad</b> der Brotkrumen zu verwenden (wie Store > Kategorie > Unterkategorie 1 > Produkt)."
+Use Category Priority,Kategorie-Priorität verwenden
+Breadcrumbs Priority,Priorität der Brotkrumen
+Edit,Bearbeiten
+ID,ID
+Path,Pfad
+Level,Ebene
+Category Name,Kategoriename
+Status,Status

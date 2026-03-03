@@ -1,0 +1,23 @@
+{
+    "name": "mageworx/module-seoextended",
+    "description": "SEO Extended module for Magento 2",
+    "require": {
+        "mageworx/module-seoall"            : ">=2.10.0",
+        "magento/module-catalog"            : ">=103.0.0 <105",
+        "magento/framework"                 : ">=102.0.0 <104",
+        "magento/module-layered-navigation" : ">=100.0.0 <101",
+        "magento/module-store"              : ">=101.0.0 <102"
+    },
+    "type": "magento2-module",
+    "version": "2.7.4",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "MageWorx\\SeoExtended\\": ""
+        }
+    }
+}

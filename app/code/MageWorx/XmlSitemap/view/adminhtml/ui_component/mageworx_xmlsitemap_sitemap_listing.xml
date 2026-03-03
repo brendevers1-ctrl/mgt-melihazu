@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">mageworx_xmlsitemap_sitemap_listing.mageworx_xmlsitemap_sitemap_listing_data_source</item>
+        </item>
+    </argument>
+    <settings>
+        <buttons>
+            <button name="add">
+                <url path="*/*/create"/>
+                <class>primary</class>
+                <label translate="true">Add Sitemap</label>
+            </button>
+        </buttons>
+        <spinner>mageworx_xmlsitemap_sitemap_columns</spinner>
+        <deps>
+            <dep>mageworx_xmlsitemap_sitemap_listing.mageworx_xmlsitemap_sitemap_listing_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="mageworx_xmlsitemap_sitemap_listing_data_source" component="Magento_Ui/js/grid/provider">
+        <settings>
+            <storageConfig>
+                <param name="indexField" xsi:type="string">sitemap_id</param>
+            </storageConfig>
+            <updateUrl path="mui/index/render"/>
+        </settings>
+        <aclResource>MageWorx_XmlSitemap::sitemap</aclResource>
+        <dataProvider class="MageWorxXmlSitemapSitemapGridDataProvider" name="mageworx_xmlsitemap_sitemap_listing_data_source">
+            <settings>
+                <requestFieldName>sitemap_id</requestFieldName>
+                <primaryFieldName>sitemap_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <listingToolbar name="listing_top">
+        <settings>
+            <sticky>true</sticky>
+        </settings>
+        <bookmark name="bookmarks"/>
+        <columnsControls name="columns_controls"/>
+        <filters name="listing_filters">
+            <argument name="data" xsi:type="array">
+                <item name="observers" xsi:type="array">
+                    <item name="column" xsi:type="string">column</item>
+                </item>
+            </argument>
+            <settings>
+                <templates>
+                    <filters>
+                        <select>
+                            <param name="template" xsi:type="string">ui/grid/filters/elements/ui-select</param>
+                            <param name="component" xsi:type="string">Magento_Ui/js/form/element/ui-select</param>
+                        </select>
+                    </filters>
+                </templates>
+            </settings>
+            <filterSelect name="store_id" provider="${ $.parentName }">
+                <settings>
+                    <captionValue>0</captionValue>
+                    <options class="Magento\Cms\Ui\Component\Listing\Column\Cms\Options"/>
+                    <label translate="true">Store View</label>
+                    <dataScope>store_id</dataScope>
+                    <imports>
+                        <link name="visible">componentType = column, index = ${ $.index }:visible</link>
+                    </imports>
+                </settings>
+            </filterSelect>
+        </filters>
+        <massaction name="listing_massaction">
+            <action name="delete">
+                <settings>
+                    <confirm>
+                        <message translate="true">Are you sure you want to delete selected sitemaps?</message>
+                        <title translate="true">Delete sitemaps</title>
+                    </confirm>
+                    <url path="mageworx_xmlsitemap/sitemap/massDelete"/>
+                    <type>delete</type>
+                    <label translate="true">Delete</label>
+                </settings>
+            </action>
+            <action name="generate">
+                <settings>
+                    <url path="mageworx_xmlsitemap/sitemap/massGenerate"/>
+                    <type>generate</type>
+                    <label translate="true">Generate</label>
+                </settings>
+            </action>
+        </massaction>
+        <paging name="listing_paging"/>
+    </listingToolbar>
+    <columns name="mageworx_xmlsitemap_sitemap_columns">
+        <settings>
+            <editorConfig>
+                <param name="indexField" xsi:type="string">sitemap_id</param>
+                <param name="enabled" xsi:type="boolean">true</param>
+                <param name="selectProvider" xsi:type="string">mageworx_xmlsitemap_sitemap_listing.mageworx_xmlsitemap_sitemap_listing.mageworx_xmlsitemap_sitemap_columns.ids</param>
+            </editorConfig>
+        </settings>
+        <selectionsColumn name="ids">
+            <settings>
+                <indexField>sitemap_id</indexField>
+                <resizeEnabled>false</resizeEnabled>
+                <resizeDefaultWidth>55</resizeDefaultWidth>
+            </settings>
+        </selectionsColumn>
+        <column name="sitemap_id">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">ID</label>
+                <sorting>asc</sorting>
+            </settings>
+        </column>
+        <column name="server_path">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Server Path</label>
+            </settings>
+        </column>
+        <column name="sitemap_path">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Sitemap Path</label>
+            </settings>
+        </column>
+        <column name="sitemap_filename">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Filename</label>
+            </settings>
+        </column>
+        <column name="sitemap_link" class="MageWorx\XmlSitemap\Ui\Component\Listing\Column\Link" component="MageWorx_XmlSitemap/js/grid/cells/link">
+            <settings>
+                <label translate="true">Link for Google</label>
+                <sortable>false</sortable>
+            </settings>
+        </column>
+        <column name="sitemap_time" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date">
+            <settings>
+                <filter>dateRange</filter>
+                <dataType>date</dataType>
+                <label translate="true">Last Generated</label>
+            </settings>
+        </column>
+        <column name="entity_type">
+            <settings>
+                <options class="MageWorx\XmlSitemap\Model\Source\EntityType"/>
+                <filter>select</filter>
+                <editor>
+                    <editorType>select</editorType>
+                </editor>
+                <dataType>select</dataType>
+                <label translate="true">Entity Type</label>
+            </settings>
+        </column>
+        <column name="count_by_entity">
+            <settings>
+                <label translate="true">Entity breakdown</label>
+                <bodyTmpl>ui/grid/cells/html</bodyTmpl>
+                <sortable>false</sortable>
+            </settings>
+        </column>
+        <column name="store_id" class="Magento\Store\Ui\Component\Listing\Column\Store">
+            <settings>
+                <label translate="true">Store View</label>
+                <bodyTmpl>ui/grid/cells/html</bodyTmpl>
+                <sortable>false</sortable>
+            </settings>
+        </column>
+        <actionsColumn name="actions" class="MageWorx\XmlSitemap\Ui\Component\Listing\Column\SitemapActions">
+            <settings>
+                <indexField>sitemap_id</indexField>
+                <resizeEnabled>false</resizeEnabled>
+                <resizeDefaultWidth>107</resizeDefaultWidth>
+            </settings>
+        </actionsColumn>
+    </columns>
+</listing>

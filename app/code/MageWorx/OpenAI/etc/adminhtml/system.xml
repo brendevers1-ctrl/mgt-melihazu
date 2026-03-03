@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mageworx">
+            <label>MageWorx</label>
+        </tab>
+        <section id="mageworx_openai" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>AI Integration Settings</label>
+            <tab>mageworx</tab>
+            <resource>MageWorx_OpenAI::settings</resource>
+            <group id="main_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Settings</label>
+                <field id="api_key" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="obscure">
+                    <label>OpenAI API KEY</label>
+                    <comment><![CDATA[
+Please specify your OpenAI API key. You can get your API key in your account at
+<a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI portal</a>. This key is required to authorize API requests from your Magento store to OpenAI's services.
+]]></comment>
+                    <frontend_model>MageWorx\OpenAI\Block\Adminhtml\System\Config\CustomApiKeyField</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+                <group id="cron" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Cron</label>
+                    <field id="cron_frequency" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                        <label>Frequency</label>
+                        <source_model>MageWorx\OpenAI\Model\Source\Cron\Frequency</source_model>
+                        <backend_model>MageWorx\OpenAI\Model\Config\Backend\CronFrequency</backend_model>
+                    </field>
+                    <field id="cron_frequency_value" type="hidden" sortOrder="41" showInDefault="0" showInWebsite="0" showInStore="0" canRestore="0">
+                        <label>Frequency Value</label>
+                    </field>
+                </group>
+            </group>
+        </section>
+    </system>
+</config>

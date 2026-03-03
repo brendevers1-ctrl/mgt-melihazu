@@ -1,0 +1,15 @@
+SEO,SEO
+SEO-friendly URLs,SEO-freundliche URLs
+"SEO-optimize the URLs of any page filtered by the layered navigation and any category page. Click <a target=""_blank"" href=""https://www.mageworx.com/blog/2018/07/magento-2-layered-navigation-seo-the-ultimate-guide/"">here</a> to see the practical Use Cases of this functionality.","Optimieren Sie die URLs von Seiten, die durch die Layered Navigation gefiltert sind, sowie von jeder Kategorieseite für SEO. Klicken Sie <a target=""_blank"" href=""https://www.mageworx.com/blog/2018/07/magento-2-layered-navigation-seo-the-ultimate-guide/"">hier</a>, um praktische Anwendungsfälle dieser Funktion zu sehen."
+Category Pages,Kategorieseiten
+Enable SEO LN URLs ▾,SEO LN URLs aktivieren ▾
+Enables SEO-friendly URLs for layered navigation filters. Example: <i>http://site.com/gear/bags.html/l/size=s</i>,Aktiviert SEO-freundliche URLs für Layered-Navigation-Filter. Beispiel: <i>http://site.com/gear/bags.html/l/size=s</i>
+SEO LN URLs Identifier,SEO LN URLs Bezeichner
+Enable for Pager URLs ▾,Aktivieren für Pager-URLs ▾
+"Changes the default pager added by <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Query_string"">Get-parameter</a> to the more SEO-friendly way.","Ändert den standardmäßigen Pager, der durch <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Query_string"">Get-Parameter</a> hinzugefügt wird, in eine SEO-freundlichere Version."
+Pager Format,Pager-Format
+"The first option transforms such URL to <i>www.site.com/category-p2.html</i>, the second one - to <i>www.site.com/category/p/2.html</i>","Die erste Option transformiert solche URLs in <i>www.site.com/category-p2.html</i>, die zweite Option in <i>www.site.com/category/p/2.html</i>"
+"""Pager Var"" Parameter",Pager-Var Parameter
+"Changes the default ""p"" variable for the pager parameter. By default and in case the field is left blank, <i>p</i> is set.","Ändert die standardmäßige ""p"" Variable für den Pager-Parameter. Standardmäßig wird <i>p</i> festgelegt, wenn das Feld leer gelassen wird."
+Enable Redirects from SEO LN URLs to Default URLs,Aktivieren von Weiterleitungen von SEO LN URLs zu Standard-URLs
+Enables the 301 redirects from our SEO-friendly LN URLs to Magento default ones. Can be useful if you decide to disable the SEO friendly LN URLs for any reason.,"Aktiviert die 301-Weiterleitungen von unseren SEO-freundlichen LN URLs zu den Standard-URLs von Magento. Kann nützlich sein, wenn Sie aus irgendeinem Grund die SEO-freundlichen LN URLs deaktivieren möchten."

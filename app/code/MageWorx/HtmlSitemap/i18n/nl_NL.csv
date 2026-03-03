@@ -1,0 +1,53 @@
+"You can exclude any specific CMS, Category, and Product pages from HTML sitemap on the corresponding grids, or on their Edit pages (%linkProduct, %linkCategory, %linkPage).","Je kunt specifieke CMS-pagina's, categorieën en productpagina's uitsluiten van de HTML-sitemap op de overeenkomstige roosters of op hun bewerkingspagina's (%linkProduct, %linkCategory, %linkPage)."
+In HTML Sitemap,In HTML-sitemap
+No,Nee
+Yes,Ja
+This setting was added by MageWorx HTML Sitemap,Deze instelling is toegevoegd door MageWorx HTML-sitemap
+Add,Toevoegen
+Crop,Bijsnijden
+Position,Positie
+Name,Naam
+Use Categories Path,Gebruik Categorieën Pad
+Root,Root
+Catalog,Catalogus
+Pages,Pagina's
+Links,Links
+Stores,Winkels
+SEO,SEO
+HTML Sitemap,HTML-sitemap
+Show Stores,Toon Winkels
+Show Categories ▾,Toon Categorieën ▾
+Maximum category depth level,Maximale categorie diepteniveau
+Manages the maximum depth of the categories to show. Leave empty for default (all categories).,Beheert de maximale diepte van de categorieën om te tonen. Laat leeg voor standaard (alle categorieën).
+Show Products ▾,Toon Producten ▾
+"If <i>Enabled</i>, HTML Sitemap includes products so that every product is being displayed under the appropriate category. Any Product can be <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/sitemap/image12.png"">excluded manually</a>. Keep it disabled if you have a big number of products.","Indien ingeschakeld, bevat de HTML-sitemap producten, zodat elk product wordt weergegeven onder de juiste categorie. Elk product kan handmatig worden uitgesloten. Houd het uitgeschakeld als je een groot aantal producten hebt."
+According to the category display mode,Volgens de categorie weergavemodus
+Product URLs,Product-URL's
+Categories/Products Sort Order,Sorteervolgorde Categorieën/Producten
+Show CMS Pages,Toon CMS-pagina's
+Show Additional Links ▾,Toon Extra Links ▾
+Additional Links,Extra Links
+"
+                        A comma-delimited list of links and link labels to append to the sitemap. <b>Example:</b><br/>http://www.mageworx.com,MageWorx.<br/>Link without 'http[s]://' will be treated as relative to this domain.<br/><b>NOTE!</b> http[s]:// is required in case the page is on some other website
+                    ","
+                        Een door komma's gescheiden lijst van links en linklabels om toe te voegen aan de sitemap. <b>Voorbeeld:</b><br/>http://www.mageworx.com,MageWorx.<br/> Link zonder 'http[s]://' wordt beschouwd als relatief aan dit domein.<br/> <b>LET OP!</b> http[s]:// is vereist als de pagina zich op een andere website bevindt.
+                    "
+Exclude Pages from Sitemap,Pagina's uitsluiten van Sitemap
+"
+                        You can exclude any specific CMS, Category, and Product pages from HTML sitemap on the corresponding grids, or on their Edit pages (Product, Category, CMS).
+                    ","
+                        Je kunt specifieke CMS-pagina's, categorieën en productpagina's uitsluiten van de HTML-sitemap op de overeenkomstige roosters of op hun bewerkingspagina's (Product, Categorie, CMS).
+                    "
+Allow Third-party Links ▾,Toestaan van links van derden ▾
+Title,Titel
+Meta Description,Meta-omschrijving
+Meta Keywords,Meta-trefwoorden
+Common Settings For Sitemaps,Gemeenschappelijke instellingen voor Sitemaps
+Trailing Slash For Home Page,Scheidingsteken aan het einde voor de startpagina
+<b>NOTE!</b> The trailing slash can be added to pages without suffix .html or .htm,<b>LET OP!</b> Het scheidingsteken aan het einde kan worden toegevoegd aan pagina's zonder suffix .html of .htm
+Trailing Slash For URLs,Scheidingsteken aan het einde voor URL's
+<b>NOTE!<b> The trailing slash can be added to pages without suffix .html or .htm,<b>LET OP!</b> Het scheidingsteken aan het einde kan worden toegevoegd aan pagina's zonder suffix .html of .htm
+Include in HTML Sitemap,Opnemen in HTML-sitemap
+Use in HTML Sitemap,Gebruiken in HTML-sitemap
+Use in Html Sitemap,Gebruiken in HTML-sitemap
+Sitemap,Sitemap

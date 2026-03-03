@@ -1,0 +1,95 @@
+#message-form {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    width: auto;
+    margin: 0 auto;
+}
+
+#message-form select, #message-form input, #message-form textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+}
+
+#message-form textarea {
+    min-height: 160px;
+}
+
+#message-form select option {
+    padding: 10px;
+}
+
+#message-form .select-wrapper {
+    margin-bottom: 20px;
+}
+
+#response {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    width: auto;
+    margin: 20px auto;
+}
+
+#response p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#response p:first-line {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.mw-seo-ai-button-left {
+    left: calc((100%) * 0.25 + 10px);
+}
+
+.response-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+}
+
+.response-item span {
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.response-item button {
+    background-color: #0071a1;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.response-item button:hover {
+    background-color: #005b7a;
+}
+
+.admin__control-textarea {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    resize: vertical;
+    height: 300px;
+}
+
+.custom-notice {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}

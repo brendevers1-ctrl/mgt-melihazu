@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright ©  MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="view_block_abstract_to_html_before">
+        <observer name="mageworx_seomarkup_remove_open_graph" instance="MageWorx\SeoMarkup\Observer\RemoveOpenGraphBlockObserver"/>
+    </event>
+    <event name="view_block_abstract_to_html_after">
+        <observer name="mageworx_seomarkup_remove_offer_markup" instance="MageWorx\SeoMarkup\Observer\RemoveProductOfferMarkupObserver"/>
+    </event>
+</config>

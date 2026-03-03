@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="MageWorx_OpenAI::main">
+                    <resource id="MageWorx_SeoAI::settings" title="SEO Open AI Integration Settings" sortOrder="10"/>
+                    <resource id="MageWorx_SeoAI::menu" title="Open AI: Manage generation processes" sortOrder="20"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,31 @@
+{
+    "name": "mageworx/module-seo-ai",
+    "description": "Seo module for Open AI integration",
+    "require": {
+        "magento/framework": ">=102.0.0 <104",
+        "magento/module-ui": ">=101 <102",
+        "magento/module-catalog": ">=103 <105",
+        "mageworx/module-open-ai": ">=1.2.3",
+        "mageworx/module-google-ai": ">=1.0.0",
+        "ext-json": "*",
+        "ext-intl": "*",
+        "ext-curl": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.2.4",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageWorx\\SeoAI\\": ""
+        }
+    },
+    "require-dev": {
+        "allure-framework/allure-phpunit": "~2.1"
+    }
+}

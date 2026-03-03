@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mageworx">
+            <label>MageWorx</label>
+        </tab>
+        <section id="mageworx_seo">
+            <tab>mageworx</tab>
+            <group id="mageworx_seoai" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>SEO AI</label>
+                <comment><![CDATA[
+To activate and use the SEO AI module features, please get your <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API key</a>
+or <a href="https://console.cloud.google.com/apis/credentials" target="_blank">Google API key</a>.
+Once you have your API key, please specify it in the <a href="{{config path='web/secure/base_url'}}admin/system_config/edit/section/mageworx_openai">'AI Integration Settings'</a> section.
+]]></comment>
+                <field id="is_enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Enable the AI features for the administrator.
+                    When disabled you will no longer see the “Generate using AI” buttons in product and category form.
+                    All previously generated data will still be available.]]>
+                    </comment>
+                </field>
+                <field id="enabled_on" translate="label comment" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Enable for</label>
+                    <source_model>MageWorx\SeoAI\Model\Source\EnabledForEntities</source_model>
+                    <can_be_empty>1</can_be_empty>
+                    <depends>
+                        <field id="is_enabled">1</field>
+                    </depends>
+                    <comment>
+                        Using this field you can enable or disable the "Generate" functionality for specific entities.
+                    </comment>
+                </field>
+                <field id="openai_model" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>AI Model</label>
+                    <source_model>MageWorx\SeoAI\Model\Source\SeoOpenAIModels</source_model>
+                    <comment><![CDATA[
+<b>GPT-4</b> More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Availability depends on your pricing plan.
+For many basic tasks, the difference between GPT-4 and GPT-3.5 models is not significant.<br>
+
+<b>GPT-3.5</b> - A set of models that improve on GPT-3 and can understand as well as generate natural language or code<br>
+
+<b>GPT-3.5 turbo</b> (recommended) - Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with our latest model iteration 2 weeks after it is released.<br>
+
+<b>Text ADA 001</b> - Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.<br>
+
+<b>Text Davinci 003</b> - Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. Also supports some additional features such as inserting text.<br>
+
+<b>Gemini 1.5 Pro</b> - Optimized for complex reasoning tasks such as code and text generation, text editing, problem solving, data extraction and generation.<br>
+
+<b>Gemini 1.5 Flash</b> - Optimized for fast and versatile performance across a diverse variety of tasks
+                    ]]></comment>
+                </field>
+                <include path="MageWorx_SeoAI::system/product_config.xml"/>
+                <include path="MageWorx_SeoAI::system/category_config.xml"/>
+            </group>
+        </section>
+    </system>
+</config>

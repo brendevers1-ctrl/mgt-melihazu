@@ -1,0 +1,30 @@
+{
+    "cms_page": {
+        "column": {
+            "meta_robots": true,
+            "mageworx_hreflang_identifier": true
+        }
+    },
+    "catalog_eav_attribute": {
+        "column": {
+            "layered_navigation_canonical": true
+        }
+    },
+    "mageworx_seobase_custom_canonical": {
+        "column": {
+            "entity_id": true,
+            "source_entity_type": true,
+            "source_entity_id": true,
+            "source_store_id": true,
+            "target_entity_type": true,
+            "target_entity_id": true,
+            "target_store_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_SEOBASE_CUSTOM_CANONICAL_SOURCE_STORE_ID_STORE_STORE_ID": true,
+            "MAGEWORX_SEOBASE_CUSTOM_CANONICAL_TARGET_STORE_ID_STORE_STORE_ID": true,
+            "UNQ_255B1B9AFAEF3C52C61FB7D7DA93D6BD": true
+        }
+    }
+}

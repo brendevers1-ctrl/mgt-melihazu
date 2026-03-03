@@ -1,0 +1,628 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mageworx_seo>
+            <mageworx_seoai>
+                <is_enabled>1</is_enabled>
+                <openai_model>gpt-3.5-turbo</openai_model>
+                <enabled_on>product,category</enabled_on>
+                <product>
+                    <temperature>1</temperature>
+                    <number_of_variants>1</number_of_variants>
+                    <meta_description>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Analyze the details of the product below and create a compelling catchy meta description with high CTR that will be best for SEO.
+Return only the text of the meta description without any prefixes like "Meta Description:" or additional explanations before and after main response.
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </meta_description>
+                    <meta_keyword>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Analyze the details of the product below and create compelling catchy meta keywords that will be best for SEO.
+Return only the list of meta keywords separated by commas without any prefixes like "Meta Keywords:" or additional explanations before and after main response.
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </meta_keyword>
+                    <meta_title>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Analyze the details of the product below and create a compelling catchy meta title with high CTR that will be best for SEO.
+Return only the text of the meta title without any prefixes like "Meta title:" or additional explanations before and after main response.
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.
+]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique
+Return the result text only without quotes, without explanation, without any additional information about what you are doing or what you are generating
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </meta_title>
+                    <description>
+                        <max_length>2000</max_length>
+                        <content><![CDATA[Analyze the details of the product below and create a SEO-friendly description that highlights the key features and benefits of this product.
+Return only the text of the description without any prefixes like "Description:" or additional explanations before and after main response.
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </description>
+                    <short_description>
+                        <max_length>500</max_length>
+                        <content><![CDATA[Analyze the details of the product below and create a SEO-friendly short description that highlights the key features and benefits of this product.
+Return only the text of the short description without any prefixes like "Short Description:" or additional explanations before and after main response.
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </short_description>
+                    <seo_name>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Analyze the details of the product below and create a SEO-friendly name that accurately represents the product.
+Return only the text of the seo name without any prefixes like "Seo Name:" or additional explanations before and after main response.
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </seo_name>
+                    <!-- Improvements -->
+                    <improve_meta_description>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Rewrite the following meta description of the product and improve it for better SEO results.
+                        Return only the text of the meta description without any prefixes like "Meta Description:" or additional explanations before and after main response.
+
+Keep it up to {{max_length}} characters.
+
+Current meta description in triple quotes:
+"""
+{{meta_description}}
+"""
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_meta_description>
+                    <improve_meta_keyword>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Rewrite the following meta keywords and improve them for better SEO results.
+Return only the list of meta keywords separated by commas without any prefixes like "Keywords:" or additional explanations before and after main response.
+Current meta keywords in triple quotes:
+"""
+{{meta_keyword}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_meta_keyword>
+                    <improve_meta_title>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Rewrite the following meta title and improve it for better SEO results.
+                        Return only the text of the meta title without any prefixes like "Meta Title:" or additional explanations before and after main response.
+Current meta title in triple quotes:
+"""
+{{meta_title}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.
+]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_meta_title>
+                    <improve_description>
+                        <max_length>2000</max_length>
+                        <content><![CDATA[Rewrite the following product description and improve it for better SEO results.
+                        Return only the text of the description without any prefixes like "Description:" or additional explanations before and after main response.
+Current description in triple quotes:
+"""
+{{description}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_description>
+                    <improve_seo_name>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Rewrite the following SEO name of the product and improve it for better SEO results.
+                        Return only the text of the seo name without any prefixes like "Seo Name:" or additional explanations before and after main response.
+Current seo name in triple quotes:
+"""
+{{seo_name}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product short description: {{short_description}}
+
+Product description: {{description}}
+
+It’s priced at {{product_price}} and comes with {{product_attributes}}.]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_seo_name>
+                    <improve_short_description>
+                        <max_length>500</max_length>
+                        <content><![CDATA[Act as a SEO specialist and rewrite the given product short description to optimize it for SEO. To understand the product, see the full product description.
+Return only the text of the short description without any prefixes like "Short Description:" or additional explanations before and after main response.
+Current short description in triple quotes:
+"""
+{{short_description}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Product name: {{product_name}}.
+
+Product categories: {{categories_list}}.
+
+Product full description: {{description}}
+
+It's priced at {{product_price}} and comes with {{product_attributes}}
+
+]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_short_description>
+                </product>
+                <category>
+                    <temperature>1</temperature>
+                    <number_of_variants>1</number_of_variants>
+                    <meta_description>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Analyze the details of the category below and create a compelling catchy meta description with high CTR that will be best for SEO.
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Internet store
+Category SEO description
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </meta_description>
+                    <meta_keywords>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Analyze the details of the category below and create compelling catchy meta keywords that will be best for SEO.
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Magento internet store
+Meta keywords of the category for a SEO purpose
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </meta_keywords>
+                    <meta_title>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Analyze the details of the category below and create a compelling catchy meta title with high CTR that will be best for SEO.
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Magento internet store
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </meta_title>
+                    <seo_name>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Analyze the details of the category below and create a SEO-friendly name that accurately represents the category.
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a SEO purpose
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </seo_name>
+                    <description>
+                        <max_length>2000</max_length>
+                        <content><![CDATA[Analyze the details of the category below and create a SEO-friendly description that highlights the key products in this category and encourages customers to explore further.
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}
+]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </description>
+                    <!-- Improvements -->
+                    <improve_meta_description>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Rewrite the following meta description of the category and improve it for better SEO results.
+                        Return only the text of the meta description without any prefixes like "Meta Description:" or additional explanations before and after main response.
+
+Current meta description in triple quotes:
+"""
+{{meta_description}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Internet store
+Category SEO description
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_meta_description>
+                    <improve_meta_keywords>
+                        <max_length>160</max_length>
+                        <content><![CDATA[Rewrite the following meta keywords and improve them for better SEO results.
+Return only the list of meta keywords separated by commas without any prefixes like "Keywords:" or additional explanations before and after main response.
+Current meta keywords in triple quotes:
+"""
+{{meta_keywords}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Magento internet store
+Meta keywords of the category for a SEO purpose
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_meta_keywords>
+                    <improve_meta_title>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Rewrite the following meta title and improve it for better SEO results.
+                        Return only the text of the meta title without any prefixes like "Meta Title:" or additional explanations before and after main response.
+Current meta title in triple quotes:
+"""
+{{meta_title}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Magento internet store
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_meta_title>
+                    <improve_seo_name>
+                        <max_length>60</max_length>
+                        <content><![CDATA[Rewrite the following SEO name of the category and improve it for better SEO results.
+                        Return only the text of the seo name without any prefixes like "Seo Name:" or additional explanations before after main response.
+Current seo name in triple quotes:
+"""
+{{seo_name}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a SEO purpose
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_seo_name>
+                    <improve_description>
+                        <max_length>2000</max_length>
+                        <content><![CDATA[Rewrite the following category description and improve it for better SEO results.
+                        Return only the text of the description without any prefixes like "Description:" or additional explanations before and after main response.
+Current description in triple quotes:
+"""
+{{category_description}}
+"""
+
+Keep it up to {{max_length}} characters.
+
+Category name: {{category_name}}.
+
+Assigned products: {{category_products}}.
+
+Category description: {{category_description}}
+]]></content>
+                        <context><![CDATA[
+Magento internet store
+For a customers
+Make it unique and do not include the name of attribute you are generating in the response
+It will be indexed by bots and will be used in search results
+Use active voice and make it actionable
+Include a call-to-action
+Use focus keywords
+Show specifications, where possible
+Do not wrap the text and keep html formatting
+Return the text only without quotes and without explanation, do not strip tags.
+Text must be modified for better SEO results, act as a SEO specialist but don't tell about that
+]]></context>
+                    </improve_description>
+                </category>
+            </mageworx_seoai>
+        </mageworx_seo>
+    </default>
+</config>

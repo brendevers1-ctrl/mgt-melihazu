@@ -1,0 +1,102 @@
+{
+    "mageworx_openai_queue_item": {
+        "column": {
+            "entity_id": true,
+            "process_id": true,
+            "request_data_id": true,
+            "updated_at": true,
+            "status": true,
+            "requires_approval": true,
+            "position": true,
+            "model": true,
+            "preprocessor": true,
+            "callback": true,
+            "error_handler": true,
+            "response": true,
+            "content": true,
+            "context": true,
+            "options": true,
+            "additional_data": true,
+            "json": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "FK_E0F9B312A086361EADBE50B3F8B98766": true,
+            "FK_DFFCF07A65C82EF473BDD9D71F20DF53": true
+        }
+    },
+    "mageworx_openai_queue_process": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "code": true,
+            "type": true,
+            "module": true,
+            "status": true,
+            "size": true,
+            "processed": true,
+            "created_at": true,
+            "updated_at": true,
+            "additional_data": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_OPENAI_QUEUE_PROCESS_NAME": true,
+            "MAGEWORX_OPENAI_QUEUE_PROCESS_CODE": true,
+            "MAGEWORX_OPENAI_QUEUE_MODULE": true,
+            "MAGEWORX_OPENAI_QUEUE_PROCESS_TYPE": true
+        }
+    },
+    "mageworx_openai_request_data": {
+        "column": {
+            "entity_id": true,
+            "content": true,
+            "context": true,
+            "options": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "mageworx_openai_queue_dependencies": {
+        "column": {
+            "id": true,
+            "queue_item_id": true,
+            "dependency_item_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "FK_1B257444486FE3AFAFC6F68B1C22A7CA": true,
+            "FK_A4B71E7CF85AB0DB2ECBC4DC6055BA86": true
+        }
+    },
+    "mageworx_openai_presets": {
+        "column": {
+            "entity_id": true,
+            "code": true,
+            "name": true,
+            "group_id": true,
+            "store_id": true,
+            "content": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_OPENAI_PRESETS_CODE_GROUP_ID_STORE_ID": true,
+            "FK_E05FC8CBC4060E752552E50DF11C599B": true,
+            "MAGEWORX_OPENAI_PRESETS_STORE_ID_STORE_STORE_ID": true
+        }
+    },
+    "mageworx_openai_preset_groups": {
+        "column": {
+            "group_id": true,
+            "code": true,
+            "name": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_OPENAI_PRESET_GROUPS_CODE": true
+        }
+    }
+}

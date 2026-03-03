@@ -1,0 +1,125 @@
+Save,Save
+"Save & Generate","Save & Generate"
+"Edit Sitemap '%1'","Edit Sitemap '%1'"
+"New Sitemap","New Sitemap"
+Sitemap,Sitemap
+Filename,Filename
+"Example: %1","Example: %1"
+"Server Path","Server Path"
+"Path to server root directory. Example: 'pub/' or 'second_website/' (path must be writeable). This path won't be added to its host links.","Path to server root directory. Example: 'pub/' or 'second_website/' (path must be writeable). This path won't be added to its host links."
+Path,Path
+"Example: ""sitemap/"" or ""/"" for base path (path must be writeable). This path will be added to links.","Example: ""sitemap/"" or ""/"" for base path (path must be writeable). This path will be added to links."
+"Store View","Store View"
+"Split Sitemap","Split Sitemap"
+"Separate sitemaps will be created for selected entity types.","Separate sitemaps will be created for selected entity types."
+"Sitemap file names will contain corresponding suffix.","Sitemap file names will contain corresponding suffix."
+"E.g.: sitemap_products.xml","E.g.: sitemap_products.xml"
+"Entity Type","Entity Type"
+"the standard Magento XML sitemap settings","the standard Magento XML sitemap settings"
+"NOTE: To specify frequency, priority, file limitations and another settings please use %1.","NOTE: To specify frequency, priority, file limitations and another settings please use %1."
+"XML Sitemap by MageWorx","XML Sitemap by MageWorx"
+"We can't find a sitemap to delete.","We can't find a sitemap to delete."
+"The ""%1"" sitemap has been deleted.","The ""%1"" sitemap has been deleted."
+"This sitemap no longer exists.","This sitemap no longer exists."
+"Edit Sitemap","Edit Sitemap"
+"Edit Sitemap ""%s""","Edit Sitemap ""%s"""
+"Edit Sitemap ""%1""","Edit Sitemap ""%1"""
+"The sitemap ""%1"" has been generated.","The sitemap ""%1"" has been generated."
+"We can't generate the sitemap right now.","We can't generate the sitemap right now."
+"We can't find a sitemap to generate.","We can't find a sitemap to generate."
+"XML Sitemap","XML Sitemap"
+"Mass Action successful on %1 records","Mass Action successful on %1 records"
+"Mass Action failed.","Mass Action failed."
+"A total of %1 record(s) have been deleted","A total of %1 record(s) have been deleted"
+"An error occurred while deleting record(s).","An error occurred while deleting record(s)."
+"A total of %1 sitemap(s) have been generated.","A total of %1 sitemap(s) have been generated."
+"An error occurred while generating sitemap(s).","An error occurred while generating sitemap(s)."
+"Incorrect data.","Incorrect data."
+"Sitemap %1 was successfully saved","Sitemap %1 was successfully saved"
+"Something went wrong while saving the sitemap.","Something went wrong while saving the sitemap."
+Add,Add
+Crop,Crop
+"Additional links","Additional links"
+Categories,Categories
+Other,Other
+"CMS Pages","CMS Pages"
+Products,Products
+Images,Images
+Videos,Videos
+"Unfortunately, the process of generating sitemap(s) went wrong.","Unfortunately, the process of generating sitemap(s) went wrong."
+Module,Module
+Date,Date
+"Sitemap(s) with id(s)  %1 were not updated.","Sitemap(s) with id(s)  %1 were not updated."
+"In XML Sitemap","In XML Sitemap"
+No,No
+Yes,Yes
+"This setting was added by MageWorx XML Sitemap","This setting was added by MageWorx XML Sitemap"
+"Please choose store view","Please choose store view"
+"The file with such name '%1' exists (sitemap id = %2). Please, select other name for the file.","The file with such name '%1' exists (sitemap id = %2). Please, select other name for the file."
+"Please use only letters (a-z or A-Z), numbers (0-9) or underscore (_) in the filename. No spaces or other characters are allowed.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore (_) in the filename. No spaces or other characters are allowed."
+"Please define correct path","Please define correct path"
+"Please create the specified folder ""%1"" before saving the sitemap.","Please create the specified folder ""%1"" before saving the sitemap."
+"Please make sure that ""%1"" is writable by web-server.","Please make sure that ""%1"" is writable by web-server."
+Cache,Cache
+Original,Original
+"The sitemap index file can't be created without storeBaseUrl . Process is canceled.","The sitemap index file can't be created without storeBaseUrl . Process is canceled."
+"Sitemap Writer class wasn't initialized.","Sitemap Writer class wasn't initialized."
+"Location value '%1' is not valid.","Location value '%1' is not valid."
+"Changefreq value '%1' is not valid. Item url: '%2'.","Changefreq value '%1' is not valid. Item url: '%2'."
+"Lastmod value '%1' is not valid. Item url: '%2'.","Lastmod value '%1' is not valid. Item url: '%2'."
+"Priority value '%1' is not valid. Item url: '%2'.","Priority value '%1' is not valid. Item url: '%2'."
+"The following file renaming from: file %1 into %2 is impossible.","The following file renaming from: file %1 into %2 is impossible."
+"Relocation of the file %1 to %2 is impossible.","Relocation of the file %1 to %2 is impossible."
+"Delete ""${ $.$data.sitemap_filename}""","Delete ""${ $.$data.sitemap_filename}"""
+Generate,Generate
+Edit,Edit
+Delete,Delete
+"Are you sure you want to delete sitemap?","Are you sure you want to delete sitemap?"
+SEO,SEO
+"XML Sitemap helps the search bot index the pages including those that might have been ignored otherwise. An XML sitemap is written for the search bots (as opposed to the HTML Sitemap that is created for the real clients).","XML Sitemap helps the search bot index the pages including those that might have been ignored otherwise. An XML sitemap is written for the search bots (as opposed to the HTML Sitemap that is created for the real clients)."
+"Homepage Optimization","Homepage Optimization"
+"Сrops the identifier (like /home/) from the homepage URL and sends its priority to the highest (1.0).","Сrops the identifier (like /home/) from the homepage URL and sends its priority to the highest (1.0)."
+"Source for Product Images Links","Source for Product Images Links"
+"Depends on ""Add Images into Sitemap"" Magento setting","Depends on ""Add Images into Sitemap"" Magento setting"
+"Add Product Videos","Add Product Videos"
+"Add Category Images","Add Category Images"
+"Enable Additional Links","Enable Additional Links"
+"List of links to append to the XML Sitemap. Link without 'http[s]://' will be treated as relative to this domain.<br/> <b>NOTE!</b> http:// is required in case the page is on some other website.","List of links to append to the XML Sitemap. Link without 'http[s]://' will be treated as relative to this domain.<br/> <b>NOTE!</b> http:// is required in case the page is on some other website."
+"Additional Links","Additional Links"
+Frequency,Frequency
+Priority,Priority
+"Sort the pages <b>on your store only</b> according to their importance. Won't affect your site rankings among other websites. Valid values range from 0.0 to 1.0.","Sort the pages <b>on your store only</b> according to their importance. Won't affect your site rankings among other websites. Valid values range from 0.0 to 1.0."
+"Exclude ""Out of Stock"" Products","Exclude ""Out of Stock"" Products"
+"Meta Robots Exclusion","Meta Robots Exclusion"
+"The pages with chosen meta robots tag won't be added to Mageworx XML sitemap. The following types of pages are supported: products, categories, CMS pages, MageWorx Landing pages, MageWorx Brands pages, Blog pages (Mirasvit and Mageplaza).","The pages with chosen meta robots tag won't be added to Mageworx XML sitemap. The following types of pages are supported: products, categories, CMS pages, MageWorx Landing pages, MageWorx Brands pages, Blog pages (Mirasvit and Mageplaza)."
+"Enable Validate URLs","Enable Validate URLs"
+"Select <i>No</i> if you are using the <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters"">specific literal characters</a> in the URLs.","Select <i>No</i> if you are using the <a target=""_blank"" href=""https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters"">specific literal characters</a> in the URLs."
+"Enable Checking URLs Availability","Enable Checking URLs Availability"
+"A check of the sitemap URLs and sitemap index URL availability will take place. If a check hasn't passed or disabled, then the standard Magento sitemap URL will be used for the sitemap link and sitemap index file.","A check of the sitemap URLs and sitemap index URL availability will take place. If a check hasn't passed or disabled, then the standard Magento sitemap URL will be used for the sitemap link and sitemap index file."
+"Alternate Hreflang URLs","Alternate Hreflang URLs"
+"If SEO Suite Ultimate is installed and active, alternate hreflang URLs will be added. See the detailed settings in the SEO Base section above.","If SEO Suite Ultimate is installed and active, alternate hreflang URLs will be added. See the detailed settings in the SEO Base section above."
+"Enable a user-friendly XML Sitemap Preview","Enable a user-friendly XML Sitemap Preview"
+"Mirasvit Blog in XML Sitemap","Mirasvit Blog in XML Sitemap"
+"Add Mirasvit Blog Pages To XML Sitemap","Add Mirasvit Blog Pages To XML Sitemap"
+"This setting will work if you have Mirasvit Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mirasvitblog-seo-compatibility"">github</a>.","This setting will work if you have Mirasvit Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mirasvitblog-seo-compatibility"">github</a>."
+"Mageplaza Blog in XML Sitemap","Mageplaza Blog in XML Sitemap"
+"Add Mageplaza Blog Pages To XML Sitemap","Add Mageplaza Blog Pages To XML Sitemap"
+"This setting will work if you have Mageplaza Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mageplazablog-seo-compatibility"">github</a>.","This setting will work if you have Mageplaza Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-mageplazablog-seo-compatibility"">github</a>."
+"Aheadworks Blog in XML Sitemap","Aheadworks Blog in XML Sitemap"
+"Add Aheadworks Blog Pages To XML Sitemap","Add Aheadworks Blog Pages To XML Sitemap"
+"This setting will work if you have Aheadworks Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-aheadworks-seo-compatibility"">github</a>.","This setting will work if you have Aheadworks Blog extension and Seo Compatibility Extension for this blog from <a target=""_blank"" href=""https://github.com/mageworx/module-aheadworks-seo-compatibility"">github</a>."
+"Common Settings For Sitemaps","Common Settings For Sitemaps"
+"Trailing Slash For URLs","Trailing Slash For URLs"
+"Note: the trailing slash can be added to pages without suffix .html or .htm","Note: the trailing slash can be added to pages without suffix .html or .htm"
+"Include in XML sitemap","Include in XML sitemap"
+"Use in XML Sitemap","Use in XML Sitemap"
+"Include in XML Sitemap","Include in XML Sitemap"
+"Add Sitemap","Add Sitemap"
+"Are you sure you want to delete selected sitemaps?","Are you sure you want to delete selected sitemaps?"
+"Delete sitemaps","Delete sitemaps"
+ID,ID
+"Sitemap Path","Sitemap Path"
+"Link for Google","Link for Google"
+"Last Generated","Last Generated"
+"Entity breakdown","Entity breakdown"
+"The general information to search bots about the crawling frequency. The <i>Always</i> means that the page will differ each time it's accessed. The <i>Never</i> is used for the archived URLs like some old blog posts. <br/><b>NOTE!</b> It's always up to search bot to decide when these pages should be recrawled.","The general information to search bots about the crawling frequency. The <i>Always</i> means that the page will differ each time it's accessed. The <i>Never</i> is used for the archived URLs like some old blog posts. <br/><b>NOTE!</b> It's always up to search bot to decide when these pages should be recrawled."

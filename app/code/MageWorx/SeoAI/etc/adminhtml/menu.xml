@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageWorx_SeoAI::menu"
+             title="MageWorx SEO AI Integration"
+             translate="title"
+             module="MageWorx_SeoAI"
+             sortOrder="100" parent="Magento_Backend::stores"
+             resource="MageWorx_SeoAI::menu"
+        />
+        <add id="MageWorx_SeoAI::request_logs"
+             title="Request Logs: Product"
+             translate="title"
+             module="MageWorx_SeoAI"
+             sortOrder="40"
+             parent="MageWorx_SeoAI::menu"
+             action="mageworx_seoai/product_logs/index"
+             resource="MageWorx_SeoAI::menu"
+        />
+        <add id="MageWorx_SeoAI::request_logs_category"
+             title="Request Logs: Category"
+             translate="title"
+             module="MageWorx_SeoAI"
+             sortOrder="50"
+             parent="MageWorx_SeoAI::menu"
+             action="mageworx_seoai/category_logs/index"
+             resource="MageWorx_SeoAI::menu"
+        />
+    </menu>
+</config>

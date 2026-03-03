@@ -1,0 +1,10 @@
+<!-- progress-bar.html -->
+<div class="progress-container">
+    <div class="progress-bar" data-bind="style: { width: $col.getLabel($row()) + '%', 'background-color': getColor($col.getLabel($row())) }">
+        <span data-bind="text: $col.getLabel($row()) + '%'"></span>
+    </div>
+</div>
+<div class="progress-labels">
+    <span class="progress-start">0%</span>
+    <span class="progress-end">100%</span>
+</div>

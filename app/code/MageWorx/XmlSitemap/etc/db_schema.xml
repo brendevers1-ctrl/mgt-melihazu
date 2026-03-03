@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+  <table name="sitemap" resource="default">
+    <column xsi:type="text" name="count_by_entity" nullable="true" comment="Count by entity statistic (added by MageWorx XMLSitemap)"/>
+    <column xsi:type="varchar" name="entity_type" nullable="false" length="32" default="default" comment="Entity type code (added by MageWorx XMLSitemap)"/>
+    <column xsi:type="varchar" name="sitemap_filename" nullable="true" length="64" comment="Sitemap Filename"/>
+    <column xsi:type="varchar" name="server_path" nullable="false" length="64" default="" comment="Server Path (added by MageWorx XMLSitemap)"/>
+    <column xsi:type="text" name="sitemap_link" nullable="false" comment="Sitemap Link"/>
+  </table>
+  <table name="cms_page" resource="default">
+    <column xsi:type="boolean" name="in_xml_sitemap" nullable="false" default="true" comment="Use in XML sitemap (added by MageWorx XMLSitemap)"/>
+  </table>
+</schema>

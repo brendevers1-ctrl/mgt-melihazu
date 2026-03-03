@@ -1,0 +1,29 @@
+Brand ID,Branden-ID
+Status,Status
+Enabled,Aktiviert
+Disabled,Deaktiviert
+Attribute,Attribut
+Brand,Marke
+ID,ID
+Landing Page,Landing Page
+Attribute Value,Attributwert
+Root,Root
+Use Config,Konfiguration verwenden
+All Values,Alle Werte
+UNKNOWN CATEGORY,UNBEKANNTE KATEGORIE
+UNKNOWN PRODUCT,UNBEKANNTES PRODUKT
+All Store Views,Alle Store-Ansichten
+SEO,SEO
+SEO Common Settings,Gemeinsame SEO-Einstellungen
+These settings can be used in the other SEO extensions.,Diese Einstellungen können in anderen SEO-Erweiterungen verwendet werden.
+Length settings for Properties,Längeneinstellungen für Eigenschaften
+"Please note that the settings below are used for the SEO reports only to find the values which exceed the specified limits.</br>
+                        You can't use these settings to set the specific length for your meta values and URLs.","Bitte beachten Sie, dass die unten aufgeführten Einstellungen nur für die SEO-Berichte verwendet werden, um die Werte zu finden, die die angegebenen Grenzen überschreiten.</br>
+                        Sie können diese Einstellungen nicht verwenden, um die spezifische Länge für Ihre Meta-Werte und URLs festzulegen."
+Meta Title Max Length,Maximale Länge für Meta-Titel
+Meta Description Max Length,Maximale Länge für Meta-Beschreibung
+Meta Keywords Max Length,Maximale Länge für Meta-Keywords
+H1 Tag Max Length,Maximale Länge für H1-Tag
+URL Path Max Length,Maximale Länge für URL-Pfad
+Disable SEO Features for logged customer,Deaktivieren Sie SEO-Funktionen für angemeldete Kunden
+Choose the functionalities which will be disabled for the logged in customers to improve the performance.,"Wählen Sie die Funktionalitäten aus, die für angemeldete Kunden deaktiviert werden sollen, um die Leistung zu verbessern."

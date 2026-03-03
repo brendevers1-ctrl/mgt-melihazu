@@ -1,0 +1,26 @@
+.mw-seo-ai-button-generate-express {
+    display: inline-block;
+}
+
+.mw-seo-ai-button-generate {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.admin__field.admin__field-small.mw-seo-ai-button-generate-express > .admin__field-control,
+.admin__field.admin__field-small.mw-seo-ai-button-generate > .admin__field-control {
+    width: auto;
+}
+
+.admin__field.admin__field-small.mw-seo-ai-button-generate-express > .admin__field-control > button > span,
+.admin__field.admin__field-small.mw-seo-ai-button-generate > .admin__field-control > button > span {
+    font-family: system-ui;
+}
+
+.admin__fieldset > .admin__field.mw-seo-ai-button-generate-express {
+    margin-left: calc( (100%) * 0.25 - 20px );
+}
+
+.admin__fieldset-wrapper-content > .admin__fieldset > .admin__field.mw-seo-ai-button-generate {
+    margin-bottom: 3rem;
+}

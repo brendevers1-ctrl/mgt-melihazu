@@ -1,0 +1,22 @@
+{
+    "mageworx_seoextended_category": {
+        "column": {
+            "id": true,
+            "attribute_id": true,
+            "category_id": true,
+            "store_id": true,
+            "meta_title": true,
+            "meta_description": true,
+            "description": true,
+            "meta_keywords": true,
+            "attribute_option_id": true,
+            "category_seo_name": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEWORX_SEOEXTENDED_CATEGORY_STORE_ID_STORE_STORE_ID": true,
+            "MAGEWORX_SEOEXTENDED_CTGR_ATTR_ID_EAV_ATTR_ATTR_ID": true,
+            "MAGEWORX_SEOEXTENDED_CTGR_CTGR_ID_CAT_CTGR_ENTT_ENTT_ID": true
+        }
+    }
+}

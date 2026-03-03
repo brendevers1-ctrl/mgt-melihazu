@@ -1,0 +1,11 @@
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+
+/**
+ * We use grid's counter without mass actions - it should be always visible.
+ */
+.mass-select-info._empty {
+    display: block !important;
+}

@@ -1,0 +1,24 @@
+{
+    "name": "mageworx/module-open-ai",
+    "description": "Open AI integration module for Magento 2",
+    "require": {
+        "magento/framework": ">=102 <104",
+        "ext-json": "*",
+        "ext-intl": "*",
+        "ext-curl": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.2.4",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageWorx\\OpenAI\\": ""
+        }
+    }
+}

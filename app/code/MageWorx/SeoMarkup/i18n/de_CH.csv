@@ -1,0 +1,237 @@
+brand snippet,Marken-Snippet
+Enable to match the Brand Attribute code from Magento to %schema %link.,"Aktivieren Sie, um den Marken-Attributcode von Magento mit %schema %link abzugleichen."
+category snippet,Kategorie-Snippet
+Enable to match the product category to %schema %link.,"Aktivieren Sie, um die Produktkategorie mit %schema %link abzugleichen."
+color snippet,Farb-Snippet
+Enable to match the Color Attribute code from Magento to %schema %link.,"Aktivieren Sie, um den Farb-Attributcode von Magento mit %schema %link abzugleichen."
+priority of the categories,Priorität der Kategorien
+Map any existing product attribute to the Schema.org %link.,Ordnen Sie einem beliebigen vorhandenen Produktattribut das Schema.org %link zu.
+"Assign the current product attribute options to the Schema.org condition options such as %new, %used, %refurbished or %damaged.","Ordnen Sie die aktuellen Produktattributoptionen den Schema.org-Bedingungsoptionen wie %new, %used, %refurbished oder %damaged zu."
+Example,Beispiel
+"A comma-delimited list of %schema_link property name and attribute codes.%br%htmlNote%br mpn,mpn_code %br For JSON-LD will be converted to: %br { ... ""mpn"":""12343"" ... } %br","Eine kommaseparierte Liste von %schema_link Eigenschaftsnamen und Attributcodes.%br%htmlHinweis%br mpn,mpn_code %br Wird für JSON-LD zu: %br { ... ""mpn"":""12343"" ... } %br"
+store snippet,Store-Snippet
+Populate the description property for the %schema %link.,"Füllen Sie die Eigenschaft ""Beschreibung"" für %schema %link aus."
+description snippet,Beschreibungs-Snippet
+Select the Description Attribute Code from Magento match it to %schema %link,Wählen Sie den Beschreibungs-Attributcode aus Magento und gleichen Sie ihn mit %schema %link ab.
+Free shipping markup,Markup für kostenlosen Versand
+This setting allows you to enable the %link for the products.,"Diese Einstellung ermöglicht es Ihnen, den %link für die Produkte zu aktivieren."
+manufacurer snippet,Hersteller-Snippet
+Enable to match the Manufacturer code from Magento to %schema %link.,"Aktivieren Sie, um den Hersteller-Code von Magento mit %schema %link abzugleichen."
+Note,Hinweis
+rich snippets,Rich Snippets
+Adds %link to your existing website HTML. %br%htmlNote adding snippets to your site in the search results may take some time as the search bots do not include this information immediately.,"Fügt %link zu Ihrer vorhandenen Website-HTML hinzu. %br%htmlHinweis: Das Hinzufügen von Snippets zu Ihrer Website in den Suchergebnissen kann einige Zeit in Anspruch nehmen, da die Suchroboter diese Informationen nicht sofort einbeziehen."
+Merchant Return Policy markup,Markup für Händler-Rückgaberegelung
+model snippet,Modell-Snippet
+Enable to match the Model Attribute code from Magento to %schema %link.,"Aktivieren Sie, um den Modell-Attributcode von Magento mit %schema %link abzugleichen."
+special page,Spezielle Seite
+Adds the snippets that will be shown on the search engine results page. The store owner can preview the snippet data on the %link.,"Fügt die Snippets hinzu, die auf der Suchergebnisseite der Suchmaschine angezeigt werden. Der Geschäftsinhaber kann die Snippet-Daten auf der %link anzeigen."
+"By default and without any configurations, the product entity will include the following attributes: product name, preview image, rating, price, availability and website language.","Standardmäßig und ohne Konfiguration werden die folgenden Attribute für die Produktentität verwendet: Produktname, Vorschaubild, Bewertung, Preis, Verfügbarkeit und Website-Sprache."
+Type (by %schema),Typ (nach %schema)
+type,Typ
+Select your business %link,Wählen Sie Ihr Geschäfts- %link
+Shipping Details markup,Markup für Versanddetails
+SKU snippet,SKU-Snippet
+Enable to match the SKU Attribute code from Magento to %schema %link.,"Aktivieren Sie, um den SKU-Attributcode von Magento mit %schema %link abzugleichen."
+weight snippet,Gewichts-Snippet
+Enable to match the product weight to %schema %link.,"Aktivieren Sie, um das Produktgewicht mit %schema %link abzugleichen."
+Home,Startseite
+Go to Home Page,Zur Startseite gehen
+-- Please Select --,-- Bitte auswählen --
+Monday,Montag
+Tuesday,Dienstag
+Wednesday,Mittwoch
+Thursday,Donnerstag
+Friday,Freitag
+Saturday,Samstag
+Sunday,Sonntag
+--Please Select--,--Bitte auswählen--
+Page Title (%1),Seitentitel (%1)
+Content Heading (%1),Inhaltstitel (%1)
+Meta Title (%1),Meta-Titel (%1)
+Meta Keywords (%1),Meta-Keywords (%1)
+Meta Description (%1),Meta-Beschreibung (%1)
+All Pages,Alle Seiten
+Home Page,Startseite
+lb,lb
+kg,kg
+SEO,SEO
+SEO Markup,SEO-Markup
+Product,Produkt
+These settings are for the snippet configuration on the products pages.,Diese Einstellungen dienen der Schnittstellenkonfiguration auf den Produktseiten.
+Enable In Rich Snippets,In Rich Snippets aktivieren
+Show Product microdata for products without offers and rating,Produkt-Microdata für Produkte ohne Angebote und Bewertung anzeigen
+Enable for Google Assistant,Für Google Assistant aktivieren
+CSS Selectors,CSS-Selektoren
+You can specify a few values separated by commas.,Sie können mehrere Werte durch Kommata trennen.
+Best Rating,Beste Bewertung
+Add Review Markup,Bewertungs-Markup hinzufügen
+Disable Default Review Markup,Standardmäßiges Bewertungs-Markup deaktivieren
+Disabled review markup added by theme.,"Deaktiviertes Bewertungs-Markup, das von dem Theme hinzugefügt wurde."
+Use Multiple Offer for Configurable Product,Mehrere Angebote für konfigurierbare Produkte verwenden
+"Add several offers, one for each child product","Mehrere Angebote hinzufügen, eines für jedes Kindprodukt"
+Description Attribute Code,Attributcode für die Beschreibung
+Crop HTML tags from Description,HTML-Tags aus der Beschreibung ausschneiden
+Add SKU,SKU hinzufügen
+SKU Attribute Code,SKU-Attributcode
+Select the SKU Attribute Code from Magento.,Wählen Sie den SKU-Attributcode aus Magento aus.
+Add Category,Kategorie hinzufügen
+Use Deepest Category,Tiefste Kategorie verwenden
+Handles the situation if some product is assigned to different categories.,"Handhabt die Situation, wenn ein Produkt verschiedenen Kategorien zugeordnet ist."
+Add Color,Farbe hinzufügen
+Color Attribute Code,Farb-Attributcode
+Select the Color Attribute Code from Magento.,Wählen Sie den Farb-Attributcode aus Magento aus.
+Add Manufacturer,Hersteller hinzufügen
+Manufacturer Attribute Code,Hersteller-Attributcode
+Select the Manufacturer Attribute Code from Magento.,Wählen Sie den Hersteller-Attributcode aus Magento aus.
+Add Brand,Marke hinzufügen
+Brand Attribute Code,Marken-Attributcode
+Select the Brand Attribute Code from Magento.,Wählen Sie den Marken-Attributcode aus Magento aus.
+Add Model,Modell hinzufügen
+Model Attribute Code,Modell-Attributcode
+Select the Model Attribute Code from Magento.,Wählen Sie den Modell-Attributcode aus Magento aus.
+Add Gtin,GTIN hinzufügen
+"The GTIN is a globally unique 14-digit number used to identify trade items, products, or services. Please use digits only when you add the GTIN for your products otherwise it will not be shown in the microdata.","Die GTIN ist eine global eindeutige 14-stellige Nummer, die zur Identifizierung von Handelsartikeln, Produkten oder Dienstleistungen verwendet wird. Verwenden Sie bitte nur Ziffern, wenn Sie die GTIN für Ihre Produkte hinzufügen, da sie sonst nicht in den Mikrodaten angezeigt wird."
+Gtin Attribute Code,GTIN-Attributcode
+Select the GTIN Attribute Code from Magento.,Wählen Sie den GTIN-Attributcode aus Magento aus.
+Add Weight,Gewicht hinzufügen
+Use Special Price functionality for Price Valid Until,Spezielle Preisfunktionalität für Gültig bis verwenden
+Price Valid Until Default Value,"Standardwert für ""Gültig bis"" festlegen"
+Product ID Attribute Code,Produkt-ID-Attributcode
+"This value will be used as productID in the Rich Snippets and as retailer_item_id in the Open Graph tags.<br/>
+                                Recommended attributes are: sku, gtin, isbn, etc.","Dieser Wert wird als productID in den Rich Snippets und als retailer_item_id in den Open-Graph-Tags verwendet.<br/>
+                                Empfohlene Attribute sind: sku, gtin, isbn usw."
+Add Condition,Zustand hinzufügen
+Condition Attribute Code,Zustands-Attributcode
+Condition Value For New,"Wert für ""Neu"" in Zustands-Attribut"
+Condition Value For Used,"Wert für ""Gebraucht"" in Zustands-Attribut"
+Condition Value For Damaged,"Wert für ""Beschädigt"" in Zustands-Attribut"
+Condition Value For Refurbished,"Wert für ""Generalüberholt"" in Zustands-Attribut"
+Default Option For Condition,Standardoption für Zustand angeben
+Specify the default condition option for the product if it doesn't have the condition attribute assigned.,"Geben Sie die Standardbedingungsoption für das Produkt an, wenn das Bedingungsattribut nicht zugewiesen ist."
+Add Custom Properties,Benutzerdefinierte Eigenschaften hinzufügen
+Custom Properties,Benutzerdefinierte Eigenschaften
+Shipping Details,Versanddetails
+Enable Shipping Details,Versanddetails aktivieren
+Enable Free Shipping,Kostenloser Versand aktivieren
+Free Shipping Attribute,Attribut für kostenlosen Versand
+"This setting allows you to select the free shipping attribute, which will be used to determine the products with the free shipping option. <br/><b>Note:</b> only attributes of ""Yes/No"" type are shown here.","Diese Einstellung ermöglicht es Ihnen, das Attribut für kostenlosen Versand auszuwählen, das zur Bestimmung der Produkte mit der kostenlosen Versandoption verwendet wird. <br/><b>Hinweis:</b> Hier werden nur Attribute des Typs ""Ja/Nein"" angezeigt."
+Shipping Cost,Versandkosten
+Max Shipping Cost,Maximale Versandkosten
+Shipping Country,Versandland
+This field is <b>required</b>.,Dieses Feld ist <b>erforderlich</b>.
+Min Days for Handling Time,Mindesttage für Bearbeitungszeit
+Max Days for Handling Time,Maximale Tage für Bearbeitungszeit
+Min Days for Transit Time,Mindesttage für Transportzeit
+Max Days for Transit Time,Maximale Tage für Transportzeit
+Business Days,Werktag(e)
+Cutoff Time,Schneidezeitpunkt
+<b>Example:</b> 13:30:00,<b>Beispiel:</b> 13:30:00
+Merchant Return Policy,Händler-Rückgaberegelung
+Enable Merchant Return Policy,Händler-Rückgaberegelung aktivieren
+Merchant Return Policy Attribute,Attribut für Händler-Rückgaberegelung
+"This setting allows you to select the merchant return policy attribute, which will be used to determine the products with the merchant return policy option. <br/><b>Note:</b> only attributes of ""Yes/No"" type are shown here.","Diese Einstellung ermöglicht es Ihnen, das Attribut für die Händler-Rückgaberegelung auszuwählen, das zur Bestimmung der Produkte mit der Option Händler-Rückgaberegelung verwendet wird. <br/><b>Hinweis:</b> Hier werden nur Attribute des Typs ""Ja/Nein"" angezeigt."
+Applicable Country,Anwendbares Land
+Return Policy Category,Rückgaberichtlinien-Kategorie
+Merchant Return Days,Händler-Rückgabetage
+Return Method,Rückgabemethode
+Return Fees,Rückgabegebühren
+Shipping Fees Amount,Versandgebührenbetrag
+Category (Product List),Kategorie (Produktliste)
+These settings are for the snippet configuration on the category pages.,Diese Einstellungen dienen der Schnittstellenkonfiguration auf den Kategorieseiten.
+"Adds the snippets that will be shown on the search engine results page. The store owner can preview the snippet data on the <a target=""_blank"" href=""https://search.google.com/structured-data/testing-tool"">special page</a>.","Fügt die Snippets hinzu, die auf der Suchergebnisseite der Suchmaschine angezeigt werden. Der Geschäftsinhaber kann die Snippet-Daten auf der %link anzeigen."
+Show Product Offers,Produktangebote anzeigen
+"Informs search engines about the special <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image08.png"">product offers</a>","Informiert Suchmaschinen über die besonderen <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image08.png"">Produktangebote</a>"
+"Adds the beta support for the recently added <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/speakable"">speakable markup</a>.","Fügt die Beta-Unterstützung für das kürzlich hinzugefügte <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/speakable"">sprechbare Markup</a> hinzu."
+Add any CSS Selectors that the store owner wishes to be spoken aloud by Google Assistant/Google Home. You can specify a few values separated by commas.,"Fügen Sie beliebige CSS-Selektoren hinzu, die der Geschäftsinhaber von Google Assistant/Google Home laut vorsprechen lassen möchte. Sie können mehrere Werte durch Kommata trennen."
+Disable for NOINDEX Robots,Für NOINDEX-Robots deaktivieren
+"If set to Yes, hides the snippets on the categories that are not indexed.","Wenn auf Ja gesetzt, werden die Snippets auf den Kategorien ausgeblendet, die nicht indexiert sind."
+Landing Page,Landing Page
+Enable In Open Graph,In Open Graph aktivieren
+"Adding <a target=""_blank"" href=""http://ogp.me/"">these tags</a> helps the Facebook Crawler pick up the correct title, description and the suitable preview image for the shared page.","Durch Hinzufügen <a target=""_blank"" href=""http://ogp.me/"">dieser Tags</a> wird der Facebook-Crawler aufgefordert, den richtigen Titel, die richtige Beschreibung und das passende Vorschaubild für die freigegebene Seite auszuwählen."
+Page,Seite
+These settings are for the snippet configuration on the CMS pages.,Diese Einstellungen dienen der Schnittstellenkonfiguration auf den CMS-Seiten.
+Website,Website
+Enable In Rich Snippets ▾,In Rich Snippets aktivieren ▾
+Enable Search Box,Suchfeld aktivieren
+Website Logo,Website-Logo
+"Upload your website logo for the correct sharing on Facebook and using in OpenGraph markup. Allowed file types: PNG, GIF, JPG, JPEG","Laden Sie Ihr Website-Logo hoch, um es korrekt auf Facebook zu teilen und in OpenGraph-Markup zu verwenden. Zulässige Dateitypen: PNG, GIF, JPG, JPEG"
+Facebook App Id,Facebook App-ID
+"Can be taken from the <a target=""_blank"" href=""https://developers.facebook.com/apps/"">facebook for developers</a> website.","Kann von der <a target=""_blank"" href=""https://developers.facebook.com/apps/"">Facebook for Developers</a>-Website übernommen werden."
+Website Name,Website-Name
+Website About,Über die Website
+Seller,Verkäufer
+These settings are for the snippet configuration of the entire store (your organization).,Diese Einstellungen dienen der Schnittstellenkonfiguration des gesamten Shops (Ihrer Organisation).
+"Snippet will be added to the home page only. The store owner can preview the snippet data on the <a target=""_blank"" href=""https://search.google.com/structured-data/testing-tool"">special page</a>.",Snippet wird nur auf der Startseite hinzugefügt. Der Geschäftsinhaber kann die Snippet-Daten auf der %link anzeigen.
+Show Seller Markup on,Verkäufer-Markup anzeigen auf
+Name,Name
+Image,Bild
+"If the seller rich snippet is enabled, this field is <b>required</b>.<br/>Allowed file types: PNG, GIF, JPG, JPEG.","Wenn das Verkäufer-Rich-Snippet aktiviert ist, ist dieses Feld <b>erforderlich</b>.<br/>Zulässige Dateitypen: PNG, GIF, JPG, JPEG."
+Description,Beschreibung
+Opening Hours,Öffnungszeiten
+"The list of opening hours <br /><b>Example:</b><br />Mo-Fr 10:00-19:00<br />Sa,Su 10:00-22:00","Die Liste der Öffnungszeiten <br /><b>Beispiel:</b><br />Mo-Fr 10:00-19:00<br />Sa,So 10:00-22:00"
+Social Links,Soziale Links
+The list of social media links <br /><b>Example:</b><br />https://twitter.com/mageworxteam<br />https://www.facebook.com/mageworx,Die Liste der Links zu sozialen Medien <br /><b>Beispiel:</b><br />https://twitter.com/mageworxteam<br />https://www.facebook.com/mageworx
+Phone,Telefon
+This field is <b>recommended</b>.,Dieses Feld ist <b>empfohlen</b>.
+Fax,Fax
+Email,E-Mail
+Country,Land
+Location,Ort
+This field is <b>recommended</b>.<br/>Example:</b> Seattle,Dieses Feld ist <b>empfohlen</b>.<br/>Beispiel:</b> Seattle
+Region,Region
+This field is <b>recommended</b>.<br/><b>Example:</b> WA,Dieses Feld ist <b>empfohlen</b>.<br/><b>Beispiel:</b> WA
+Street,Straße
+This field is <b>recommended</b>.<br/><b>Example:</b><br>20341 Whitworth Institute<br>405 N. Whitworth,Dieses Feld ist <b>empfohlen</b>.<br/><b>Beispiel:</b><br>20341 Whitworth Institute<br>405 N. Whitworth
+ZIP Code,Postleitzahl
+Price Range,Preisspanne
+This field is <b>recommended</b>.<br/>Example:</b><br />$$$<br />$31-60,Dieses Feld ist <b>empfohlen</b>.<br/>Beispiel:</b><br />$$$<br />$31-60
+Breadcrumbs,Brotkrumen
+"The breadcrumbs settings add the <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/breadcrumb"">breadcrumb snippet support</a>.","Die Brotkrumen-Einstellungen fügen die Unterstützung für das <a target=""_blank"" href=""https://developers.google.com/search/docs/data-types/breadcrumb"">Brotkrumen-Snippet</a> hinzu."
+Enable,Aktivieren
+"The breadcrumbs will be visible on the <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image14.png"">search results page</a>","Die Brotkrumen werden auf der <a target=""_blank"" href=""https://support.mageworx.com/images/manuals/richsnippets/image14.png"">Suchergebnisseite</a> angezeigt."
+OpenGraph,OpenGraph
+"These settings let the store owner to deliver the highest quality posts on Facebook or other social networks and sharing the product links in messengers. Adding Open Graph tags to the store pages will help the Facebook Crawler pick up the right title and description for the shared page, as well as supply them with the most suitable preview image. Visit <a target=""_blank"" href=""https://ogp.me/"">this page</a> to learn more about the way Open Graph tags work.","Diese Einstellungen ermöglichen es dem Geschäftsinhaber, die höchste Qualität von Beiträgen auf Facebook oder anderen sozialen Netzwerken zu liefern und die Produktlinks in Messengern zu teilen. Das Hinzufügen von Open Graph-Tags zu den Shop-Seiten hilft dem Facebook-Crawler, den richtigen Titel und die Beschreibung für die freigegebene Seite auszuwählen und sie mit dem am besten geeigneten Vorschaubild zu versorgen. Besuchen Sie <a target=""_blank"" href=""https://ogp.me/"">diese Seite</a>, um mehr über die Funktionsweise von Open Graph-Tags zu erfahren."
+Enable Product OG,Produkt-OG aktivieren
+This setting will disable the default magento Open Graph output if enabled,"Diese Einstellung deaktiviert die standardmäßige Open Graph-Ausgabe von Magento, wenn sie aktiviert ist."
+Product OG Title,Produkt-OG-Titel
+This setting allows you to select what product attribute will be used in OG title for product pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Produktattribut für den OG-Titel auf den Produktseiten verwendet wird."
+Product OG Description,Produkt-OG-Beschreibung
+This setting allows you to select what product attribute will be used in OG description for product pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Produktattribut für die OG-Beschreibung auf den Produktseiten verwendet wird."
+Product OG Description Length,Länge der Produkt-OG-Beschreibung
+Please specify a number of characters to crop og:description.,Bitte geben Sie die Anzahl der Zeichen für die Beschneidung der og:description an.
+Enable Category OG,Kategorie-OG aktivieren
+Category OG Title,Kategorie-OG-Titel
+This setting allows you to select what category attribute will be used in OG title for category pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Kategorieattribut für den OG-Titel auf den Kategorieseiten verwendet wird."
+Category OG Description,Kategorie-OG-Beschreibung
+This setting allows you to select what category attribute will be used in OG description for category pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Kategorieattribut für die OG-Beschreibung auf den Kategorieseiten verwendet wird."
+Category OG Description Length,Länge der Kategorie-OG-Beschreibung
+Enable Page OG,Seiten-OG aktivieren
+Page OG Title,Seiten-OG-Titel
+This setting allows you to select what page attribute will be used in OG title for CMS pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Seitenattribut für den OG-Titel auf CMS-Seiten verwendet wird."
+Page OG Description,Seiten-OG-Beschreibung
+This setting allows you to select what page attribute will be used in OG description for CMS pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Seitenattribut für die OG-Beschreibung auf CMS-Seiten verwendet wird."
+Enable Website OG,Website-OG aktivieren
+Twitter Cards,Twitter-Karten
+"These settings provide a media-rich experience to those who view your Twitter content. If enabled, the standard Tweet with the website URL will be transformed into the Summary Card and accompanied with an additional title, an extra up-to-200 words description, and an image. To enable the feature, make sure you enter Twitter Username. Visit <a target=""_blank"" href=""https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started"">this page</a> to learn more about Twitter Cards.","Diese Einstellungen bieten eine mediareiche Erfahrung für diejenigen, die Ihren Twitter-Inhalt anzeigen. Wenn aktiviert, wird der Standard-Tweet mit der Website-URL in die Zusammenfassungskarte umgewandelt und mit einem zusätzlichen Titel, einer zusätzlichen Beschreibung von bis zu 200 Wörtern und einem Bild begleitet. Um die Funktion zu aktivieren, stellen Sie sicher, dass Sie den Twitter-Benutzernamen eingeben. Besuchen Sie <a target=""_blank"" href=""https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started"">diese Seite</a>, um mehr über Twitter-Karten zu erfahren."
+Enable Product,Produkt aktivieren
+"To enable the feature, make sure you enter Twitter Username.","Um die Funktion zu aktivieren, stellen Sie sicher, dass Sie den Twitter-Benutzernamen eingeben."
+Product Title,Produkt-Titel
+This setting allows you to select what product attribute will be used in Twitter Cards as the title for product pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Produktattribut für die Titel auf Twitter-Karten für Produktseiten verwendet wird."
+Product Description,Produkt-Beschreibung
+This setting allows you to select what product attribute will be used in Twitter Cards as the description for product pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Produktattribut für die Beschreibung auf Twitter-Karten für Produktseiten verwendet wird."
+Product Description Length,Länge der Produkt-Beschreibung
+Please specify a number of characters to crop description.,Bitte geben Sie die Anzahl der Zeichen für die Beschneidung der Beschreibung an.
+Enable Category,Kategorie aktivieren
+Category Title,Kategorie-Titel
+This setting allows you to select what category attribute will be used in Twitter Cards as the title for category pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Kategorieattribut für die Titel auf Twitter-Karten für Kategorieseiten verwendet wird."
+Category Description,Kategorie-Beschreibung
+This setting allows you to select what category attribute will be used in Twitter Cards as description for category pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Kategorieattribut für die Beschreibung auf Twitter-Karten für Kategorieseiten verwendet wird."
+Category Description Length,Länge der Kategorie-Beschreibung
+Enable Page,Seite aktivieren
+"Visit <a target=""_blank"" href=""https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started"">this page</a> to learn more about Twitter Cards. To enable the feature, make sure you enter Twitter Username.","Besuchen Sie <a target=""_blank"" href=""https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started"">diese Seite</a>, um mehr über Twitter-Karten zu erfahren. Um die Funktion zu aktivieren, stellen Sie sicher, dass Sie den Twitter-Benutzernamen eingeben."
+Page Title,Seiten-Titel
+This setting allows you to select what page attribute will be used in Twitter Cards as the title for CMS pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Seitenattribut für die Titel auf Twitter-Karten für CMS-Seiten verwendet wird."
+Page Description,Seiten-Beschreibung
+This setting allows you to select what page attribute will be used in Twitter Cards as the description for CMS pages.,"Diese Einstellung ermöglicht es Ihnen, auszuwählen, welches Seitenattribut für die Beschreibung auf Twitter-Karten für CMS-Seiten verwendet wird."
+Enable Website,Website aktivieren
+Twitter Username,Twitter-Benutzername

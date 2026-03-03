@@ -1,0 +1,152 @@
+Seo AI Request Logs for Category,Seo AI-Anforderungsprotokolle für Kategorie
+Seo AI Request Logs for Products,Seo AI-Anforderungsprotokolle für Produkte
+Could not save the log: %1,Konnte das Protokoll nicht speichern: %1
+"The log with ID ""%1"" does not exist.","Das Protokoll mit der ID ""%1"" existiert nicht."
+Could not delete the log: %1,Konnte das Protokoll nicht löschen: %1
+"Unable to locate instance ""%1"" .","Konnte die Instanz ""%1"" nicht finden."
+Category Meta Description,Kategorie Meta-Beschreibung
+Category Meta Keywords,Kategorie Meta-Stichwörter
+Category Meta Title,Kategorie Meta-Titel
+Category Seo Name,Kategorie SEO-Name
+Category Description,Kategorie Beschreibung
+Product Meta Description,Produkt Meta-Beschreibung
+Product Meta Keywords,Produkt Meta-Stichwörter
+Product Meta Title,Produkt Meta-Titel
+Product Seo Name,Produkt-SEO-Name
+Product Description,Produktbeschreibung
+Product Short Description,Kurzbeschreibung des Produkts
+AI-Powered Generator,KI-gesteuerter Generator
+AI Express Generator,AI Express Generator
+Product attributes,Produktattribute
+Message Type,Nachrichtentyp
+OpenAI Model,OpenAI-Modell
+Text successfully copied to clipboard.,Text erfolgreich in die Zwischenablage kopiert.
+Failed to copy text to clipboard.,Text konnte nicht in die Zwischenablage kopiert werden.
+Apply,Anwenden
+Copy,Kopieren
+Text successfully copied to clipboard. You can paste result where you want using the page builder.,Text erfolgreich in die Zwischenablage kopiert. Sie können das Ergebnis an der gewünschten Stelle mit dem Seitengestalter einfügen.
+Failed to copy text to clipboard. Please do it manually and paste the result where you want using the page builder.,Das Kopieren des Textes in die Zwischenablage ist fehlgeschlagen. Bitte tun Sie dies manuell und fügen Sie das Ergebnis mit dem Seitengestalter an der gewünschten Stelle ein.
+MageWorx SEO AI Integration,MageWorx SEO AI Integration
+Request Logs: Product,Anforderungsprotokolle: Produkt
+Request Logs: Category,Anforderungsprotokolle: Kategorie
+SEO AI,SEO AI
+Enable,Aktivieren
+"Enable the Open AI features for the administrator.
+                        When disabled you will no longer see the ""Generate using Open AI"" buttons in product and category form.
+                        All previously generated data still be available.","Aktivieren Sie die Open AI-Funktionen für den Administrator.
+                        Wenn deaktiviert, werden Sie die Schaltflächen ""Mit Open AI generieren"" im Produkt- und Kategoriedialogfeld nicht mehr sehen.
+                        Alle zuvor generierten Daten bleiben verfügbar."
+Enable for,Aktivieren für
+"Using this field you can enable or disable the ""Generate"" functionality for specific entities.","Mit diesem Feld können Sie die ""Generieren""-Funktion für bestimmte Entitäten aktivieren oder deaktivieren."
+Open AI Model,Open AI-Modell
+"<b>GPT-4</b> More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Availability depends on your pricing plan.
+For many basic tasks, the difference between GPT-4 and GPT-3.5 models is not significant.<br>
+
+<b>GPT-3.5</b> - A set of models that improve on GPT-3 and can understand as well as generate natural language or code<br>
+
+<b>GPT-3.5 turbo</b> (recommended) - Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with our latest model iteration 2 weeks after it is released.<br>
+
+<b>Text ADA 001</b> - Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.<br>
+
+<b>Text Davinci 003</b> - Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. Also supports some additional features such as inserting text.","<b>GPT-4</b> Leistungsfähiger als jedes GPT-3.5-Modell, in der Lage, komplexere Aufgaben zu erledigen und optimiert für den Chat. Die Verfügbarkeit hängt von Ihrem Preismodell ab.
+Für viele grundlegende Aufgaben ist der Unterschied zwischen GPT-4 und GPT-3.5-Modellen nicht signifikant.<br>
+
+<b>GPT-3.5</b> - Eine Reihe von Modellen, die GPT-3 verbessern und natürliche Sprache oder Code verstehen und generieren können.<br>
+
+<b>GPT-3.5 Turbo</b> (empfohlen) - Leistungsfähigstes GPT-3.5-Modell und optimiert für den Chat zu 1/10 des Preises von text-davinci-003. Wird 2 Wochen nach Veröffentlichung unserer neuesten Modelliteration aktualisiert.<br>
+
+<b>Text ADA 001</b> - In der Lage, sehr einfache Aufgaben zu erledigen, normalerweise das schnellste Modell in der GPT-3-Serie und am kostengünstigsten.<br>
+
+<b>Text Davinci 003</b> - Kann jede sprachliche Aufgabe mit besserer Qualität, längerer Ausgabe und konsistenter Befolgung von Anweisungen als die Modelle Curie, Babbage oder Ada erledigen. Unterstützt auch einige zusätzliche Funktionen wie das Einfügen von Text."
+Description,Beschreibung
+Max Length,Maximale Länge
+Content,Inhalt
+"This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{category_name}} - name of the category you generate data for
+                    {{category_description}} - description of the category you generate data for
+                    {{category_products}} - 10 first products assigned to the category.
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get.","Dieser Text wird als Anforderung an OpenAI verwendet, um einen entsprechenden Attributwert zu generieren.
+                    Die folgenden Variablen sind erlaubt:
+                    {{category_name}} - Name der Kategorie, für die Sie Daten generieren
+                    {{category_description}} - Beschreibung der Kategorie, für die Sie Daten generieren
+                    {{category_products}} - 10 erste Produkte, die der Kategorie zugeordnet sind.
+                    {{max_length}} - maximale Länge des Ergebnisses
+
+                    Bitte seien Sie vorsichtig beim Bearbeiten dieser Anforderung, da sie die Ergebnisse beeinflusst."
+Meta Description,Meta-Beschreibung
+Meta Keywords,Meta-Stichwörter
+Meta Title,Meta-Titel
+SEO Name,SEO-Name
+Category Specific Settings,Kategoriespezifische Einstellungen
+Temperature,Temperatur
+"By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.","Gemäß den OpenAI-Dokumenten: Welche Abtauchtiefe (Temperatur) zwischen 0 und 2 verwendet werden soll. Höhere Werte wie 0,8 machen die Ausgabe zufälliger, während niedrigere Werte wie 0,2 sie fokussierter und deterministischer machen."
+Category attributes that will be used for generation,"Kategorieattribute, die für die Generierung verwendet werden"
+"Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{category_attributes}} variable to the content request.","Bitte wählen Sie Attribute aus, die in der Generierungsanfrage verwendet werden sollen.
+                Diese Attribute werden anstelle der {{category_attributes}}-Variable in die Inhaltsanfrage aufgenommen."
+Number of variants in response per request,Anzahl der Varianten in der Antwort pro Anforderung
+A value that is too high may result in additional costs. We recommend to use the default value of 1 and only change it on a case-by-case basis from the object interface before making the request if necessary.,"Ein zu hoher Wert kann zusätzliche Kosten verursachen. Wir empfehlen, den Standardwert von 1 zu verwenden und ihn nur bei Bedarf über die Objektschnittstelle vor der Anforderung zu ändern."
+"This text will be used as a request to AI model to generate a corresponding attribute value.
+                    The following variables are allowed:
+                    {{product_name}} - name of the product you generate data for
+                    {{short_description}} - short description of the product you generate data for
+                    {{description}} - description of the product you generate data for
+                    {{product_price}} - price of the product you generate data for
+                    {{categories_list}} - list of the categories the product is assigned to
+                    {{product_attributes}} - list of available product attributes in a title:value format
+                    {{max_length}} - max length of the result
+
+                    Please be careful when editing this request as it will affect the results you get.","Dieser Text wird als Anforderung an OpenAI verwendet, um einen entsprechenden Attributwert zu generieren.
+                    Die folgenden Variablen sind erlaubt:
+                    {{product_name}} - Name des Produkts, für das Sie Daten generieren
+                    {{short_description}} - Kurzbeschreibung des Produkts, für das Sie Daten generieren
+                    {{description}} - Beschreibung des Produkts, für das Sie Daten generieren
+                    {{product_price}} - Preis des Produkts, für das Sie Daten generieren
+                    {{categories_list}} - Liste der Kategorien, denen das Produkt zugeordnet ist
+                    {{product_attributes}} - Liste der verfügbaren Produktattribute im Format Titel:Wert
+                    {{max_length}} - maximale Länge des Ergebnisses
+
+                    Bitte seien Sie vorsichtig beim Bearbeiten dieser Anforderung, da sie die Ergebnisse beeinflusst."
+Short Description,Kurzbeschreibung
+Product Specific Settings,Produktspezifische Einstellungen
+Product attributes that will be used for generation,"Produktattribute, die für die Generierung verwendet werden"
+"Please select attributes that will be used in the generation request.
+                These attributes data will be added instead of the {{product_attributes}} variable to the content request in a title:value format.","Bitte wählen Sie Attribute aus, die in der Generierungsanfrage verwendet werden sollen.
+                Diese Attributsdaten werden anstelle der {{product_attributes}}-Variable in die Inhaltsanfrage im Format Titel:Wert aufgenommen."
+Done,Erledigt
+Cancel,Abbrechen
+AI-Powered Data Generator,AI-Powered Data Generator
+This text will be used as a request to AI model to generate a corresponding attribute value. Please be careful when editing this request as it will affect the results you get.,"Dieser Text wird als Anforderung an OpenAI verwendet, um einen entsprechenden Attributwert zu generieren. Bitte seien Sie vorsichtig beim Bearbeiten dieser Anforderung, da sie die Ergebnisse beeinflusst."
+Submit,Senden
+Custom settings,Benutzerdefinierte Einstellungen
+Default AI model to use.,Standard-Open-AI-Modell zur Verwendung.
+Number of alternatives,Anzahl der Alternativen
+A number of the results you get.,"Eine Anzahl der Ergebnisse, die Sie erhalten."
+Attributes,Attribute
+"
+                    Please select attributes that will be used in the generation request.
+                    These attributes data will be added instead of the {{category_attributes}} variable to the content request.
+                    ","
+                    Bitte wählen Sie Attribute aus, die in der Generierungsanfrage verwendet werden sollen.
+                    Diese Attributsdaten werden anstelle der {{category_attributes}}-Variable in die Inhaltsanfrage aufgenommen.
+"
+System settings,Systemeinstellungen
+Category ID,Kategorie-ID
+Store ID,Store-ID
+Results,Ergebnisse
+ID,ID
+Message type,Nachrichtentyp
+Request Message,Anforderungsnachricht
+Response Message,Antwortnachricht
+Variant Index,Variantenindex
+Created,Erstellt
+Product ID,Produkt-ID
+Model,Modell
+"Please select attributes that will be used in the generation request.
+                        These attributes data will be added instead of the {{product_attributes}} variable to the content request.
+                    ","Bitte wählen Sie Attribute aus, die in der Generierungsanfrage verwendet werden sollen.
+                        Diese Attributsdaten werden anstelle der {{product_attributes}}-Variable in die Inhaltsanfrage aufgenommen.
+                    "

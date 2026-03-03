@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Interface to model preference -->
+    <preference for="MageWorx\OpenAI\Api\OptionsInterface" type="MageWorx\OpenAI\Model\Options"/>
+    <preference for="MageWorx\OpenAI\Api\RequestInterface" type="MageWorx\OpenAI\Model\Request"/>
+    <preference for="MageWorx\OpenAI\Api\ResponseInterface" type="MageWorx\OpenAI\Model\Response"/>
+    <preference for="MageWorx\OpenAI\Api\MessengerInterface" type="MageWorx\OpenAI\Model\Messenger"/>
+    <preference for="MageWorx\OpenAI\Api\GeneralOpenAIHelperInterface" type="MageWorx\OpenAI\Helper\General"/>
+    <!-- Queue interfaces -->
+    <preference for="MageWorx\OpenAI\Api\Data\QueueItemInterface" type="MageWorx\OpenAI\Model\Queue\QueueItem"/>
+    <preference for="MageWorx\OpenAI\Api\Data\QueueProcessInterface" type="MageWorx\OpenAI\Model\Queue\QueueProcess"/>
+    <!-- Queue item processors pool -->
+    <preference for="MageWorx\OpenAI\Api\QueueItemPreprocessorPoolInterface" type="MageWorx\OpenAI\Model\Queue\QueueItemPreprocessor\QueueItemPreprocessorPool"/>
+    <preference for="MageWorx\OpenAI\Api\QueueItemErrorHandlerPoolInterface" type="MageWorx\OpenAI\Model\Queue\QueueItemErrorHandler\HandlerPool"/>
+    <!-- Queue repositories -->
+    <preference for="MageWorx\OpenAI\Api\QueueRepositoryInterface" type="MageWorx\OpenAI\Model\Queue\QueueRepository"/>
+    <preference for="MageWorx\OpenAI\Api\QueueProcessRepositoryInterface" type="MageWorx\OpenAI\Model\Queue\ProcessRepository"/>
+    <!-- Queue managers -->
+    <preference for="MageWorx\OpenAI\Api\QueueManagementInterface" type="MageWorx\OpenAI\Model\Queue\QueueManagement"/>
+    <preference for="MageWorx\OpenAI\Api\QueueProcessorInterface" type="MageWorx\OpenAI\Model\Queue\QueueProcessor"/>
+    <!-- Queue process management -->
+    <preference for="MageWorx\OpenAI\Api\QueueProcessManagementInterface" type="MageWorx\OpenAI\Model\Queue\QueueProcessManagement"/>
+    <!-- Presets -->
+    <preference for="MageWorx\OpenAI\Api\Data\PresetInterface" type="MageWorx\OpenAI\Model\Presets\Preset" />
+    <preference for="MageWorx\OpenAI\Api\Data\PresetGroupInterface" type="MageWorx\OpenAI\Model\Presets\PresetGroup" />
+
+    <!-- Models type pool -->
+    <type name="MageWorx\OpenAI\Model\Models\ModelsFactory">
+        <arguments>
+            <argument name="types" xsi:type="array">
+                <item name="gpt-4" xsi:type="string">MageWorx\OpenAI\Model\Models\ChatGPT4Model</item>
+                <item name="gpt-4-1106-preview" xsi:type="string">MageWorx\OpenAI\Model\Models\ChatGPT41106PModel</item>
+                <item name="gpt-4o" xsi:type="string">MageWorx\OpenAI\Model\Models\ChatGPT4OModel</item>
+                <item name="gpt-3.5-turbo" xsi:type="string">MageWorx\OpenAI\Model\Models\ChatGPT3d5Model</item>
+                <item name="gpt-3.5-turbo-16k" xsi:type="string">MageWorx\OpenAI\Model\Models\ChatGPT3d516kModel</item>
+                <item name="text-davinci-003" xsi:type="string">MageWorx\OpenAI\Model\Models\TextDavinci003Model</item>
+                <item name="text-ada-001" xsi:type="string">MageWorx\OpenAI\Model\Models\TextAda001Model</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Configuration and settings -->
+    <type name="Magento\Config\Model\Config\TypePool">
+        <arguments>
+            <argument name="sensitive" xsi:type="array">
+                <item name="mageworx_openai/main_settings/api_key" xsi:type="string">1</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Register callback class -->
+    <type name="MageWorx\OpenAI\Model\Queue\Callback\CallbackFactory">
+        <arguments>
+            <argument name="callbacks" xsi:type="array">
+                <item name="dummy" xsi:type="string">MageWorx\OpenAI\Model\Queue\Callback\DummyCallback</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Register preprocessors -->
+    <type name="MageWorx\OpenAI\Api\QueueItemPreprocessorPoolInterface">
+        <arguments>
+            <argument name="preprocessors" xsi:type="array">
+                <item name="default" xsi:type="object">MageWorx\OpenAI\Model\Queue\QueueItemPreprocessor\DefaultPreprocessor</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Response Error handler pool: take in action when Open AI returning error to request -->
+    <type name="MageWorx\OpenAI\Api\QueueItemErrorHandlerPoolInterface">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="default" xsi:type="array">
+                    <item name="rate_limit_exceeded" xsi:type="object">MageWorx\OpenAI\Model\Queue\QueueItemErrorHandler\RequestLimitReachedHandler</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- Add proxy error handlers pool to queue processor to avoid circular dependency error in OM -->
+    <type name="MageWorx\OpenAI\Api\QueueProcessorInterface">
+        <arguments>
+            <argument name="errorHandlerPool" xsi:type="object">MageWorx\OpenAI\Api\QueueItemErrorHandlerPoolInterface\Proxy</argument>
+        </arguments>
+    </type>
+</config>
