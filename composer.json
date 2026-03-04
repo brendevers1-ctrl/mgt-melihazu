@@ -28,7 +28,6 @@
         "magento/module-catalog-sample-data": "100.4.*",
         "magento/module-cms-sample-data": "100.4.*",
         "magento/module-configurable-sample-data": "100.4.*",
-        "magento/module-customer-sample-data": "100.4.*",
         "magento/module-downloadable-sample-data": "100.4.*",
         "magento/module-grouped-product-sample-data": "100.4.*",
         "magento/module-msrp-sample-data": "100.4.*",
