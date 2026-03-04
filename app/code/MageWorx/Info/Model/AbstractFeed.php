@@ -59,7 +59,7 @@ class AbstractFeed extends Feed
         ?\Magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
         ?\Magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
         array $data = [],
-        Escaper $escaper = null
+        ?Escaper $escaper = null
     ) {
         parent::__construct(
             $context,

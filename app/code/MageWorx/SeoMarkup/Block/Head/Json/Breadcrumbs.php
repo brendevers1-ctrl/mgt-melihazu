@@ -42,7 +42,7 @@ abstract class Breadcrumbs extends \MageWorx\SeoMarkup\Block\Head\Json
         \MageWorx\SeoMarkup\Helper\Breadcrumbs $helperBreadcrumbs,
         \Magento\Framework\View\Element\Template\Context $context,
         array $data = [],
-        SeoFeaturesStatusProvider $seoFeaturesStatusProvider = null
+        ?SeoFeaturesStatusProvider $seoFeaturesStatusProvider = null
 
     ) {
         $this->helperBreadcrumbs = $helperBreadcrumbs;

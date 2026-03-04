@@ -19,7 +19,7 @@ class CallbackProcessingException extends LocalizedException
      */
     public function __construct(
         Phrase $phrase,
-        \Exception $cause = null,
+        ?\Exception $cause = null,
         int $code = 1001
     ) {
         parent::__construct($phrase, $cause, $code);

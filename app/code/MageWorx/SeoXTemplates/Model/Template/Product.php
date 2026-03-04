@@ -204,8 +204,8 @@ class Product extends \MageWorx\SeoXTemplates\Model\AbstractTemplate
         TypeOptions $typeOptions,
         HelperStore $helperStore,
         DataProviderProductFactory $dataProviderProductFactory,
-        AbstractResource $resource = null,
-        AbstractDb $resourceCollection = null,
+        ?AbstractResource $resource = null,
+        ?AbstractDb $resourceCollection = null,
         array $data = []
     ) {
         $this->attributeCodeOptions       = $attributeCodeOptions;

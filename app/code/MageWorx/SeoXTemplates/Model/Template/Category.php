@@ -173,8 +173,8 @@ class Category extends \MageWorx\SeoXTemplates\Model\AbstractTemplate
         HelperStore $helperStore,
         MagentoManagerInterface $messageManager,
         DataProviderCategoryFactory $dataProviderCategoryFactory,
-        AbstractResource $resource = null,
-        AbstractDb $resourceCollection = null,
+        ?AbstractResource $resource = null,
+        ?AbstractDb $resourceCollection = null,
         array $data = []
     ) {
 

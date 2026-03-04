@@ -32,11 +32,10 @@ class Category extends \Magento\Catalog\Model\ResourceModel\Category
         \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory $categoryCollectionFactory,
         Processor $indexerProcessor,
         $data = [],
-        \Magento\Framework\Serialize\Serializer\Json
-        $serializer = null,
-        MetadataPool $metadataPool = null,
-        \Magento\Framework\EntityManager\EntityManager  $entityManager = null,
-        \Magento\Catalog\Model\ResourceModel\Category\AggregateCount $aggregateCount = null
+        ?\Magento\Framework\Serialize\Serializer\Json $serializer = null,
+        ?MetadataPool $metadataPool = null,
+        ?\Magento\Framework\EntityManager\EntityManager  $entityManager = null,
+        ?\Magento\Catalog\Model\ResourceModel\Category\AggregateCount $aggregateCount = null
     ) {
         $this->productMetadata = $productMetadata;
 

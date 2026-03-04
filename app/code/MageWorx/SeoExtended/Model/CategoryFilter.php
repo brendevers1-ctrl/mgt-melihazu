@@ -96,8 +96,8 @@ class CategoryFilter extends AbstractModel implements CategoryFilterInterface
         HelperCategory $helperCategory,
         EavAttributeFactory $attributeModelFactory,
         AttributeOptionCollectionFactory $attributeOptionCollectionFactory,
-        AbstractResource $resource = null,
-        AbstractDb $resourceCollection = null,
+        ?AbstractResource $resource = null,
+        ?AbstractDb $resourceCollection = null,
         array $data = []
     ) {
         $this->filter                    = $filter;

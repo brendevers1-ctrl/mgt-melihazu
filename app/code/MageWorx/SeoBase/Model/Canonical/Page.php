@@ -185,7 +185,7 @@ class Page extends \MageWorx\SeoBase\Model\Canonical
      * @return string
      */
     public function getStoreBaseUrl(
-        int $storeId = null,
+        ?int $storeId = null,
         string $type = \Magento\Framework\UrlInterface::URL_TYPE_LINK
     ): string {
         return rtrim($this->storeManager->getStore($storeId)->getBaseUrl($type), '/') . '/';

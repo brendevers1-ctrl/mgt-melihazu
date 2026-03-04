@@ -77,7 +77,7 @@ abstract class Canonical implements \MageWorx\SeoBase\Model\CanonicalInterface
      * @param bool $isHomePage
      * @return string
      */
-    public function trailingSlash(string $url, int $storeId = null, bool $isHomePage = false): string
+    public function trailingSlash(string $url, ?int $storeId = null, bool $isHomePage = false): string
     {
         return $this->helperStoreUrl->trailingSlash($url, $storeId, $isHomePage);
     }

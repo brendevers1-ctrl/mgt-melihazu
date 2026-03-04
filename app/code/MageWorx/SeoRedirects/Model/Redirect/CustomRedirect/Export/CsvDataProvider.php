@@ -35,7 +35,7 @@ class CsvDataProvider
      * @param array|null $redirectIds
      * @return string
      */
-    public function getContent(array $redirectIds = null): string
+    public function getContent(?array $redirectIds = null): string
     {
         /** start csv content and set template */
         $headers = new \Magento\Framework\DataObject(
@@ -132,7 +132,7 @@ class CsvDataProvider
      * @param array|null $redirectIds
      * @return Collection | null
      */
-    protected function getCustomRedirectCollection(array $redirectIds = null): ?Collection
+    protected function getCustomRedirectCollection(?array $redirectIds = null): ?Collection
     {
         /** @var Collection $redirectCollection */
         $redirectCollection = $this->redirectCollectionFactory->create();

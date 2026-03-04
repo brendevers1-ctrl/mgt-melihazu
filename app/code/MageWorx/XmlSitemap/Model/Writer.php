@@ -487,8 +487,8 @@ class Writer implements WriterInterface
     protected function isInputDataValid(
         string $url,
         string $lastmod,
-        string $changefreq = null,
-        string $priority = null
+        ?string $changefreq = null,
+        ?string $priority = null
     ): void {
         if ($this->locationValidator->isValid($url) == false && $this->helper->isEnableValidateUrls()) {
             throw new LocalizedException(__("Location value '%1' is not valid.", $url));
@@ -644,7 +644,7 @@ class Writer implements WriterInterface
      * @param string|null $fileName
      * @throws LocalizedException
      */
-    protected function moveFileFromTempToOriginal(string $fileName = null): void
+    protected function moveFileFromTempToOriginal(?string $fileName = null): void
     {
         if (!$fileName) {
             $fileName = $this->getSitemapFilename();

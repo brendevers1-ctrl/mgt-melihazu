@@ -87,7 +87,7 @@ class Category extends \Magento\Sitemap\Model\ResourceModel\Catalog\Category
         Data $helperData,
         ManagerInterface $eventManager,
         CollectionFactory $collectionFactory,
-        string $connectionName = null
+        ?string $connectionName = null
     ) {
         $this->fileInfo = $fileInfo;
         $this->helperSitemap = $helperData;

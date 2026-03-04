@@ -85,7 +85,7 @@ class Product extends \MageWorx\SeoBase\Model\Canonical
         AssociatedFactory $associatedFactory,
         SimpleFactory $simpleFactory,
         $fullActionName = 'catalog_product_view',
-        \Magento\Framework\UrlInterface $url = null
+        ?\Magento\Framework\UrlInterface $url = null
     ) {
         $this->registry           = $registry;
         $this->crossDomainFactory = $crossDomainFactory;

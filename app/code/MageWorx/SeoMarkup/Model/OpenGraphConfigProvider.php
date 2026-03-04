@@ -46,7 +46,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return bool
      */
-    public function isEnabledForProduct(int $storeId = null): bool
+    public function isEnabledForProduct(?int $storeId = null): bool
     {
         return $this->scopeConfig->isSetFlag(
             self::XML_CONFIG_PATH_ENABLED_FOR_PRODUCT,
@@ -72,7 +72,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getProductTitleCode(int $storeId = null): string
+    public function getProductTitleCode(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_PRODUCT_TITLE_CODE,
@@ -85,7 +85,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getProductDescriptionCode(int $storeId = null): string
+    public function getProductDescriptionCode(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_PRODUCT_DESCRIPTION_CODE,
@@ -98,7 +98,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getCropProductDescription(int $storeId = null): string
+    public function getCropProductDescription(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_CROP_PRODUCT_DESCRIPTION,
@@ -111,7 +111,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return bool
      */
-    public function isEnabledForCategory(int $storeId = null): bool
+    public function isEnabledForCategory(?int $storeId = null): bool
     {
         return $this->scopeConfig->isSetFlag(
             self::XML_CONFIG_PATH_ENABLED_FOR_CATEGORY,
@@ -124,7 +124,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getCategoryTitleCode(int $storeId = null): string
+    public function getCategoryTitleCode(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_CATEGORY_TITLE_CODE,
@@ -137,7 +137,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getCategoryDescriptionCode(int $storeId = null): string
+    public function getCategoryDescriptionCode(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_CATEGORY_DESCRIPTION_CODE,
@@ -150,7 +150,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getCropCategoryDescription(int $storeId = null): string
+    public function getCropCategoryDescription(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_CROP_CATEGORY_DESCRIPTION,
@@ -163,7 +163,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return bool
      */
-    public function isEnabledForPage(int $storeId = null): bool
+    public function isEnabledForPage(?int $storeId = null): bool
     {
         return $this->scopeConfig->isSetFlag(
             self::XML_CONFIG_PATH_ENABLED_FOR_PAGE,
@@ -176,7 +176,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getPageTitleCode(int $storeId = null): string
+    public function getPageTitleCode(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_PAGE_TITLE_CODE,
@@ -189,7 +189,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return string
      */
-    public function getPageDescriptionCode(int $storeId = null): string
+    public function getPageDescriptionCode(?int $storeId = null): string
     {
         return (string)$this->scopeConfig->getValue(
             self::XML_CONFIG_PATH_PAGE_DESCRIPTION_CODE,
@@ -202,7 +202,7 @@ class OpenGraphConfigProvider
      * @param int|null $storeId
      * @return bool
      */
-    public function isEnabledForHomePage(int $storeId = null): bool
+    public function isEnabledForHomePage(?int $storeId = null): bool
     {
         return $this->scopeConfig->isSetFlag(
             self::XML_CONFIG_PATH_ENABLED_FOR_HOME_PAGE,

@@ -154,8 +154,8 @@ class Feed extends AbstractModel {
 		RequestInterface $request,
 		Session $backendSession,
 		Data $helperData,
-		AbstractResource $resource = null,
-		AbstractDb $resourceCollection = null,
+		?AbstractResource $resource = null,
+		?AbstractDb $resourceCollection = null,
 		array $data = []
 	) {
 		$this->resourceIterator = $resourceIterator;

@@ -74,8 +74,8 @@ class CustomRedirect extends \MageWorx\SeoRedirects\Model\Redirect implements Cu
         Registry $registry,
         StoreManagerInterface $storeManager,
         HelperData $helperData,
-        AbstractResource $resource = null,
-        AbstractDb $resourceCollection = null,
+        ?AbstractResource $resource = null,
+        ?AbstractDb $resourceCollection = null,
         array $data = []
     ) {
         $this->filter       = $filter;

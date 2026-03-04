@@ -29,7 +29,7 @@ class Gallery extends \Magento\Catalog\Model\ResourceModel\Product\Gallery
         \Magento\Framework\Model\ResourceModel\Db\Context $context,
         \Magento\Framework\EntityManager\MetadataPool $metadataPool,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
-        string $connectionName = null
+        ?string $connectionName = null
     ) {
         $this->storeManager = $storeManager;
         parent::__construct($context, $metadataPool, $connectionName);

@@ -83,8 +83,8 @@ class DpRedirect extends \MageWorx\SeoRedirects\Model\Redirect implements DpRedi
         Registry $registry,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
         HelperData $helperData,
-        AbstractResource $resource = null,
-        AbstractDb $resourceCollection = null,
+        ?AbstractResource $resource = null,
+        ?AbstractDb $resourceCollection = null,
         array $data = []
     ) {
         $this->filter       = $filter;

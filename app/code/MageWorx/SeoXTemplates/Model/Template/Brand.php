@@ -133,8 +133,8 @@ class Brand extends \MageWorx\SeoXTemplates\Model\AbstractTemplate
         TypeOptions $typeOptions,
         HelperStore $helperStore,
         MagentoManagerInterface $messageManager,
-        AbstractResource $resource = null,
-        AbstractDb $resourceCollection = null,
+        ?AbstractResource $resource = null,
+        ?AbstractDb $resourceCollection = null,
         array $data = []
     ) {
 

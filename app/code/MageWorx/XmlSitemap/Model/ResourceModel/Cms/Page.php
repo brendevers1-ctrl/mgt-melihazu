@@ -43,7 +43,7 @@ class Page extends \Magento\Sitemap\Model\ResourceModel\Cms\Page
         EntityManager $entityManager,
         Data $helperData,
         ManagerInterface $eventManager,
-        string $connectionName = null
+        ?string $connectionName = null
     ) {
         $this->helperSitemap = $helperData;
         $this->eventManager  = $eventManager;

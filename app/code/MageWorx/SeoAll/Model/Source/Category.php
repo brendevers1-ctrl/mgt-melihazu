@@ -68,7 +68,7 @@ class Category extends Source
         array $specialCategories = [],
         string $action = 'disable',
         string $markLabel = '',
-        int $storeId = null
+        ?int $storeId = null
     ) {
         $this->options = [['value' => '', 'label' => '']];
 
@@ -145,7 +145,7 @@ class Category extends Source
      * @return array
      * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
-    protected function getCategoryTree(int $storeId = null): array
+    protected function getCategoryTree(?int $storeId = null): array
     {
         if ($storeId === \Magento\Store\Model\Store::DEFAULT_STORE_ID) {
             $parentId = \Magento\Catalog\Model\Category::TREE_ROOT_ID;

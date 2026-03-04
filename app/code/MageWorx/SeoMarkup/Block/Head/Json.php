@@ -27,7 +27,7 @@ abstract class Json extends \MageWorx\SeoMarkup\Block\Head
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
         array $data,
-        SeoFeaturesStatusProvider $seoFeaturesStatusProvider = null
+        ?SeoFeaturesStatusProvider $seoFeaturesStatusProvider = null
 
     ) {
         $this->seoFeaturesStatusProvider = $seoFeaturesStatusProvider;

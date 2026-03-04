@@ -180,8 +180,8 @@ class Crosslink extends AbstractModel
         \Magento\Store\Model\StoreManagerInterface $storeManager,
         CacheTypeListInterface $cache,
         HelperData $helperData,
-        AbstractResource $resource = null,
-        AbstractDb $resourceCollection = null,
+        ?AbstractResource $resource = null,
+        ?AbstractDb $resourceCollection = null,
         array $data = []
     ) {
         $this->filter       = $filter;
