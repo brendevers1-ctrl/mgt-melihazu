@@ -1,5 +1,6 @@
 /vendor/
 /generated/
+/setup/
 /var/
 /pub/static/
 /pub/media/catalog/product/cache/
@@ -10,4 +11,6 @@
 /app/etc/config.php
 /.idea/
 /node_modules/
-/composer.lock
+/dev/
+/lib/
+/pub/
