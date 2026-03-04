@@ -1879,6 +1879,7 @@
                 <item name="MySQL-5.7" xsi:type="string">^5\.7\.</item>
                 <item name="MariaDB-(10.2-10.6)" xsi:type="string">^10\.[2-6]\.</item>
                 <item name="MariaDB-11.4" xsi:type="string">^11\.4\.</item>
+                <item name="MariaDB-10.11" xsi:type="string">^10\.11\.</item>
             </argument>
         </arguments>
     </type>
