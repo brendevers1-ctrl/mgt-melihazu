@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="amazonses" translate="label" type="text" sortOrder="1150" showInDefault="1" showInWebsite="1">
+            <label>Amazon SES</label>
+            <tab>general</tab>
+            <resource>Magento_Analytics::analytics_settings</resource>
+            <group id="general" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1">
+                <label>Amazon SES</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="region" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1">
+                    <label>AWS Region</label>
+                </field>
+                <field id="access_key" translate="label" type="password" sortOrder="30" showInDefault="1" showInWebsite="1">
+                    <label>AWS Access Key</label>
+                </field>
+                <field id="secret_key" translate="label" type="password" sortOrder="40" showInDefault="1" showInWebsite="1">
+                    <label>AWS Secret</label>
+                </field>
+                <field id="from_email" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1">
+                    <label>From Email</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
