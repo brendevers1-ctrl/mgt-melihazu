@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+    <type name="Custom\OrderToSheet\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">order_to_sheet</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">Custom\OrderToSheet\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
