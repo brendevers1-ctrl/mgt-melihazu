@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Custom_SizeGuide::css/sizeguide.css"/>
+        <script src="Custom_SizeGuide::js/sizeguide.js"/>
+    </head>
+    <body>
+        <referenceBlock name="product.info.options.wrapper">
+            <block class="Custom\SizeGuide\Block\SizeGuide"
+                   name="mysignbox.sizeguide"
+                   template="Custom_SizeGuide::sizeguide.phtml"
+                   after="-"/>
+        </referenceBlock>
+    </body>
+</page>

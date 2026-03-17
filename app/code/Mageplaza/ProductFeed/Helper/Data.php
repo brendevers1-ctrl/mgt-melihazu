@@ -651,23 +651,29 @@ class Data extends CoreHelper {
 		return $storeData;
 	}
 
-	/**
-	 * @return AbstractCollection
-	 */
-	public function getReviewCollection() {
-		$collection = $this->reviewFactory->create()->getCollection();
-		/** @var $review Review */
-		foreach ($collection as $review) {
-			$review->setUrl($review->getReviewUrl());
-			$product = $this->productFactory->create()->load($review->getEntityPkValue());
-			$product->setUrl($product->getProductUrl());
-			$rating = $this->reviewSummaryFactory->create()->load($review->getId())->getRatingSummary() * 5 / 100;
-			$review->setRating($rating);
-			$review->setProduct($product);
-		}
+    /**
+     * @return AbstractCollection
+     */
+    public function getReviewCollection() {
+        $collection = $this->reviewFactory->create()->getCollection();
+        /** @var $review Review */
+        foreach ($collection as $review) {
+            $review->setUrl($review->getReviewUrl());
+            $product = $this->productFactory->create()->load($review->getEntityPkValue());
+            $product->setUrl($product->getProductUrl());
+            $ratingSum = $this->reviewSummaryFactory
+                ->create()
+                ->load($review->getEntityPkValue())
+                ->getRatingSummary();
+            $ratingSum =$ratingSum * 5 / 100;
+            $review->setRating($ratingSum);
+            $review->setProduct($product);
+            $dateTime = new \DateTime($review->getCreatedAt());
+            $review->setCreatedAt($dateTime->format('c'));
+        }
 
-		return $collection;
-	}
+        return $collection;
+    }
 
 	/**
 	 * @param Feed $feed

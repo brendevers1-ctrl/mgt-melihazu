@@ -1,0 +1,45 @@
+<?php
+
+$product = $block->getProduct();
+$sizeAttributes = ['size', 'pa_size', 'clothing_size'];
+$hasSize = false;
+foreach ($product->getAttributes() as $attribute) {
+    if (in_array($attribute->getAttributeCode(), $sizeAttributes)) {
+        $hasSize = true;
+        break;
+    }
+}
+if (!$hasSize) {
+    return;
+}
+$categoryIds = $product->getCategoryIds();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$categoryFactory = $objectManager->get(\Magento\Catalog\Model\CategoryFactory::class);
+$imageUrl = '';
+foreach ($categoryIds as $categoryId) {
+    $category = $categoryFactory->create()->load($categoryId);
+    if ($category->getData('size_guide_image')) {
+        $baseUrl = $block->getBaseUrl();
+        $imageUrl = $baseUrl . $category->getData('size_guide_image');
+        break;
+    }
+}
+?>
+<?php if ($imageUrl): ?>
+    <div class="size-guide-wrapper">
+        <button type="button" id="open-size-guide" class="size-guide-btn">
+            Size Guide
+        </button>
+    </div>
+    <div id="size-guide-modal">
+        <div class="size-guide-overlay"></div>
+        <div class="size-guide-popup">
+            <span class="size-guide-close">×</span>
+            <img
+                class="size-guide-img lazyload"
+                src="<?= $imageUrl ?>"
+                alt="Size Guide"
+            />
+        </div>
+    </div>
+<?php endif; ?>
