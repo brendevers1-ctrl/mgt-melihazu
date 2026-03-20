@@ -1,0 +1,11 @@
+<h2>Import Tracking CSV</h2>
+
+<form action="<?= $block->getFormAction(); ?>" method="post" enctype="multipart/form-data">
+    <input type="file" name="csv_file" accept=".csv" required />
+    <input type="hidden" name="form_key" value="<?= $block->getFormKey(); ?>">
+    <br><br>
+    <button type="submit" class="action-primary">Import</button>
+</form>
+
+<p>Format CSV:</p>
+<pre>order_increment_id,tracking_number</pre>

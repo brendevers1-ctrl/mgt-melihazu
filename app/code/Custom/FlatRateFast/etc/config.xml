@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <flatratefast>
+                <active>1</active>
+                <model>Custom\FlatRateFast\Model\Carrier\FlatRateFast</model>
+                <title>Fast</title>
+                <name>Fast Shipping</name>
+                <price>15</price>
+                <sallowspecific>0</sallowspecific>
+            </flatratefast>
+        </carriers>
+    </default>
+</config>

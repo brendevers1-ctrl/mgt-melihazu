@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <!-- ========================= -->
+    <!-- MAIN IMPORT TABLE -->
+    <!-- ========================= -->
+    <table name="custom_tracking_import" resource="default" engine="innodb" comment="Tracking Import">
+
+        <column xsi:type="int" name="entity_id" identity="true" unsigned="true" nullable="false" comment="ID"/>
+        <column xsi:type="varchar" name="file_name" length="255" nullable="false" comment="File Name"/>
+        <column xsi:type="varchar" name="status" length="20" nullable="false" default="pending" comment="Status"/>
+        <column xsi:type="int" name="total_rows" unsigned="true" nullable="false" default="0" comment="Total Rows"/>
+        <column xsi:type="int" name="processed_rows" unsigned="true" nullable="false" default="0" comment="Processed Rows"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+
+        <index referenceId="IDX_TRACKING_IMPORT_STATUS" indexType="btree">
+            <column name="status"/>
+        </index>
+
+    </table>
+
+    <!-- ========================= -->
+    <!-- IMPORT ITEMS TABLE -->
+    <!-- ========================= -->
+    <table name="custom_tracking_import_item" resource="default" engine="innodb" comment="Tracking Import Items">
+
+        <column xsi:type="int" name="entity_id" identity="true" unsigned="true" nullable="false" comment="ID"/>
+        <column xsi:type="int" name="import_id" unsigned="true" nullable="false" comment="Import ID"/>
+        <column xsi:type="varchar" name="order_increment_id" length="50" nullable="false" comment="Order Increment ID"/>
+        <column xsi:type="varchar" name="tracking_number" length="100" nullable="false" comment="Tracking Number"/>
+        <column xsi:type="varchar" name="status" length="20" nullable="false" default="pending" comment="Status"/>
+        <column xsi:type="text" name="message" nullable="true" comment="Error Message"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Updated At"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+
+        <!-- Foreign key -->
+        <constraint xsi:type="foreign"
+                    referenceId="FK_TRACKING_IMPORT_ITEM_IMPORT_ID"
+                    table="custom_tracking_import_item"
+                    column="import_id"
+                    referenceTable="custom_tracking_import"
+                    referenceColumn="entity_id"
+                    onDelete="CASCADE"/>
+
+        <!-- Indexes -->
+        <index referenceId="IDX_TRACKING_IMPORT_ITEM_IMPORT_ID" indexType="btree">
+            <column name="import_id"/>
+        </index>
+
+        <index referenceId="IDX_TRACKING_IMPORT_ITEM_STATUS" indexType="btree">
+            <column name="status"/>
+        </index>
+
+    </table>
+
+</schema>
