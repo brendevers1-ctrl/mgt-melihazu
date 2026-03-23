@@ -364,6 +364,8 @@ return [
         'Custom_OrderToSheet' => 1,
         'Custom_SizeGuide' => 1,
         'Custom_TrackingImport' => 1,
+        'ET_Base' => 1,
+        'ET_Theme' => 1,
         'Hidden_Base' => 1,
         'Hidden_ShopkartLite' => 1,
         'MageWorx_OpenAI' => 1,
