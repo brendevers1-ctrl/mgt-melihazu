@@ -368,6 +368,8 @@ return [
         'ET_Theme' => 1,
         'Hidden_Base' => 1,
         'Hidden_ShopkartLite' => 1,
+        'Hiddentechies_Base' => 1,
+        'Hiddentechies_Bentriz' => 1,
         'MageWorx_OpenAI' => 1,
         'MageWorx_SeoAll' => 1,
         'MageWorx_Info' => 1,
