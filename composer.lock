@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "669a32621eaffe9271e4e0b19146c6a2",
+    "content-hash": "d252707e548e3529aee4f69b67bb0d9d",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -27006,6 +27006,48 @@
                 }
             ],
             "time": "2024-10-24T12:32:22+00:00"
+        },
+        {
+            "name": "zohomail/magento2-zohomail",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zohomail/magento2-zohomail.git",
+                "reference": "0a5c241cf16713789d31def7bc02f9dd2550c4db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zohomail/magento2-zohomail/zipball/0a5c241cf16713789d31def7bc02f9dd2550c4db",
+                "reference": "0a5c241cf16713789d31def7bc02f9dd2550c4db",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Zoho\\ZohoMail\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "zmintegration",
+                    "email": "zmintegration@zohomail.com",
+                    "homepage": "http://zoho.com/mail",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Zoho Mail plugin for magento2",
+            "support": {
+                "issues": "https://github.com/zohomail/magento2-zohomail/issues",
+                "source": "https://github.com/zohomail/magento2-zohomail/tree/1.0"
+            },
+            "time": "2025-02-25T10:43:35+00:00"
         }
     ],
     "packages-dev": [

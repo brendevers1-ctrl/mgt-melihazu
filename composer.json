@@ -45,7 +45,8 @@
         "magento/product-community-edition": "2.4.8-p3",
         "magento/sample-data-media": "100.4.*",
         "mageplaza/module-smtp": "^4.7",
-        "yireo/magento2-webp2": "^0.14.3"
+        "yireo/magento2-webp2": "^0.14.3",
+        "zohomail/magento2-zohomail": "*"
     },
     "autoload": {
         "exclude-from-classmap": [

@@ -427,6 +427,7 @@ return [
         'PayPal_BraintreeReward' => 1,
         'Yireo_CspUtilities' => 0,
         'Yireo_NextGenImages' => 1,
-        'Yireo_Webp2' => 1
+        'Yireo_Webp2' => 1,
+        'Zoho_ZohoMail' => 1
     ]
 ];
