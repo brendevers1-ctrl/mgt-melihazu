@@ -355,9 +355,9 @@ class Product extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public function getMerchantReturnPolicyData(\Magento\Catalog\Model\Product $product): array
     {
-        if (!$this->isMerchantReturnPolicyAllowed($product)) {
-            return [];
-        }
+//        if (!$this->isMerchantReturnPolicyAllowed($product)) {
+//            return [];
+//        }
 
         $data    = ['@type' => 'MerchantReturnPolicy'];
         $country = $this->helperData->getMerchantReturnPolicyApplicableCountry();
@@ -399,7 +399,7 @@ class Product extends \Magento\Framework\App\Helper\AbstractHelper
                 'value'    => $this->helperData->getShippingFeesAmount()
             ];
         }
-
+//    var_dump($data);die;
         return $data;
     }
 

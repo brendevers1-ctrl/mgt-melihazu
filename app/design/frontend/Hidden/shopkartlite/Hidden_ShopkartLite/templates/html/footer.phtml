@@ -60,6 +60,7 @@ $copyrightRightBlock = $helper->getConfigValue('shopkartlitesettings/footer_bott
                 <?php if ($copyrightRightBlock != '') { ?>
                     <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($copyrightRightBlock)->toHtml(); ?>
                 <?php } ?>
+                <img style="padding-top:10px;height: 30px" src="<?= $this->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA).'/media/wysiwyg/Paypal-Stripe-Cards.webp' ?>" alt="Paypal Stripe Credit Cards Secured Payment Accepted">
             </div>
         </div>
     </div>

@@ -39,7 +39,7 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
     /**
      * Position for actions regarding image size changing in vde if needed
      */
-    $pos = $block->getPositioned();
+    $pos = $block->getPositioned() ?? '';
     ?>
     <div class="products wrapper <?php /* @escapeNotVerified */ echo $viewMode; ?> products-<?php /* @escapeNotVerified */ echo $viewMode; ?>">
         <?php $iterator = 1; ?>
@@ -53,6 +53,8 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                     if ($pos != null) {
                         $position = ' style="left:' . $productImage->getWidth() . 'px;'
                                 . 'top:' . $productImage->getHeight() . 'px;"';
+                    } else {
+                        $pos = '';
                     }
                     ?>
                     <?php // Product Image ?>

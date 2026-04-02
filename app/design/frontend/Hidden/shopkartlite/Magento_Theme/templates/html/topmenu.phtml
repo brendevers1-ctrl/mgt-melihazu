@@ -34,3 +34,17 @@ $showHome = $helper->getConfigValue('shopkartlitesettings/navigation_settings/en
         <?php /* @escapeNotVerified */ echo $_menu; ?>
     </ul>
 </nav>
+<script type="text/javascript" xml="space">
+    require(['jquery','Magento_Customer/js/customer-data'], function ($,customerData) {
+        var cart = customerData.get('cart');
+        var lastCount = cart().summary_count;
+        cart.subscribe(function (updatedCart) {
+            if (updatedCart.summary_count > lastCount && updatedCart.summary_count > 0) {
+                setTimeout(function () {
+                    $('[data-block="minicart"]').find('.action.showcart').trigger('click');
+                }, 1000);
+            }
+            lastCount = updatedCart.summary_count;
+        });
+    });
+</script>

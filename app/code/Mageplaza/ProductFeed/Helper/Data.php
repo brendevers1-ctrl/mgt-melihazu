@@ -789,8 +789,8 @@ class Data extends CoreHelper {
                 }
             }
 
-			$stockStatus ? $product->setData('quantity_and_stock_status', 'in stock')
-			: $product->setData('quantity_and_stock_status', 'out of stock');
+			$stockStatus ? $product->setData('quantity_and_stock_status', 'in_stock')
+			: $product->setData('quantity_and_stock_status', 'out_of_stock');
 
 			$noneAttr = [
 				'categoryCollection',
