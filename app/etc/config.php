@@ -378,7 +378,6 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
-        'Custom_AmazonSes' => 1,
         'Custom_FlatRateFast' => 1,
         'Custom_OrderToSheet' => 1,
         'Custom_SizeGuide' => 1,
